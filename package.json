@@ -12,7 +12,8 @@
     "test:autonomous": "tsx test-harness/autonomous-validator.ts",
     "test:autonomous:smoke": "tsx test-harness/autonomous-validator.ts --smoke --max-iterations 1 --conversations 4",
     "test:autonomous:marathon": "tsx test-harness/autonomous-validator.ts --max-hours 72 --max-iterations 36",
-    "security:audit": "node scripts/security/audit.mjs"
+    "security:audit": "node scripts/security/audit.mjs",
+    "test:waitlist-email": "node scripts/test-waitlist-email.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.80.0",

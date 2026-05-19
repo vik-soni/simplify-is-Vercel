@@ -1,5 +1,5 @@
-import { Resend } from "resend";
 import type { WaitlistEmailConfig } from "@/lib/config/server";
+import { getResendClient } from "./resendClient";
 
 export interface WaitlistSubmission {
   firstName: string;
@@ -23,7 +23,11 @@ export async function sendWaitlistNotificationEmail(
   config: WaitlistEmailConfig,
   input: WaitlistSubmission,
 ): Promise<void> {
-  const resend = new Resend(config.RESEND_API_KEY);
+  const client = getResendClient();
+  if (!client) {
+    throw new Error("Resend is not configured");
+  }
+
   const fullName = `${input.firstName} ${input.lastName}`.trim();
   const safe = {
     firstName: escapeHtml(input.firstName),
@@ -63,8 +67,8 @@ export async function sendWaitlistNotificationEmail(
     "They asked to be notified when Simplify IS is ready for demo, signup, or launch credits.",
   ].join("\n");
 
-  const { error } = await resend.emails.send({
-    from: config.RESEND_FROM_EMAIL,
+  const { error } = await client.resend.emails.send({
+    from: client.from,
     to: config.VIK_ALERT_EMAIL,
     subject,
     html,

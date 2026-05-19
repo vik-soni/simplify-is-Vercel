@@ -90,9 +90,19 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json({ success: true }, { status: 200 });
-  } catch {
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : "unknown error";
+    if (process.env.NODE_ENV !== "production") {
+      console.error("[waitlist] Resend send failed:", message);
+    }
     return NextResponse.json(
-      { success: false, error: "Something went wrong. Please try again shortly." },
+      {
+        success: false,
+        error:
+          process.env.NODE_ENV === "production"
+            ? "Something went wrong. Please try again shortly."
+            : `Email send failed: ${message}`,
+      },
       { status: 500 },
     );
   }
