@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en-AU"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Framework Selection | Simplify IS</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&amp;family=Josefin+Sans:wght@300;400;600&amp;family=Montserrat:wght@400;500;600&amp;family=Epilogue:wght@700&amp;family=Manrope:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@500;700&amp;family=Geist+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "secondary": "#cdc6ba",
+                        "secondary-fixed": "#e9e2d5",
+                        "background": "#141311",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "surface": "#141311",
+                        "secondary-fixed-dim": "#cdc6ba",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#ffdbcf",
+                        "on-surface-variant": "#e1bfb4",
+                        "tertiary": "#ffb59d",
+                        "surface-dim": "#141311",
+                        "on-tertiary-container": "#511500",
+                        "on-error": "#690005",
+                        "surface-container-low": "#1c1b19",
+                        "inverse-surface": "#e6e2de",
+                        "on-surface": "#e6e2de",
+                        "primary": "#ffb59c",
+                        "on-tertiary-fixed-variant": "#7d2c0d",
+                        "secondary-container": "#4f4b42",
+                        "outline": "#a88a80",
+                        "on-background": "#e6e2de",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#ffb59c",
+                        "tertiary-container": "#dc734f",
+                        "surface-bright": "#3a3937",
+                        "on-primary-fixed-variant": "#822700",
+                        "surface-container-high": "#2b2a28",
+                        "on-secondary-fixed-variant": "#4a463d",
+                        "surface-variant": "#363432",
+                        "on-secondary-fixed": "#1e1b14",
+                        "on-secondary-container": "#c2bbaf",
+                        "on-primary-container": "#511500",
+                        "on-tertiary": "#5d1900",
+                        "inverse-on-surface": "#32302e",
+                        "surface-container-lowest": "#0f0e0c",
+                        "primary-fixed-dim": "#ffb59c",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-primary": "#5c1900",
+                        "outline-variant": "#594139",
+                        "primary-container": "#f2632d",
+                        "on-primary-fixed": "#390c00",
+                        "surface-container-highest": "#363432",
+                        "on-secondary": "#343028",
+                        "inverse-primary": "#ab3600",
+                        "surface-container": "#211f1d"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                },
+                "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Plus Jakarta Sans"]
+                }
+              },
+            },
+          }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-brand {
+            box-shadow: 0 0 20px rgba(235,94,40,0.15);
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .glass-surface {
+            background: rgba(20, 19, 17, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .premium-gradient {
+            background: linear-gradient(135deg, #EB5E28 0%, #C44A1A 100%);
+        }
+        .selectable-card.selected {
+            border-color: #f2632d;
+            box-shadow: 0 0 20px rgba(235,94,40,0.15);
+        }
+        .selectable-card.selected .check-icon {
+            display: flex;
+        }
+        .selectable-card .check-icon {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#141311]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-7xl mx-auto">
+<!-- Text Logo -->
+<div class="text-[#E6E2DE] font-['Raleway'] font-bold text-lg">
+            Simplify IS
+        </div>
+<div class="flex items-center gap-12">
+<!-- Progress Indicator -->
+<div class="flex flex-col items-end gap-2">
+<span class="font-['Geist_Mono'] text-[10px] uppercase tracking-[0.2em] text-primary">
+                    Step 03 / 04
+                </span>
+<div class="flex gap-1 w-32">
+<div class="h-1 flex-1 bg-primary"></div>
+<div class="h-1 flex-1 bg-primary"></div>
+<div class="h-1 flex-1 bg-[#EB5E28]"></div>
+<div class="h-1 flex-1 bg-outline/20"></div>
+</div>
+</div>
+<!-- Close Button -->
+<button aria-label="Close" class="text-on-surface hover:text-[#EB5E28] transition-colors p-2">
+<span class="material-symbols-outlined text-3xl" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center pt-32 pb-20 px-4 sm:px-8">
+<!-- Modal Container -->
+<div class="max-w-5xl w-full surface-container-high editorial-shadow rounded-lg overflow-hidden border border-[#A88A80]/15 relative">
+<!-- Abstract Background Visual Component -->
+<div class="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+<div class="absolute -top-1/4 -right-1/4 w-96 h-96 rounded-full bg-primary-container blur-[100px]"></div>
+<div class="absolute -bottom-1/4 -left-1/4 w-64 h-64 rounded-full bg-secondary-container blur-[80px]"></div>
+</div>
+<div class="relative z-10 p-8 md:p-12">
+<!-- Progress Metadata (Mini) -->
+<div class="mb-8 flex items-center gap-4">
+<span class="font-['Geist_Mono'] text-xs uppercase tracking-[0.2em] text-primary">
+                    Initialisation
+                </span>
+<div class="h-[1px] flex-grow bg-outline/20"></div>
+</div>
+<!-- Header Section -->
+<div class="mb-12">
+<h1 class="font-['Raleway'] text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-6 leading-none">Select Primary Frameworks</h1>
+<p class="font-body text-secondary text-lg max-w-2xl leading-relaxed opacity-80">Identify the regulatory standards Cypher should prioritise for your initial assessment.</p>
+</div>
+<!-- Framework Selection Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+<!-- ISO 27001 (Selected) -->
+<div class="selectable-card selected group relative flex flex-col p-6 rounded-lg bg-surface-container-lowest border-2 border-primary-container glow-brand transition-all duration-300 cursor-pointer" onclick="this.classList.toggle('selected')">
+<div class="flex justify-between items-start mb-6">
+<div class="w-10 h-10 flex items-center justify-center bg-primary-container/10 rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="check-icon w-5 h-5 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed text-[12px] font-bold" data-icon="check">check</span>
+</div>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">ISO 27001:2022</h3>
+<p class="font-body text-xs text-secondary/70 leading-snug flex-grow">International standard for information security management systems (ISMS).</p>
+<div class="mt-4 flex gap-1">
+<span class="font-['Geist_Mono'] text-[9px] px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded">GLOBAL</span>
+</div>
+</div>
+<!-- NIST CSF (Selected) -->
+<div class="selectable-card selected group relative flex flex-col p-6 rounded-lg bg-surface-container-lowest border-2 border-primary-container glow-brand transition-all duration-300 cursor-pointer" onclick="this.classList.toggle('selected')">
+<div class="flex justify-between items-start mb-6">
+<div class="w-10 h-10 flex items-center justify-center bg-primary-container/10 rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div class="check-icon w-5 h-5 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed text-[12px] font-bold" data-icon="check">check</span>
+</div>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">NIST CSF 2.0</h3>
+<p class="font-body text-xs text-secondary/70 leading-snug flex-grow">Framework for managing cybersecurity-related risk and improving infrastructure resilience.</p>
+<div class="mt-4 flex gap-1">
+<span class="font-['Geist_Mono'] text-[9px] px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded">ESSENTIALS</span>
+</div>
+</div>
+<!-- APRA CPS 234 (Now Selected/Selectable) -->
+<div class="selectable-card selected group relative flex flex-col p-6 rounded-lg bg-surface-container-lowest border-2 border-primary-container glow-brand transition-all duration-300 cursor-pointer" onclick="this.classList.toggle('selected')">
+<div class="flex justify-between items-start mb-6">
+<div class="w-10 h-10 flex items-center justify-center bg-primary-container/10 rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="account_balance" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<div class="check-icon w-5 h-5 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed text-[12px] font-bold" data-icon="check">check</span>
+</div>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">APRA CPS 234</h3>
+<p class="font-body text-xs text-secondary/70 leading-snug flex-grow">Australian Prudential Regulation Authority standard for information security.</p>
+<div class="mt-4 flex gap-1">
+<span class="font-['Geist_Mono'] text-[9px] px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded">AUSTRALIA</span>
+</div>
+</div>
+<!-- SOC 2 (Coming Soon) -->
+<div class="group relative flex flex-col p-6 rounded-lg bg-surface-container/30 border border-outline/10 opacity-60 transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg">
+<span class="material-symbols-outlined text-secondary/50 text-2xl" data-icon="account_balance">account_balance</span>
+</div>
+<span class="text-[9px] font-['Geist_Mono'] text-secondary px-2 py-0.5 bg-surface-container-high rounded border border-outline/10">COMING SOON</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface/80 mb-2">SOC 2 Type II</h3>
+<p class="font-body text-xs text-secondary/50 leading-snug flex-grow">Attestation for service organisations focusing on security and availability.</p>
+</div>
+<!-- PCI DSS v4.0 (Coming Soon) -->
+<div class="group relative flex flex-col p-6 rounded-lg bg-surface-container/30 border border-outline/10 opacity-60 transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg">
+<span class="material-symbols-outlined text-secondary/50 text-2xl" data-icon="payments">payments</span>
+</div>
+<span class="text-[9px] font-['Geist_Mono'] text-secondary px-2 py-0.5 bg-surface-container-high rounded border border-outline/10">COMING SOON</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface/80 mb-2">PCI DSS v4.0</h3>
+<p class="font-body text-xs text-secondary/50 leading-snug flex-grow">The security standard for organisations handling branded credit cards.</p>
+</div>
+<!-- HIPAA (Coming Soon) -->
+<div class="group relative flex flex-col p-6 rounded-lg bg-surface-container/30 border border-outline/10 opacity-60 transition-all duration-300">
+<div class="flex justify-between items-start mb-6">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg">
+<span class="material-symbols-outlined text-secondary/50 text-2xl" data-icon="medical_services">medical_services</span>
+</div>
+<span class="text-[9px] font-['Geist_Mono'] text-secondary px-2 py-0.5 bg-surface-container-high rounded border border-outline/10">COMING SOON</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface/80 mb-2">HIPAA</h3>
+<p class="font-body text-xs text-secondary/50 leading-snug flex-grow">US health information privacy and security regulation.</p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 pt-8 border-t border-outline/15">
+<div class="flex items-center gap-3 text-secondary/60">
+<span class="material-symbols-outlined text-sm" data-icon="info">info</span>
+<p class="text-xs font-['Josefin_Sans'] tracking-wide uppercase">You can add more specialised frameworks later in the vault settings.</p>
+</div>
+<button class="w-full md:w-auto px-10 py-5 premium-gradient text-on-primary-fixed font-['Josefin_Sans'] font-bold tracking-widest uppercase rounded-lg glow-brand transition-all duration-300 hover:scale-[1.01] active:scale-[0.98]">
+                    Confirm Selection
+                </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Blueprint -->
+<footer class="bg-[#141311] border-t border-[#A88A80]/15 w-full pt-12 pb-8 mt-auto">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-8 items-center">
+<!-- Left -->
+<div class="text-[#E6E2DE] font-['Raleway'] font-bold text-lg text-center md:text-left">
+            Simplify IS
+        </div>
+<!-- Right Links -->
+<div class="flex justify-center md:justify-end gap-8">
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Terms of Service</a>
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Contact</a>
+</div>
+</div>
+<!-- Bottom Center -->
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-[#A88A80]/5 text-center">
+<span class="font-['Geist_Mono'] text-[10px] text-outline/30 uppercase tracking-[0.3em]">
+            © 2026 Simplify IS. Systems Online.
+        </span>
+</div>
+</footer>
+</body></html>

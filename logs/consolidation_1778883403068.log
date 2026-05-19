@@ -1,0 +1,102 @@
+Agent 18 consolidated question generation
+Started: 2026-05-15T22:16:43.068Z
+Flags: {"resume":false,"preview":false}
+
+=== Phase 1: Consolidated question generation ===
+Fetching detail questions...
+Fetched 3615 detail rows.
+Grouped into 440 unique (framework, control_id) pairs.
+[1/440] ISO_27001_2022:A.8.13 (10 detail qs)
+  attempt 1 AUDIT FAIL: Framework-native: ISO 27001:2022 uses Implementation Levels 0-5, not Yes/Partial/No maturity model; Coverage gap: Detail questions cover formal policies, encryption, monitoring/alerting, and automated validation which aren't reflected in maturity levels
+  attempt 2 AUDIT FAIL: Framework-native: ISO 27001:2022 uses Implementation Levels 0-5, not Yes/Partial/No; Covers the detail: Missing key elements like ransomware protection, automated monitoring, formal policies, and RPO/RTO objectives; Honest at the bottom: 'Hit-and-miss' understates the risk - should acknowledge complete absence of backups
+  attempt 3 AUDIT FAIL: Framework-native issue: ISO 27001:2022 uses Implementation Levels 0-5, not Yes/No/Partial; Coverage gap: maturity levels miss key detail requirements like formal policies, RPO/RTO, ransomware protection, and automated monitoring
+  FAIL ISO_27001_2022:A.8.13
+[2/440] ISO_27001_2022:A.8.30 (7 detail qs)
+  attempt 1 AUDIT FAIL: Framework-native issue: ISO 27001:2022 uses Implementation Levels 0-5, not No/Partial/Yes; Coverage gap: missing key elements like supplier register, periodic audits, and independent security reviews from detail questions
+  attempt 2 ERROR: [
+  {
+    "origin": "array",
+    "code": "too_big",
+    "maximum": 5,
+    "inclusive": true,
+    "path": [
+      "maturity_levels"
+    ],
+    "message": "Too big: expected array to have <=5 items"
+  }
+]
+  attempt 3 AUDIT FAIL: Framework-native: ISO 27001:2022 uses Implementation Levels 0-5, not Yes/No/Partial; Covers the detail: Missing automated controls, continuous monitoring, supplier registers, and periodic audits from detail questions
+  FAIL ISO_27001_2022:A.8.30
+[3/440] ISO_27001_2022:A.5.28 (9 detail qs)
+  attempt 1 AUDIT FAIL: American spelling 'organized' instead of 'organised'; Framework-native issue - ISO 27001:2022 doesn't use No/Partial/Yes maturity levels; Missing coverage of automated tools and cryptographic integrity verification from detail questions
+  attempt 2 AUDIT FAIL: Uses American spelling 'organized' instead of Australian 'organised'; Framework-native issue: ISO 27001:2022 doesn't use No/Partial/Yes - it uses maturity levels like Initial/Managed/Defined; Missing coverage of key detail areas like cryptographic hashing, chain of custody records, and personnel training
+  attempt 3 AUDIT FAIL: Uses American spelling 'organized' instead of Australian 'organised'; Framework-native issue: ISO 27001:2022 doesn't use No/Partial/Yes maturity levels; Missing coverage of automated tools and regular review processes from detail questions
+  FAIL ISO_27001_2022:A.5.28
+[4/440] ISO_27001_2022:A.7.3 (10 detail qs)
+  attempt 1 AUDIT FAIL: Uses American spelling 'organization' in detail question 1; Uses American spelling 'analyze' in detail question 10; Maturity levels don't align with ISO 27001's native approach - they're more like basic/intermediate/advanced rather than ISO's compliance-based structure; Consolidated question misses key aspects like visitor management, risk assessments, and training covered in detail questions
+  attempt 2 AUDIT FAIL: Uses American spelling 'organization' instead of 'organisation'; Framework-native issue: ISO 27001:2022 doesn't use 'No/Partial/Yes' maturity levels; Missing coverage of key detail areas like security awareness training, automated monitoring, and metrics analysis; Maturity descriptions don't align with ISO 27001's implementation approach
+  attempt 3 AUDIT FAIL: Uses American spelling 'organization' instead of Australian 'organisation'; Uses American spelling 'analyze' instead of Australian 'analyse'; Maturity levels don't match ISO 27001:2022 native framework structure; Missing coverage of documented policies, area classification, and risk assessments from detail questions
+  FAIL ISO_27001_2022:A.7.3
+[5/440] NIST_CSF_2.0:PR.IR-04 (9 detail qs)
+  attempt 1 AUDIT FAIL: Framework-native: NIST CSF 2.0 uses Implementation Tiers (Partial, Risk Informed, Repeatable, Adaptive) but PR.IR-04 is a specific control that should use maturity levels like Initial/Developing/Established/Advanced; Covers the detail: Missing coverage of formal documentation, change management integration, load testing, and staffing capacity from the detail questions
+  attempt 2 AUDIT FAIL: Framework-native issue: NIST CSF 2.0 uses Implementation Tiers (Partial, Risk Informed, Repeatable, Adaptive) but not as maturity levels for individual controls; Coverage gap: Detail questions cover formal policies, documentation, review cycles, and specific technical elements that aren't reflected in the maturity descriptions
+  attempt 3 AUDIT FAIL: American spelling 'organisation' should be 'organisation' - wait, this is correct; Framework levels don't match NIST CSF 2.0 native maturity structure; Missing coverage of staffing capacity, change management integration, and formal forecasting periods
+  FAIL NIST_CSF_2.0:PR.IR-04
+[6/440] ISO_27001_2022:A.8.23 (9 detail qs)
+  attempt 1 AUDIT FAIL: Framework-native: ISO 27001:2022 uses 'Not implemented', 'Partially implemented', 'Implemented' - not No/Partial/Yes; Coverage gap: Missing key elements like Acceptable Use Policy, exception processes, logging/SIEM integration, and review frequency; Australian English: Should use 'organisation' not 'organization' in maturity levels
+  attempt 2 AUDIT FAIL: Uses American spelling 'analyze' in detail question 6 instead of Australian 'analyse'; Framework-native issue: ISO 27001:2022 doesn't use Yes/No/Partial maturity levels - it focuses on implementation effectiveness; Coverage gap: maturity levels don't address remote worker coverage, SIEM integration, threat intelligence feeds, or metrics monitoring from detail questions
+  attempt 3 AUDIT FAIL: Uses American spelling 'organize' implied in framework-native assessment - ISO 27001 doesn't use No/Partial/Yes maturity levels; Maturity levels don't cover comprehensive scope of detail questions - missing AUP documentation, exception processes, SIEM integration, and metrics monitoring; Framework-native issue - ISO 27001 uses different maturity concepts than the simple three-tier approach shown
+  FAIL ISO_27001_2022:A.8.23
+[7/440] ISO_27001_2022:A.7.5 (9 detail qs)
+  attempt 1 AUDIT FAIL: Uses American spelling 'organization' instead of Australian 'organisation'; ISO 27001:2022 doesn't use No/Partial/Yes maturity levels - it's implementation-focused; Missing coverage of third-party facility controls from detail questions; Doesn't cover formal threat assessments, documentation, or continuous improvement processes
+  attempt 2 AUDIT FAIL: Uses American spelling 'organization' instead of Australian 'organisation'; ISO 27001:2022 doesn't use No/Partial/Yes maturity levels - uses different native framework levels; Missing coverage of third-party facility controls from detail question 8
+  attempt 3 AUDIT FAIL: Uses American spelling 'organization' in detail question 1; Maturity levels don't match ISO 27001's native implementation/monitoring structure; Missing coverage of formal threat assessments and documentation requirements; Doesn't address third-party facility controls from detail question 8
+  FAIL ISO_27001_2022:A.7.5
+[8/440] ISO_27001_2022:A.5.29 (8 detail qs)
+  attempt 1 AUDIT FAIL: American spelling 'organization' instead of Australian 'organisation'; ISO 27001:2022 uses Implementation levels (0-5) not Yes/No/Partial maturity model; Missing critical elements like RTO/RPO, break-glass procedures, and automated monitoring from detail questions
+  attempt 2 AUDIT FAIL: Uses American spelling 'organization' instead of 'organisation'; ISO 27001:2022 doesn't use Yes/No/Partial maturity levels - it's implementation-focused; Missing coverage of formal ISCP documentation and BIA requirements from detail questions
+  attempt 3 AUDIT FAIL: American spelling: 'organization' should be 'organisation'; Framework-native: ISO 27001:2022 doesn't use No/Partial/Yes maturity levels - it's implementation-focused with different assessment approaches; Coverage gaps: Missing automated monitoring, break-glass procedures, BIA security considerations, and post-incident plan updates from detail questions
+  FAIL ISO_27001_2022:A.5.29
+[9/440] ISO_27001_2022:A.5.25 (8 detail qs)
+  attempt 1 AUDIT FAIL: American spelling: 'analyze' in detail question 7; Framework-native issue: ISO 27001:2022 doesn't use No/Partial/Yes maturity levels; Coverage gap: maturity levels don't address documentation, training, tools, metrics, and continuous improvement from detail questions
+  attempt 2 AUDIT FAIL: American spelling 'analyze' in detail question 7; Framework mismatch - ISO 27001:2022 uses Implementation Levels 1-5, not No/Partial/Yes maturity
+  attempt 3 REJECTED: maturity model mismatch
+  FAIL ISO_27001_2022:A.5.25
+[10/440] ISO_27001_2022:A.5.33 (8 detail qs)
+  attempt 1 AUDIT FAIL: Framework-native issue: ISO 27001:2022 doesn't use No/Partial/Yes maturity levels; Coverage gaps: maturity levels don't address backup/restoration, falsification detection, or automated workflows from detail questions
+  attempt 2 AUDIT FAIL: Framework-native issue: ISO 27001:2022 uses Implementation levels (not implemented/partially implemented/fully implemented), not Yes/No/Partial; Coverage gap: maturity levels don't adequately cover automated workflows, access reviews, or technical integrity measures from detail questions
+  attempt 3 AUDIT FAIL: Framework-native: ISO 27001:2022 uses Implementation Levels 0-5, not No/Partial/Yes maturity levels; Coverage gap: Detail questions cover technical measures like digital signatures/hashing and backup testing which aren't reflected in maturity levels
+  FAIL ISO_27001_2022:A.5.33
+[11/440] ISO_27001_2022:A.5.7 (8 detail qs)
+  attempt 1 AUDIT FAIL: American spelling 'organization' instead of Australian 'organisation'; American spelling 'analyze' instead of Australian 'analyse'; Framework-native issue: ISO 27001:2022 doesn't use No/Partial/Yes maturity levels; Detail coverage gap: missing automated tools, formal sharing processes, and effectiveness measurement
+  attempt 2 AUDIT FAIL: Uses American spelling 'analyze' instead of Australian 'analyse'; Framework-native issue - ISO 27001:2022 doesn't use No/Partial/Yes maturity levels; Missing coverage of formal documentation, registers, and measurement from detail questions
+  attempt 3 AUDIT FAIL: American spelling 'analyze' should be 'analyse'; Framework-native issue - ISO 27001:2022 doesn't use No/Partial/Yes maturity levels; Missing coverage of formal documentation, intelligence sharing, and program effectiveness measurement
+  FAIL ISO_27001_2022:A.5.7
+[12/440] ISO_27001_2022:A.5.23 (9 detail qs)
+  attempt 1 AUDIT FAIL: Framework-native: ISO 27001:2022 uses 'Not implemented', 'Partially implemented', 'Implemented' levels, not No/Partial/Yes; Covers the detail: Missing key elements like formal policies, risk assessments, contracts with security provisions, compliance reports, and technical controls implementation
+  attempt 2 AUDIT FAIL: Framework-native issue: ISO 27001:2022 uses Implementation Levels 0-5, not No/Partial/Yes maturity model; Coverage gap: maturity levels don't adequately cover comprehensive detail like formal policies, contracts, inventories, exit procedures, and continuous monitoring
+  attempt 3 ERROR: [
+  {
+    "origin": "array",
+    "code": "too_big",
+    "maximum": 5,
+    "inclusive": true,
+    "path": [
+      "maturity_levels"
+    ],
+    "message": "Too big: expected array to have <=5 items"
+  }
+]
+  FAIL ISO_27001_2022:A.5.23
+[13/440] ISO_27001_2022:A.5.1 (9 detail qs)
+  attempt 1 AUDIT FAIL: American spelling 'behavior' instead of Australian 'behaviour'; Framework-native levels don't match ISO 27001:2022 structure; Missing coverage of legal/regulatory requirements and policy register management
+  attempt 2 AUDIT FAIL: Framework-native issue: ISO 27001:2022 doesn't use No/Partial/Yes maturity levels - it's binary compliance focused; Coverage gaps: Missing key requirements like formal management approval, legal/regulatory compliance, annual reviews, policy registers, and integration into business operations; Maturity model doesn't reflect ISO 27001's actual implementation approach
+  attempt 3 AUDIT FAIL: Framework-native issue: ISO 27001:2022 doesn't use No/Partial/Yes maturity levels - it's binary compliant/non-compliant; Coverage gap: detail questions cover formal approval, legal requirements, documentation tracking, and effectiveness measurement which aren't reflected in the maturity levels
+  FAIL ISO_27001_2022:A.5.1
+[14/440] ISO_27001_2022:C.9.3.1 (8 detail qs)
+  attempt 1 AUDIT FAIL: Uses American spelling 'organization' instead of Australian 'organisation'; Framework-native issue - ISO 27001:2022 doesn't use Yes/No/Partial maturity levels; Missing coverage of mandatory input requirements and documentation aspects from detail questions
+  attempt 2 AUDIT FAIL: American spelling 'organization' in detail question 8; Framework-native issue - ISO 27001 doesn't use No/Partial/Yes maturity levels; Coverage gap - missing formal documentation, scheduled intervals, and comprehensive input requirements from detail questions
+  attempt 3 AUDIT FAIL: Uses American spelling 'organization' instead of Australian 'organisation'; Maturity levels don't match ISO 27001:2022 native framework which uses specific implementation levels; Coverage gaps - missing mandatory input requirements, formal documentation, and strategic decision-making aspects from detail questions
+  FAIL ISO_27001_2022:C.9.3.1
+[15/440] ISO_27001_2022:C.9.2.1 (9 detail qs)
+  attempt 1 AUDIT FAIL: American spelling: 'organization' should be 'organisation'; Missing coverage of key details like auditor independence, competencies, risk-based scheduling, and trend analysis; Framework mismatch - ISO 27001 uses implementation levels, not Yes/No/Partial

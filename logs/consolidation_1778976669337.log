@@ -1,0 +1,527 @@
+Agent 18 consolidated question generation (v2)
+Started: 2026-05-17T00:11:09.337Z
+Flags: {"resume":true,"preview":false,"runAudit":false}
+
+=== Phase 1: Consolidated question generation ===
+Audit gate: DISABLED
+Fetching detail questions...
+Fetched 3615 detail rows.
+Grouped into 440 unique (framework, control_id) pairs.
+[1/440] SKIP (already generated) ISO_27001_2022:A.8.13
+[2/440] SKIP (already generated) ISO_27001_2022:A.8.30
+[3/440] SKIP (already generated) ISO_27001_2022:A.5.28
+[4/440] SKIP (already generated) ISO_27001_2022:A.7.3
+[5/440] SKIP (already generated) NIST_CSF_2.0:PR.IR-04
+[6/440] SKIP (already generated) ISO_27001_2022:A.8.23
+[7/440] SKIP (already generated) ISO_27001_2022:A.7.5
+[8/440] SKIP (already generated) ISO_27001_2022:A.5.29
+[9/440] SKIP (already generated) ISO_27001_2022:A.5.25
+[10/440] SKIP (already generated) ISO_27001_2022:A.5.33
+[11/440] SKIP (already generated) ISO_27001_2022:A.5.7
+[12/440] SKIP (already generated) ISO_27001_2022:A.5.23
+[13/440] SKIP (already generated) ISO_27001_2022:A.5.1
+[14/440] SKIP (already generated) ISO_27001_2022:C.9.3.1
+[15/440] SKIP (already generated) ISO_27001_2022:C.9.2.1
+[16/440] SKIP (already generated) ISO_27001_2022:A.8.26
+[17/440] SKIP (already generated) ISO_27001_2022:A.8.11
+[18/440] SKIP (already generated) ISO_27001_2022:C.10.1
+[19/440] SKIP (already generated) ISO_27001_2022:A.8.2
+[20/440] SKIP (already generated) ISO_27001_2022:A.8.34
+[21/440] SKIP (already generated) ISO_27001_2022:A.5.9
+[22/440] SKIP (already generated) ISO_27001_2022:A.8.22
+[23/440] SKIP (already generated) ISO_27001_2022:A.8.28
+[24/440] SKIP (already generated) ISO_27001_2022:A.5.4
+[25/440] SKIP (already generated) ISO_27001_2022:C.6.1.2
+[26/440] SKIP (already generated) ISO_27001_2022:A.7.13
+[27/440] SKIP (already generated) ISO_27001_2022:A.8.21
+[28/440] SKIP (already generated) ISO_27001_2022:A.8.9
+[29/440] SKIP (already generated) ISO_27001_2022:A.6.1
+[30/440] SKIP (already generated) ISO_27001_2022:A.5.5
+[31/440] SKIP (already generated) ISO_27001_2022:A.8.27
+[32/440] SKIP (already generated) ISO_27001_2022:C.6.3
+[33/440] SKIP (already generated) ISO_27001_2022:C.7.5.2
+[34/440] SKIP (already generated) ISO_27001_2022:C.6.2
+[35/440] SKIP (already generated) ISO_27001_2022:A.8.32
+[36/440] SKIP (already generated) ISO_27001_2022:A.7.8
+[37/440] SKIP (already generated) ISO_27001_2022:A.7.14
+[38/440] SKIP (already generated) ISO_27001_2022:A.8.14
+[39/440] SKIP (already generated) ISO_27001_2022:C.6.1.1
+[40/440] SKIP (already generated) ISO_27001_2022:C.7.5.1
+[41/440] SKIP (already generated) ISO_27001_2022:C.8.1
+[42/440] SKIP (already generated) ISO_27001_2022:C.7.3
+[43/440] SKIP (already generated) ISO_27001_2022:A.7.2
+[44/440] SKIP (already generated) ISO_27001_2022:A.8.17
+[45/440] SKIP (already generated) ISO_27001_2022:A.6.8
+[46/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-08
+[47/440] SKIP (already generated) ISO_27001_2022:A.8.8
+[48/440] SKIP (already generated) ISO_27001_2022:C.4.3
+[49/440] SKIP (already generated) ISO_27001_2022:C.6.1.3
+[50/440] SKIP (already generated) ISO_27001_2022:A.5.3
+[51/440] SKIP (already generated) ISO_27001_2022:A.8.12
+[52/440] SKIP (already generated) ISO_27001_2022:C.7.1
+[53/440] SKIP (already generated) ISO_27001_2022:A.8.10
+[54/440] SKIP (already generated) ISO_27001_2022:A.5.21
+[55/440] SKIP (already generated) ISO_27001_2022:A.7.7
+[56/440] SKIP (already generated) ISO_27001_2022:A.5.35
+[57/440] ISO_27001_2022:C.7.5.3 (9 detail qs)
+  attempt 1 REJECTED: missing 1 detail mappings
+  attempt 2 REJECTED: missing 1 detail mappings
+  attempt 3 REJECTED: missing 1 detail mappings
+  FAIL ISO_27001_2022:C.7.5.3
+[58/440] SKIP (already generated) ISO_27001_2022:A.5.19
+[59/440] SKIP (already generated) ISO_27001_2022:C.7.2
+[60/440] SKIP (already generated) NIST_CSF_2.0:DE.CM-01
+[61/440] SKIP (already generated) ISO_27001_2022:A.8.5
+[62/440] SKIP (already generated) ISO_27001_2022:A.8.25
+[63/440] SKIP (already generated) ISO_27001_2022:C.5.1
+[64/440] SKIP (already generated) ISO_27001_2022:A.5.10
+[65/440] SKIP (already generated) ISO_27001_2022:A.5.37
+[66/440] SKIP (already generated) ISO_27001_2022:C.4.1
+[67/440] SKIP (already generated) ISO_27001_2022:A.5.32
+[68/440] SKIP (already generated) ISO_27001_2022:A.8.6
+[69/440] SKIP (already generated) ISO_27001_2022:A.8.3
+[70/440] SKIP (already generated) ISO_27001_2022:A.5.20
+[71/440] SKIP (already generated) ISO_27001_2022:C.5.3
+[72/440] SKIP (already generated) ISO_27001_2022:A.5.30
+[73/440] SKIP (already generated) ISO_27001_2022:A.6.3
+[74/440] SKIP (already generated) NIST_CSF_2.0:PR.PS-02
+[75/440] SKIP (already generated) ISO_27001_2022:A.5.11
+[76/440] SKIP (already generated) ISO_27001_2022:A.8.18
+[77/440] SKIP (already generated) ISO_27001_2022:A.5.12
+[78/440] SKIP (already generated) ISO_27001_2022:C.10.2
+[79/440] SKIP (already generated) ISO_27001_2022:A.5.6
+[80/440] SKIP (already generated) ISO_27001_2022:A.8.4
+[81/440] SKIP (already generated) ISO_27001_2022:A.5.31
+[82/440] SKIP (already generated) ISO_27001_2022:A.8.16
+[83/440] SKIP (already generated) ISO_27001_2022:C.5.2
+[84/440] SKIP (already generated) ISO_27001_2022:A.5.36
+[85/440] SKIP (already generated) ISO_27001_2022:A.8.19
+[86/440] SKIP (already generated) ISO_27001_2022:A.5.26
+[87/440] SKIP (already generated) ISO_27001_2022:A.5.16
+[88/440] SKIP (already generated) ISO_27001_2022:C.4.4
+[89/440] SKIP (already generated) PCI_DSS:PCI_DSS_9.1
+[90/440] SKIP (already generated) ISO_27001_2022:A.7.10
+[91/440] SKIP (already generated) ISO_27001_2022:A.6.5
+[92/440] SKIP (already generated) ISO_27001_2022:A.5.27
+[93/440] SKIP (already generated) ISO_27001_2022:C.9.3.2
+[94/440] SKIP (already generated) ISO_27001_2022:A.8.31
+[95/440] SKIP (already generated) ISO_27001_2022:C.4.2
+[96/440] SKIP (already generated) ISO_27001_2022:A.8.15
+[97/440] SKIP (already generated) ISO_27001_2022:A.5.22
+[98/440] SKIP (already generated) ISO_27001_2022:C.9.1
+[99/440] SKIP (already generated) ISO_27001_2022:A.8.1
+[100/440] SKIP (already generated) ISO_27001_2022:A.5.17
+[101/440] SKIP (already generated) ISO_27001_2022:A.7.1
+[102/440] SKIP (already generated) ISO_27001_2022:A.7.4
+[103/440] SKIP (already generated) ISO_27001_2022:A.7.6
+[104/440] SKIP (already generated) ISO_27001_2022:A.7.12
+[105/440] SKIP (already generated) ISO_27001_2022:A.7.9
+[106/440] SKIP (already generated) ISO_27001_2022:A.7.11
+[107/440] SKIP (already generated) NIST_CSF_2.0:GV.RR-03
+[108/440] SKIP (already generated) ISO_27001_2022:A.5.18
+[109/440] SKIP (already generated) ISO_27001_2022:A.8.7
+[110/440] SKIP (already generated) ISO_27001_2022:C.9.2.2
+[111/440] SKIP (already generated) ISO_27001_2022:C.8.3
+[112/440] SKIP (already generated) ISO_27001_2022:A.5.24
+[113/440] SKIP (already generated) ISO_27001_2022:A.8.29
+[114/440] SKIP (already generated) ISO_27001_2022:A.5.8
+[115/440] SKIP (already generated) ISO_27001_2022:A.5.2
+[116/440] SKIP (already generated) ISO_27001_2022:A.8.24
+[117/440] SKIP (already generated) ISO_27001_2022:C.7.4
+[118/440] SKIP (already generated) ISO_27001_2022:A.8.33
+[119/440] SKIP (already generated) ISO_27001_2022:A.6.7
+[120/440] SKIP (already generated) ISO_27001_2022:A.5.14
+[121/440] SKIP (already generated) ISO_27001_2022:A.6.4
+[122/440] SKIP (already generated) ISO_27001_2022:A.6.6
+[123/440] SKIP (already generated) ISO_27001_2022:C.9.3.3
+[124/440] SKIP (already generated) ISO_27001_2022:A.5.13
+[125/440] SKIP (already generated) ISO_27001_2022:C.8.2
+[126/440] SKIP (already generated) ISO_27001_2022:A.5.34
+[127/440] SKIP (already generated) ISO_27001_2022:A.5.15
+[128/440] SKIP (already generated) ISO_27001_2022:A.6.2
+[129/440] SKIP (already generated) ISO_27001_2022:A.8.20
+[130/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-03
+[131/440] SKIP (already generated) NIST_CSF_2.0:RC.RP-05
+[132/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-04
+[133/440] SKIP (already generated) NIST_CSF_2.0:ID.AM-01
+[134/440] SKIP (already generated) NIST_CSF_2.0:ID.AM-04
+[135/440] SKIP (already generated) NIST_CSF_2.0:ID.IM-03
+[136/440] SKIP (already generated) NIST_CSF_2.0:GV.RM-03
+[137/440] SKIP (already generated) PCI_DSS:PCI_DSS_5.3
+[138/440] SKIP (already generated) NIST_CSF_2.0:PR.AT-01
+[139/440] SKIP (already generated) NIST_CSF_2.0:PR.DS-10
+[140/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-01
+[141/440] SKIP (already generated) NIST_CSF_2.0:RC.RP-03
+[142/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-05
+[143/440] SKIP (already generated) NIST_CSF_2.0:GV.OC-05
+[144/440] SKIP (already generated) NIST_CSF_2.0:GV.RM-06
+[145/440] SKIP (already generated) NIST_CSF_2.0:PR.AA-03
+[146/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-10
+[147/440] SKIP (already generated) NIST_CSF_2.0:GV.OC-01
+[148/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-10
+[149/440] SKIP (already generated) NIST_CSF_2.0:PR.DS-02
+[150/440] SKIP (already generated) NIST_CSF_2.0:ID.AM-03
+[151/440] SKIP (already generated) PCI_DSS:PCI_DSS_3.2
+[152/440] SKIP (already generated) NIST_CSF_2.0:PR.AA-05
+[153/440] SKIP (already generated) PCI_DSS:PCI_DSS_6.2
+[154/440] SKIP (already generated) NIST_CSF_2.0:ID.IM-04
+[155/440] SKIP (already generated) NIST_CSF_2.0:RS.AN-08
+[156/440] SKIP (already generated) NIST_CSF_2.0:PR.AA-01
+[157/440] SKIP (already generated) NIST_CSF_2.0:GV.RR-04
+[158/440] SKIP (already generated) PCI_DSS:PCI_DSS_2.3
+[159/440] SKIP (already generated) NIST_CSF_2.0:PR.IR-01
+[160/440] SKIP (already generated) NIST_CSF_2.0:PR.PS-05
+[161/440] SKIP (already generated) NIST_CSF_2.0:DE.CM-06
+[162/440] SKIP (already generated) NIST_CSF_2.0:GV.RM-02
+[163/440] SKIP (already generated) NIST_CSF_2.0:GV.PO-01
+[164/440] SKIP (already generated) NIST_CSF_2.0:GV.RR-02
+[165/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-02
+[166/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-01
+[167/440] SKIP (already generated) NIST_CSF_2.0:PR.PS-04
+[168/440] SKIP (already generated) NIST_CSF_2.0:ID.IM-01
+[169/440] SKIP (already generated) NIST_CSF_2.0:RC.CO-04
+[170/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-06
+[171/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-02
+[172/440] SKIP (already generated) NIST_CSF_2.0:GV.OC-03
+[173/440] SKIP (already generated) NIST_CSF_2.0:ID.AM-07
+[174/440] SKIP (already generated) NIST_CSF_2.0:RS.MA-04
+[175/440] SKIP (already generated) NIST_CSF_2.0:RS.MA-03
+[176/440] SKIP (already generated) NIST_CSF_2.0:ID.IM-02
+[177/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-09
+[178/440] SKIP (already generated) NIST_CSF_2.0:RS.MA-01
+[179/440] SKIP (already generated) NIST_CSF_2.0:GV.OC-04
+[180/440] SKIP (already generated) ISO42001:A.4.5
+[181/440] SKIP (already generated) NIST_CSF_2.0:DE.AE-07
+[182/440] SKIP (already generated) NIST_CSF_2.0:GV.OV-01
+[183/440] SKIP (already generated) NIST_CSF_2.0:RS.MA-02
+[184/440] SKIP (already generated) NIST_CSF_2.0:RS.CO-03
+[185/440] SKIP (already generated) NIST_CSF_2.0:PR.IR-03
+[186/440] SKIP (already generated) NIST_CSF_2.0:PR.PS-06
+[187/440] SKIP (already generated) NIST_CSF_2.0:RC.RP-02
+[188/440] SKIP (already generated) NIST_CSF_2.0:GV.OV-03
+[189/440] SKIP (already generated) NIST_CSF_2.0:GV.RR-01
+[190/440] SKIP (already generated) NIST_CSF_2.0:PR.AA-04
+[191/440] SKIP (already generated) NIST_CSF_2.0:PR.IR-02
+[192/440] SKIP (already generated) NIST_CSF_2.0:PR.AA-06
+[193/440] SKIP (already generated) ISO42001:A.5.4
+[194/440] SKIP (already generated) ISO42001:A.6.1.2
+[195/440] SKIP (already generated) NIST_CSF_2.0:RC.RP-04
+[196/440] SKIP (already generated) NIST_CSF_2.0:GV.RM-05
+[197/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-07
+[198/440] SKIP (already generated) NIST_CSF_2.0:PR.AA-02
+[199/440] SKIP (already generated) NIST_CSF_2.0:DE.AE-06
+[200/440] SKIP (already generated) NIST_CSF_2.0:GV.PO-02
+[201/440] SKIP (already generated) NIST_CSF_2.0:RS.MA-05
+[202/440] SKIP (already generated) NIST_CSF_2.0:DE.AE-04
+[203/440] SKIP (already generated) NIST_CSF_2.0:GV.OV-02
+[204/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-04
+[205/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-06
+[206/440] SKIP (already generated) NIST_CSF_2.0:RS.CO-02
+[207/440] SKIP (already generated) NIST_CSF_2.0:RS.AN-03
+[208/440] SKIP (already generated) NIST_CSF_2.0:RC.RP-06
+[209/440] SKIP (already generated) NIST_CSF_2.0:ID.AM-05
+[210/440] SKIP (already generated) NIST_CSF_2.0:RS.AN-07
+[211/440] SKIP (already generated) NIST_CSF_2.0:DE.AE-08
+[212/440] SKIP (already generated) NIST_CSF_2.0:PR.PS-01
+[213/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-07
+[214/440] SKIP (already generated) PCI_DSS:PCI_DSS_6.1
+[215/440] SKIP (already generated) NIST_CSF_2.0:DE.AE-03
+[216/440] SKIP (already generated) NIST_CSF_2.0:DE.AE-02
+[217/440] SKIP (already generated) NIST_CSF_2.0:GV.RM-01
+[218/440] SKIP (already generated) NIST_CSF_2.0:DE.CM-09
+[219/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-08
+[220/440] SKIP (already generated) NIST_CSF_2.0:DE.CM-02
+[221/440] SKIP (already generated) NIST_CSF_2.0:DE.CM-03
+[222/440] SKIP (already generated) NIST_CSF_2.0:PR.AT-02
+[223/440] SKIP (already generated) NIST_CSF_2.0:RC.CO-03
+[224/440] SKIP (already generated) NIST_CSF_2.0:PR.DS-01
+[225/440] SKIP (already generated) NIST_CSF_2.0:RC.RP-01
+[226/440] SKIP (already generated) NIST_CSF_2.0:GV.OC-02
+[227/440] SKIP (already generated) NIST_CSF_2.0:ID.AM-08
+[228/440] SKIP (already generated) NIST_CSF_2.0:RS.MI-01
+[229/440] SKIP (already generated) NIST_CSF_2.0:GV.RM-04
+[230/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-09
+[231/440] SKIP (already generated) PCI_DSS:PCI_DSS_9.4
+[232/440] SKIP (already generated) NIST_CSF_2.0:GV.RM-07
+[233/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-03
+[234/440] SKIP (already generated) NIST_CSF_2.0:PR.DS-11
+[235/440] SKIP (already generated) NIST_CSF_2.0:RS.MI-02
+[236/440] SKIP (already generated) NIST_CSF_2.0:PR.PS-03
+[237/440] SKIP (already generated) NIST_CSF_2.0:RS.AN-06
+[238/440] SKIP (already generated) NIST_CSF_2.0:ID.AM-02
+[239/440] SKIP (already generated) NIST_CSF_2.0:GV.SC-05
+[240/440] SKIP (already generated) APRA_CPS_234:CPS234-1
+[241/440] SKIP (already generated) APRA_CPS_234:CPS234-2
+[242/440] SKIP (already generated) APRA_CPS_234:CPS234-3
+[243/440] SKIP (already generated) APRA_CPS_234:CPS234-5
+[244/440] SKIP (already generated) APRA_CPS_234:CPS234-4
+[245/440] SKIP (already generated) APRA_CPS_234:CPS234-6
+[246/440] SKIP (already generated) APRA_CPS_234:CPS234-7
+[247/440] SKIP (already generated) APRA_CPS_234:CPS234-8
+[248/440] SKIP (already generated) APRA_CPS_234:CPS234-9
+[249/440] SKIP (already generated) APRA_CPS_234:CPS234-10
+[250/440] SKIP (already generated) APRA_CPS_234:CPS234-11
+[251/440] SKIP (already generated) APRA_CPS_234:CPS234-12
+[252/440] SKIP (already generated) APRA_CPS_234:CPS234-13
+[253/440] SKIP (already generated) APRA_CPS_230:CPS230-02
+[254/440] SKIP (already generated) APRA_CPS_230:CPS230-01
+[255/440] SKIP (already generated) ISO42001:A.4.6
+[256/440] SKIP (already generated) APRA_CPS_230:CPS230-03
+[257/440] SKIP (already generated) APRA_CPS_230:CPS230-05
+[258/440] SKIP (already generated) APRA_CPS_230:CPS230-04
+[259/440] SKIP (already generated) APRA_CPS_230:CPS230-06
+[260/440] SKIP (already generated) APRA_CPS_230:CPS230-07
+[261/440] SKIP (already generated) PCI_DSS:PCI_DSS_5.2
+[262/440] SKIP (already generated) PCI_DSS:PCI_DSS_7.1
+[263/440] SKIP (already generated) PCI_DSS:PCI_DSS_11.2
+[264/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.3
+[265/440] SKIP (already generated) ISO42001:A.5.5
+[266/440] SKIP (already generated) ISO42001:A.5.3
+[267/440] SKIP (already generated) PCI_DSS:PCI_DSS_10.5
+[268/440] SKIP (already generated) PCI_DSS:PCI_DSS_8.1
+[269/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.2
+[270/440] SKIP (already generated) PCI_DSS:PCI_DSS_6.4
+[271/440] SKIP (already generated) PCI_DSS:PCI_DSS_11.5
+[272/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.8
+[273/440] SKIP (already generated) PCI_DSS:PCI_DSS_6.5
+[274/440] SKIP (already generated) PCI_DSS:PCI_DSS_9.2
+[275/440] SKIP (already generated) PCI_DSS:PCI_DSS_11.1
+[276/440] SKIP (already generated) PCI_DSS:PCI_DSS_9.3
+[277/440] SKIP (already generated) PCI_DSS:PCI_DSS_11.3
+[278/440] SKIP (already generated) PCI_DSS:PCI_DSS_2.2
+[279/440] SKIP (already generated) PCI_DSS:PCI_DSS_9.5
+[280/440] SKIP (already generated) PCI_DSS:PCI_DSS_3.3
+[281/440] SKIP (already generated) PCI_DSS:PCI_DSS_3.6
+[282/440] SKIP (already generated) PCI_DSS:PCI_DSS_10.2
+[283/440] SKIP (already generated) PCI_DSS:PCI_DSS_7.3
+[284/440] SKIP (already generated) PCI_DSS:PCI_DSS_10.1
+[285/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.9
+[286/440] SKIP (already generated) PCI_DSS:PCI_DSS_8.2
+[287/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.1
+[288/440] SKIP (already generated) PCI_DSS:PCI_DSS_4.1
+[289/440] SKIP (already generated) PCI_DSS:PCI_DSS_1.1
+[290/440] SKIP (already generated) PCI_DSS:PCI_DSS_1.2
+[291/440] SKIP (already generated) PCI_DSS:PCI_DSS_8.5
+[292/440] SKIP (already generated) PCI_DSS:PCI_DSS_4.2
+[293/440] SKIP (already generated) PCI_DSS:PCI_DSS_1.3
+[294/440] SKIP (already generated) PCI_DSS:PCI_DSS_1.4
+[295/440] SKIP (already generated) PCI_DSS:PCI_DSS_2.1
+[296/440] SKIP (already generated) PCI_DSS:PCI_DSS_1.5
+[297/440] SKIP (already generated) PCI_DSS:PCI_DSS_3.1
+[298/440] SKIP (already generated) PCI_DSS:PCI_DSS_8.4
+[299/440] SKIP (already generated) PCI_DSS:PCI_DSS_5.1
+[300/440] SKIP (already generated) PCI_DSS:PCI_DSS_3.7
+[301/440] SKIP (already generated) PCI_DSS:PCI_DSS_5.4
+[302/440] SKIP (already generated) PCI_DSS:PCI_DSS_6.3
+[303/440] SKIP (already generated) PCI_DSS:PCI_DSS_10.7
+[304/440] SKIP (already generated) PCI_DSS:PCI_DSS_7.2
+[305/440] SKIP (already generated) PCI_DSS:PCI_DSS_8.3
+[306/440] SKIP (already generated) PCI_DSS:PCI_DSS_8.6
+[307/440] SKIP (already generated) PCI_DSS:PCI_DSS_10.3
+[308/440] SKIP (already generated) PCI_DSS:PCI_DSS_10.4
+[309/440] SKIP (already generated) PCI_DSS:PCI_DSS_10.6
+[310/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.5
+[311/440] SKIP (already generated) PCI_DSS:PCI_DSS_11.4
+[312/440] SKIP (already generated) PCI_DSS:PCI_DSS_11.6
+[313/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.4
+[314/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.7
+[315/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.6
+[316/440] SKIP (already generated) PCI_DSS:PCI_DSS_12.10
+[317/440] SKIP (already generated) PCI_DSS:PCI_DSS_3.4
+[318/440] SKIP (already generated) PCI_DSS:PCI_DSS_3.5
+[319/440] SKIP (already generated) ASD_E8:E8-01-PATCH_APPLICATIONS
+[320/440] SKIP (already generated) ASD_E8:E8-02-PATCH_OPERATING_SYSTEMS
+[321/440] SKIP (already generated) ASD_E8:E8-03-MULTI_FACTOR_AUTHENTICATION
+[322/440] SKIP (already generated) ASD_E8:E8-04-RESTRICT_ADMINISTRATIVE_PRIVILEGES
+[323/440] SKIP (already generated) ASD_E8:E8-05-APPLICATION_CONTROL
+[324/440] SKIP (already generated) ASD_E8:E8-06-RESTRICT_MS_OFFICE_MACROS
+[325/440] SKIP (already generated) ASD_E8:E8-07-USER_APPLICATION_HARDENING
+[326/440] SKIP (already generated) ASD_E8:E8-08-REGULAR_BACKUPS
+[327/440] SKIP (already generated) ISO42001:A.3.3
+[328/440] SKIP (already generated) ISO42001:A.6.2.4
+[329/440] SKIP (already generated) ISO42001:A.5.2
+[330/440] SKIP (already generated) ISO42001:A.3.2
+[331/440] SKIP (already generated) ISO42001:A.2.2
+[332/440] SKIP (already generated) ISO42001:A.2.3
+[333/440] SKIP (already generated) ISO42001:A.2.4
+[334/440] SKIP (already generated) ISO42001:A.4.2
+[335/440] SKIP (already generated) ISO42001:A.4.3
+[336/440] SKIP (already generated) ISO42001:A.4.4
+[337/440] SKIP (already generated) ISO42001:A.6.1.3
+[338/440] SKIP (already generated) ISO42001:A.6.2.2
+[339/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.2
+[340/440] SKIP (already generated) ISO42001:A.6.2.3
+[341/440] SKIP (already generated) ISO42001:A.6.2.5
+[342/440] SKIP (already generated) ISO42001:A.6.2.6
+[343/440] SKIP (already generated) ISO42001:A.6.2.7
+[344/440] SKIP (already generated) ISO42001:A.6.2.8
+[345/440] SKIP (already generated) ISO42001:A.7.2
+[346/440] SKIP (already generated) ISO42001:A.7.3
+[347/440] SKIP (already generated) ISO42001:A.7.4
+[348/440] SKIP (already generated) ISO42001:A.7.5
+[349/440] SKIP (already generated) ISO42001:A.7.6
+[350/440] SKIP (already generated) ISO42001:A.8.2
+[351/440] SKIP (already generated) ISO42001:A.8.3
+[352/440] SKIP (already generated) AU_VAISS:AU-VAISS-G03
+[353/440] SKIP (already generated) ISO42001:A.8.4
+[354/440] SKIP (already generated) NIST_AI_RMF:MAP-2.1
+[355/440] SKIP (already generated) ISO42001:A.8.5
+[356/440] SKIP (already generated) ISO42001:A.9.4
+[357/440] SKIP (already generated) ISO42001:A.9.2
+[358/440] SKIP (already generated) ISO42001:A.9.3
+[359/440] SKIP (already generated) ISO42001:A.10.2
+[360/440] SKIP (already generated) ISO42001:A.10.3
+[361/440] SKIP (already generated) ISO42001:A.10.4
+[362/440] SKIP (already generated) AU_VAISS:AU-VAISS-G01
+[363/440] SKIP (already generated) AU_VAISS:AU-VAISS-G02
+[364/440] SKIP (already generated) AU_VAISS:AU-VAISS-G04
+[365/440] SKIP (already generated) AU_VAISS:AU-VAISS-G05
+[366/440] SKIP (already generated) AU_VAISS:AU-VAISS-G06
+[367/440] SKIP (already generated) AU_VAISS:AU-VAISS-G07
+[368/440] SKIP (already generated) AU_VAISS:AU-VAISS-G08
+[369/440] SKIP (already generated) AU_VAISS:AU-VAISS-G09
+[370/440] SKIP (already generated) AU_VAISS:AU-VAISS-G10
+[371/440] SKIP (already generated) NIST_AI_RMF:MAP-1.1
+[372/440] SKIP (already generated) NIST_AI_RMF:MANAGE-1.4
+[373/440] SKIP (already generated) NIST_AI_RMF:MANAGE-1.2
+[374/440] SKIP (already generated) NIST_AI_RMF:GOVERN-1.1
+[375/440] SKIP (already generated) NIST_AI_RMF:GOVERN-1.2
+[376/440] SKIP (already generated) NIST_AI_RMF:GOVERN-1.3
+[377/440] SKIP (already generated) NIST_AI_RMF:GOVERN-1.4
+[378/440] SKIP (already generated) NIST_AI_RMF:GOVERN-2.3
+[379/440] SKIP (already generated) NIST_AI_RMF:GOVERN-1.5
+[380/440] SKIP (already generated) NIST_AI_RMF:GOVERN-1.6
+[381/440] SKIP (already generated) NIST_AI_RMF:GOVERN-1.7
+[382/440] SKIP (already generated) NIST_AI_RMF:GOVERN-2.1
+[383/440] SKIP (already generated) NIST_AI_RMF:MANAGE-1.1
+[384/440] SKIP (already generated) NIST_AI_RMF:GOVERN-2.2
+[385/440] NIST_AI_RMF:MANAGE-4.2 (8 detail qs)
+  attempt 1 REJECTED: missing 1 detail mappings
+  attempt 2 REJECTED: missing 1 detail mappings
+  attempt 3 REJECTED: missing 1 detail mappings
+  FAIL NIST_AI_RMF:MANAGE-4.2
+[386/440] SKIP (already generated) NIST_AI_RMF:GOVERN-3.1
+[387/440] SKIP (already generated) NIST_AI_RMF:GOVERN-3.2
+[388/440] SKIP (already generated) NIST_AI_RMF:GOVERN-4.1
+[389/440] SKIP (already generated) NIST_AI_RMF:GOVERN-4.2
+[390/440] SKIP (already generated) NIST_AI_RMF:GOVERN-4.3
+[391/440] SKIP (already generated) NIST_AI_RMF:GOVERN-5.1
+[392/440] SKIP (already generated) NIST_AI_RMF:GOVERN-5.2
+[393/440] SKIP (already generated) NIST_AI_RMF:MANAGE-4.3
+[394/440] SKIP (already generated) NIST_AI_RMF:GOVERN-6.1
+[395/440] SKIP (already generated) NIST_AI_RMF:GOVERN-6.2
+[396/440] SKIP (already generated) NIST_AI_RMF:MANAGE-1.3
+[397/440] SKIP (already generated) NIST_AI_RMF:MANAGE-2.1
+[398/440] SKIP (already generated) NIST_AI_RMF:MANAGE-2.2
+[399/440] SKIP (already generated) NIST_AI_RMF:MANAGE-2.3
+[400/440] SKIP (already generated) NIST_AI_RMF:MAP-1.4
+[401/440] SKIP (already generated) NIST_AI_RMF:MANAGE-2.4
+[402/440] SKIP (already generated) NIST_AI_RMF:MANAGE-3.1
+[403/440] SKIP (already generated) NIST_AI_RMF:MANAGE-3.2
+[404/440] SKIP (already generated) NIST_AI_RMF:MANAGE-4.1
+[405/440] SKIP (already generated) NIST_AI_RMF:MAP-1.2
+[406/440] SKIP (already generated) NIST_AI_RMF:MAP-1.3
+[407/440] SKIP (already generated) NIST_AI_RMF:MAP-1.5
+[408/440] SKIP (already generated) NIST_AI_RMF:MAP-1.6
+[409/440] SKIP (already generated) NIST_AI_RMF:MAP-2.2
+[410/440] SKIP (already generated) NIST_AI_RMF:MAP-2.3
+[411/440] SKIP (already generated) NIST_AI_RMF:MAP-3.1
+[412/440] SKIP (already generated) NIST_AI_RMF:MAP-3.2
+[413/440] SKIP (already generated) NIST_AI_RMF:MAP-3.3
+[414/440] SKIP (already generated) NIST_AI_RMF:MAP-3.4
+[415/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.1
+[416/440] SKIP (already generated) NIST_AI_RMF:MAP-3.5
+[417/440] SKIP (already generated) NIST_AI_RMF:MAP-4.1
+[418/440] SKIP (already generated) NIST_AI_RMF:MAP-4.2
+[419/440] SKIP (already generated) NIST_AI_RMF:MAP-5.1
+[420/440] SKIP (already generated) NIST_AI_RMF:MAP-5.2
+[421/440] SKIP (already generated) NIST_AI_RMF:MEASURE-1.1
+[422/440] SKIP (already generated) NIST_AI_RMF:MEASURE-1.2
+[423/440] SKIP (already generated) NIST_AI_RMF:MEASURE-1.3
+[424/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.10
+[425/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.11
+[426/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.12
+[427/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.13
+[428/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.3
+[429/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.4
+[430/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.5
+[431/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.6
+[432/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.7
+[433/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.8
+[434/440] SKIP (already generated) NIST_AI_RMF:MEASURE-2.9
+[435/440] SKIP (already generated) NIST_AI_RMF:MEASURE-3.1
+[436/440] SKIP (already generated) NIST_AI_RMF:MEASURE-3.2
+[437/440] SKIP (already generated) NIST_AI_RMF:MEASURE-3.3
+[438/440] SKIP (already generated) NIST_AI_RMF:MEASURE-4.1
+[439/440] SKIP (already generated) NIST_AI_RMF:MEASURE-4.2
+[440/440] SKIP (already generated) NIST_AI_RMF:MEASURE-4.3
+
+Phase 1 complete. OK=438 FAIL=2
+Failures:
+  - ISO_27001_2022:C.7.5.3 — Failed after 3 attempts. Last reason: detail_map is missing 1 of 9 detail questions. Include EVERY detail question id from the list above.
+  - NIST_AI_RMF:MANAGE-4.2 — Failed after 3 attempts. Last reason: detail_map is missing 1 of 8 detail questions. Include EVERY detail question id from the list above.
+
+=== Phase 2: Cross-framework propagation diagnostic ===
+control_mappings has 16343 rows. Runtime saveAnswer reads this table directly.
+
+=== Phase 3: Quality audit (10% sample) ===
+Auditing 43 of 438.
+[1/43] PASS PCI_DSS:PCI_DSS_8.5
+[2/43] PASS PCI_DSS:PCI_DSS_5.2
+[3/43] AUDIT ERROR NIST_CSF_2.0:ID.AM-02 — Unexpected non-whitespace character after JSON at position 380 (line 7 column 1)
+[4/43] PASS AU_VAISS:AU-VAISS-G10
+[5/43] PASS NIST_CSF_2.0:DE.AE-03
+[6/43] AUDIT ERROR NIST_AI_RMF:GOVERN-6.2 — Unexpected non-whitespace character after JSON at position 248 (line 7 column 1)
+[7/43] PASS AU_VAISS:AU-VAISS-G09
+[8/43] AUDIT ERROR NIST_CSF_2.0:GV.RM-07 — Unexpected non-whitespace character after JSON at position 282 (line 7 column 1)
+[9/43] AUDIT ERROR ISO42001:A.5.5 — Unexpected non-whitespace character after JSON at position 288 (line 7 column 1)
+[10/43] AUDIT ERROR APRA_CPS_230:CPS230-01 — Unexpected non-whitespace character after JSON at position 437 (line 9 column 1)
+[11/43] PASS NIST_AI_RMF:MANAGE-1.2
+[12/43] FAIL ISO42001:A.4.4 — The consolidated question uses 'optimise' (British spelling) which is correct, but the maturity level uses 'optimize' (American spelling) in the Yes level
+[13/43] FAIL ISO42001:A.6.2.7 — American spelling: 'organisation' should be 'organisation' - wait, that's correct. Actually checking text: 'organization' does not appear. No American spellings found.; Coverage gap: Missing critical theme of stakeholder identification and requirements determination - the question jumps to 'tailoring' without covering the foundational steps of identifying stakeholder categories and determining their specific documentation needs
+[14/43] PASS APRA_CPS_230:CPS230-02
+[15/43] FAIL NIST_CSF_2.0:PR.AA-01 — American spelling 'organisation' appears in the consolidated question - should be 'organisation' in Australian English; Coverage gap: maturity levels don't address non-human identities (service accounts, API keys, certificates) which is a critical theme in the detail questions
+[16/43] FAIL ISO_27001_2022:A.7.5 — American spelling 'organization' appears in the consolidated question
+[17/43] PASS ISO_27001_2022:A.5.28
+[18/43] FAIL ISO_27001_2022:A.8.8 — American spelling: 'organisation' appears in the consolidated question - should be 'organisation' in Australian English. Wait, that IS Australian English. Let me re-check... The text uses 'organisation' which is correct Australian English. No American spellings found.; Coverage gap: The maturity levels don't address key themes from detail questions including vulnerability intelligence sources, management reporting/metrics, integration with security operations, or asset inventory management - these are significant operational aspects missing from the maturity progression.
+[19/43] AUDIT ERROR ISO42001:A.9.2 — Unexpected non-whitespace character after JSON at position 275 (line 7 column 1)
+[20/43] PASS PCI_DSS:PCI_DSS_11.5
+[21/43] PASS NIST_AI_RMF:MAP-2.1
+[22/43] PASS PCI_DSS:PCI_DSS_9.1
+[23/43] PASS ISO_27001_2022:A.7.3
+[24/43] PASS ISO_27001_2022:C.5.1
+[25/43] PASS ISO_27001_2022:A.8.11
+[26/43] FAIL NIST_AI_RMF:GOVERN-1.6 — American spelling 'organisation' appears in consolidated question - should be 'organisation'; American spelling 'organisation' appears in Absent level description
+[27/43] AUDIT ERROR ISO_27001_2022:A.5.18 — Unexpected non-whitespace character after JSON at position 250 (line 6 column 1)
+[28/43] AUDIT ERROR NIST_CSF_2.0:GV.SC-02 — Unexpected non-whitespace character after JSON at position 423 (line 6 column 1)
+[29/43] FAIL ISO_27001_2022:A.5.15 — American spelling: 'organisation' appears in the consolidated question - should be 'organization' in Australian English; Coverage gap: Multi-factor authentication (MFA) theme is completely missing from maturity levels despite being explicitly covered in detail questions 7
+[30/43] FAIL ISO_27001_2022:A.8.2 — American spelling 'behavioral' appears in the Yes level - should be 'behavioural' in Australian English
+[31/43] FAIL ISO42001:A.8.3 — American spelling: 'organisation' should be 'organisation' - wait, that IS Australian English. Let me re-check... Actually, 'organisation' with 's' is correct Australian English. No American spellings found.; Coverage gap: The maturity levels don't address key themes from detail questions including safeguards/protections for reporters, response timeframes, accessibility/communication of channels, and effectiveness measurement.
+[32/43] AUDIT ERROR NIST_AI_RMF:GOVERN-2.2 — Unexpected non-whitespace character after JSON at position 297 (line 7 column 1)
+[33/43] PASS ISO_27001_2022:C.4.3
+[34/43] FAIL NIST_CSF_2.0:GV.OC-01 — American spelling 'organization' appears in the consolidated question - should be 'organisation'
+[35/43] PASS ISO_27001_2022:A.5.24
+[36/43] PASS ISO_27001_2022:C.4.2
+[37/43] AUDIT ERROR NIST_CSF_2.0:PR.DS-02 — Unexpected non-whitespace character after JSON at position 462 (line 7 column 1)
+[38/43] AUDIT ERROR NIST_CSF_2.0:PR.IR-01 — Unexpected non-whitespace character after JSON at position 438 (line 7 column 1)
+[39/43] AUDIT ERROR ISO_27001_2022:A.5.31 — Unexpected non-whitespace character after JSON at position 329 (line 6 column 1)
+[40/43] AUDIT ERROR ISO_27001_2022:A.8.16 — Unexpected non-whitespace character after JSON at position 650 (line 12 column 1)
+[41/43] PASS ISO_27001_2022:A.8.27
+[42/43] AUDIT ERROR ISO_27001_2022:A.8.15 — Unexpected non-whitespace character after JSON at position 330 (line 7 column 1)
+[43/43] AUDIT ERROR PCI_DSS:PCI_DSS_7.3 — Unexpected non-whitespace character after JSON at position 434 (line 7 column 1)
+
+Phase 3 complete. 10 of 43 flagged.
+Flagged:
+  - ISO42001:A.4.4 — The consolidated question uses 'optimise' (British spelling) which is correct, but the maturity level uses 'optimize' (American spelling) in the Yes level
+  - ISO42001:A.6.2.7 — American spelling: 'organisation' should be 'organisation' - wait, that's correct. Actually checking text: 'organization' does not appear. No American spellings found.; Coverage gap: Missing critical theme of stakeholder identification and requirements determination - the question jumps to 'tailoring' without covering the foundational steps of identifying stakeholder categories and determining their specific documentation needs
+  - NIST_CSF_2.0:PR.AA-01 — American spelling 'organisation' appears in the consolidated question - should be 'organisation' in Australian English; Coverage gap: maturity levels don't address non-human identities (service accounts, API keys, certificates) which is a critical theme in the detail questions
+  - ISO_27001_2022:A.7.5 — American spelling 'organization' appears in the consolidated question
+  - ISO_27001_2022:A.8.8 — American spelling: 'organisation' appears in the consolidated question - should be 'organisation' in Australian English. Wait, that IS Australian English. Let me re-check... The text uses 'organisation' which is correct Australian English. No American spellings found.; Coverage gap: The maturity levels don't address key themes from detail questions including vulnerability intelligence sources, management reporting/metrics, integration with security operations, or asset inventory management - these are significant operational aspects missing from the maturity progression.
+  - NIST_AI_RMF:GOVERN-1.6 — American spelling 'organisation' appears in consolidated question - should be 'organisation'; American spelling 'organisation' appears in Absent level description
+  - ISO_27001_2022:A.5.15 — American spelling: 'organisation' appears in the consolidated question - should be 'organization' in Australian English; Coverage gap: Multi-factor authentication (MFA) theme is completely missing from maturity levels despite being explicitly covered in detail questions 7
+  - ISO_27001_2022:A.8.2 — American spelling 'behavioral' appears in the Yes level - should be 'behavioural' in Australian English
+  - ISO42001:A.8.3 — American spelling: 'organisation' should be 'organisation' - wait, that IS Australian English. Let me re-check... Actually, 'organisation' with 's' is correct Australian English. No American spellings found.; Coverage gap: The maturity levels don't address key themes from detail questions including safeguards/protections for reporters, response timeframes, accessibility/communication of channels, and effectiveness measurement.
+  - NIST_CSF_2.0:GV.OC-01 — American spelling 'organization' appears in the consolidated question - should be 'organisation'
+
+Finished: 2026-05-17T00:16:14.812Z
+OK=438 FAIL=2

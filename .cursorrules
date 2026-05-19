@@ -1,0 +1,36 @@
+# Simplify IS — Cursor Rules
+
+## Project Context
+This is Simplify IS — an AI-driven security assessment SaaS. Cypher is the AI agent.
+Stack: Next.js 14 App Router, TypeScript strict, Tailwind, Supabase, Claude API.
+
+## Architecture Rules (NEVER VIOLATE)
+1. Three-layer architecture: API Layer → /api/internal/ Orchestration → Supabase
+2. No direct Supabase calls from frontend components — always go through API routes
+3. No direct Claude API calls from /api/v1/ routes — always through /api/internal/ orchestration
+4. SUPABASE_SERVICE_KEY, ANTHROPIC_API_KEY, ORCHESTRATION_SECRET: NEVER in any NEXT_PUBLIC_ variable
+5. All SQL: parameterized queries only — never string interpolation
+
+## Code Quality Rules
+6. TypeScript strict — no 'any' types
+7. All env vars imported from /lib/config/env.ts only — never from process.env directly
+8. All Supabase calls go through /lib/db/ abstractions
+9. All auth calls go through /lib/auth/ abstractions
+10. Error handling on every async function — no unhandled promise rejections
+
+## Framework Data Rules
+11. ISO 27001:2022 ONLY — never reference 2013 control IDs
+12. NIST CSF 2.0 ONLY — use GV/ID/PR/DE/RS/RC prefixes only
+13. Existing Supabase tables (ft_iso_controls, ft_nist_controls, domains, top_risks): DO NOT recreate
+
+## Claude API Rules
+14. Primary model: claude-sonnet-4-20250514
+15. RAG resolver model: claude-haiku-4-5-20251001
+16. All Claude calls: 3 retries with exponential backoff, token logging to claude_api_usage table
+
+## Security Rules
+17. JWT validation on every /api/v1/* route — no exceptions
+18. RLS policies must exist on ALL data tables
+19. /api/internal/* returns 403 without valid ORCHESTRATION_SECRET header
+20. Rate limiting: 100 req/min per user, 1000 req/hour per user
+

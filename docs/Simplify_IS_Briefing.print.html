@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simplify.is — Product Briefing (Print)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 20mm 16mm;
+    }
+    * { box-sizing: border-box; }
+    html { font-size: 10.5pt; }
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      line-height: 1.45;
+      color: #1a1917;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 22pt;
+      font-weight: 700;
+      margin: 0 0 0.25em;
+      line-height: 1.15;
+      page-break-after: avoid;
+    }
+    h2 {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 14pt;
+      font-weight: 700;
+      margin: 1.4em 0 0.5em;
+      padding-bottom: 0.2em;
+      border-bottom: 1px solid #ccc;
+      page-break-after: avoid;
+    }
+    h3 {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 11pt;
+      font-weight: 600;
+      margin: 1.1em 0 0.4em;
+      page-break-after: avoid;
+    }
+    p, li { margin: 0.4em 0; }
+    ul, ol { margin: 0.4em 0 0.6em 1.2em; padding: 0; }
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 1.2em 0;
+    }
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+    a { color: #822700; text-decoration: none; }
+    a[href^="http"]::after {
+      content: " (" attr(href) ")";
+      font-size: 8pt;
+      color: #666;
+      word-break: break-all;
+    }
+    code {
+      font-family: "Menlo", "Consolas", monospace;
+      font-size: 9pt;
+      background: #f5f3f0;
+      padding: 0.1em 0.35em;
+      border-radius: 2px;
+    }
+    pre {
+      font-family: "Menlo", "Consolas", monospace;
+      font-size: 8.5pt;
+      background: #f5f3f0;
+      border: 1px solid #e0dcd6;
+      padding: 0.75em 1em;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      page-break-inside: avoid;
+    }
+    pre code { background: none; padding: 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.6em 0 1em;
+      font-size: 9pt;
+      page-break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.35em 0.5em;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f0ebe6;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-weight: 600;
+    }
+    tr:nth-child(even) td { background: #faf9f7; }
+    blockquote {
+      margin: 0.6em 0;
+      padding-left: 1em;
+      border-left: 3px solid #f2632d;
+      color: #444;
+    }
+    .print-header {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 9pt;
+      color: #666;
+      margin-bottom: 1.5em;
+      padding-bottom: 0.5em;
+      border-bottom: 2px solid #f2632d;
+    }
+    .print-footer {
+      margin-top: 2em;
+      padding-top: 0.5em;
+      border-top: 1px solid #ddd;
+      font-size: 8.5pt;
+      color: #666;
+      text-align: center;
+    }
+    @media print {
+      body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      h2 { page-break-before: auto; }
+      h2, h3 { page-break-after: avoid; }
+      table, pre, blockquote { page-break-inside: avoid; }
+      a { color: #1a1917; }
+      a[href^="http"]::after { font-size: 7pt; }
+    }
+    @media screen {
+      body {
+        max-width: 210mm;
+        margin: 2rem auto;
+        padding: 0 1rem 3rem;
+      }
+      .no-screen { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <p class="print-header no-screen">
+    <strong>Print:</strong> File → Print (or ⌘P) → Save as PDF · Paper A4 · Margins default · Background graphics on (optional)
+  </p>
+  <main><h1>Simplify.is — Product Briefing</h1>
+<p><strong>May 2026 · Vik Soni</strong></p>
+<p><strong>Sources:</strong> <a href="./SPEC.md"><code>SPEC.md</code></a> · <a href="./SOURCE_OF_TRUTH.md"><code>SOURCE_OF_TRUTH.md</code></a> · <a href="./Supabse-schema.md"><code>Supabse-schema.md</code></a> · Notion Command Centre (<code>3179e9b1-def7-81a1-87c1-f462b297ce28</code>)</p>
+<hr>
+<h2>The Problem</h2>
+<p>Organisations with 50–5,000 employees cannot afford a full-time CISO or $400–$800/hr consultants. Existing GRC tools are checkbox forms with modern skins — they measure compliance at a point in time, then decay. The $23B GRC market (growing to $39B by 2031) is dominated by enterprise tools that don&#39;t serve SMBs. 86% of organisations are evaluating AI for GRC, but only 14% have integrated it. The gap is enormous.</p>
+<p>Simplify.is is not a chatbot. It is not a checkbox tool. It is an AI-powered security maturity platform that feels like hiring a senior consultant who never forgets a conversation, knows hundreds of controls across nine global standards, and is available around the clock.</p>
+<h3>Ecosystem</h3>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong><a href="https://vik.so">vik.so</a></strong></td>
+<td>Free, permanent — ISO 27001 + NIST CSF RAG consultants. Credibility, community, lead-gen. Proves the Claude + Supabase RAG pattern Simplify.is runs on.</td>
+</tr>
+<tr>
+<td><strong>simplify.is</strong></td>
+<td>Paid SaaS — structured assessments, persistent Cypher, scoring, dashboards, PDF, compliance cadence, billing.</td>
+</tr>
+<tr>
+<td><strong>decipher.net</strong></td>
+<td>Owned; reserved for future expansion.</td>
+</tr>
+</tbody></table>
+<h3>Why now</h3>
+<ul>
+<li><strong>EU AI Act</strong> full enforcement from <strong>2 August 2026</strong> — procurement forms now include AI sections.</li>
+<li><strong>ISO 42001</strong> (AI management) — few commercial GRC tools map it to NIST CSF 2.0; we ship it in the nine-framework bundle.</li>
+<li><strong>GRC market dislocation</strong> (Jan–Feb 2026) — buyers unhappy with incumbents; agentic software share rising (Gartner: 33% of enterprise software agentic by 2028).</li>
+<li><strong>OWASP Agentic Top 10</strong> (Dec 2025) — no commercial ISO/NIST mapping yet; vik.so PDF = lead-gen.</li>
+<li><strong>Australian regulatory pull</strong> — APRA CPS 230/234, ASD Essential Eight, AU Voluntary AI Safety — home-market wedge before global scale.</li>
+</ul>
+<h3>Target market</h3>
+<ul>
+<li><strong>Sweet spot:</strong> 50–5,000 employees; can&#39;t afford full-time CISO or expensive consultants; must still demonstrate compliance.</li>
+<li><strong>Geo:</strong> Australia first → global.</li>
+<li><strong>Sectors:</strong> financial services, healthcare, SaaS, technology, retail, professional services.</li>
+<li><strong>Buyers:</strong> Security Manager (primary) · CISO (secondary) · GRC / Compliance Officer (tertiary).</li>
+</ul>
+<h3>Two non-negotiables</h3>
+<ol>
+<li><strong>World-class product quality</strong> — no placeholder logic, no shortcuts, no TODO in production.</li>
+<li><strong>Security first, always</strong> — enterprise-grade from day one; target zero critical findings on a real pen test.</li>
+</ol>
+<hr>
+<h2>What We Built (and Why It Matters)</h2>
+<h3>The Core Experience</h3>
+<p>A user signs up, names their AI consultant (default: <strong>Cypher</strong>), selects their industry, picks their compliance frameworks, and starts a structured assessment. They can answer via a clean form interface or have a real conversation with Cypher — either path produces scored, auditable results.</p>
+<p><strong>Assessment flow</strong> (per <code>SPEC.md</code> — locked):</p>
+<ol>
+<li><strong>Discovery</strong> — Cypher learns context; no scoring yet.</li>
+<li><strong>Scope</strong> — seven scope questions captured in <code>assessment_sessions.scope_data</code> (JSONB).</li>
+<li><strong>Baseline</strong> — maturity by <strong>21 industry-standard domains</strong> (from <code>domains</code> table), not control-by-control checkbox fatigue.</li>
+<li><strong>Reassessment / freeflow</strong> — returning users; ad-hoc Cypher chat with signal extraction.</li>
+</ol>
+<p><strong>Posture surfaces:</strong> Industry Domain (default) · nine Framework executive views · <strong>Threat Readiness</strong> (scenario-centric; replaced legacy “Risk View” IA).</p>
+<p>Every answer writes to an append-only ledger. Scores recalculate live. Cross-framework mappings propagate knowledge silently — answer a question for NIST, and your ISO 27001 posture updates automatically where the controls overlap.</p>
+<p><strong>Compliance cadence</strong> (spec): six-month reassessment default · event-based triggers · manual reassessment button · email for reassessment due + system recovery; in-app bell for everything else.</p>
+<h3>The Architecture (Three Layers, No Shortcuts)</h3>
+<pre><code>Browser
+  ↓ HTTPS
+API Layer        /api/v1/*     JWT auth, Zod validation, rate limits, audit log
+  ↓ orchestration secret
+Orchestration    /api/internal/*    Claude reasoning, RAG, scoring, threats
+  ↓
+Supabase         Postgres + RLS + pre-seeded framework libraries
+</code></pre>
+<p><strong>Hard rules</strong> (from <code>CLAUDE.md</code> / <code>SOURCE_OF_TRUTH.md</code>):</p>
+<ul>
+<li>No direct Supabase calls from React components.</li>
+<li>No direct Anthropic calls from <code>/api/v1/*</code>.</li>
+<li><code>SUPABASE_SERVICE_ROLE_KEY</code>, <code>ANTHROPIC_API_KEY</code>, <code>ORCHESTRATION_SECRET</code> never in <code>NEXT_PUBLIC_*</code>.</li>
+<li>Parameterised SQL only; RLS on every tenant table.</li>
+<li>JWT on every <code>/api/v1/*</code> route; <code>/api/internal/*</code> returns 403 without <code>x-orchestration-secret</code>.</li>
+<li>Rate limits: <strong>100 req/min</strong>, <strong>1000 req/hr</strong> per user.</li>
+<li>Claude: <strong>300 calls/month/user</strong> hard cap; alerts at 80% and 100%; token logging to <code>claude_api_usage</code>.</li>
+<li>Version anchors: <strong>ISO 27001:2022 only</strong> (never 2013 IDs) · <strong>NIST CSF 2.0 only</strong> (GV/ID/PR/DE/RS/RC).</li>
+</ul>
+<p><strong>Supabase project:</strong> <code>simplify-dev</code> (ref <code>gksfyflhnihdizegeglc</code>).</p>
+<h3>What Is Actually Running</h3>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>9 compliance frameworks</strong></td>
+<td>NIST CSF 2.0, ISO 27001:2022, ISO 42001 (AI), NIST AI RMF, PCI DSS 4.0, APRA CPS 230, APRA CPS 234, ASD Essential Eight, AU Voluntary AI Safety Standard</td>
+</tr>
+<tr>
+<td><strong>898 controls catalogued</strong></td>
+<td>Full control text with implementation guidance, related tools, maturity criteria</td>
+</tr>
+<tr>
+<td><strong>3,615 assessment questions</strong></td>
+<td>Rich detail bank in <code>control_assessment_questions</code> (~4 MB) — consolidated to ~1 question per control via Claude-audited pipeline</td>
+</tr>
+<tr>
+<td><strong>16,343 cross-framework mappings</strong></td>
+<td>Strength-weighted (full / strong / partial) in <code>control_mappings</code> (~3.4 MB) — “answer once, benefit everywhere”</td>
+</tr>
+<tr>
+<td><strong>Consolidated question engine</strong></td>
+<td><code>consolidated_questions</code> + <code>consolidated_question_detail_map</code>; ~440 user-facing questions with quality gates, banned-phrase detection, AU English</td>
+</tr>
+<tr>
+<td><strong>Cypher conversational assessment</strong></td>
+<td>Dual path: structured form or adaptive conversation; answers extracted and mapped to controls; <code>source</code> = <code>form</code> | <code>cypher</code></td>
+</tr>
+<tr>
+<td><strong>Three-pass RAG</strong></td>
+<td>Explicit control ID → Haiku semantic resolver → keyword fallback. Sonnet <code>claude-sonnet-4-20250514</code> · Haiku <code>claude-haiku-4-5-20251001</code></td>
+</tr>
+<tr>
+<td><strong>Live scoring</strong></td>
+<td><code>subdomain_maturity_scores</code> → <code>domain_maturity_scores</code> → <code>organization_maturity_scores</code>; framework-native models; recalc on every answer</td>
+</tr>
+<tr>
+<td><strong>9 executive dashboards</strong></td>
+<td>Each framework gets its own chart module — not one generic widget</td>
+</tr>
+<tr>
+<td><strong>Threat Readiness</strong></td>
+<td>Scenario-based; triangulated from tech stack + live maturity + industry; Key Levers panel; 24h cache + Tue/Fri cron refresh</td>
+</tr>
+<tr>
+<td><strong>Tech Stack Discovery</strong></td>
+<td>Conversational interview → <code>organization_tech_stack</code> → feeds threat generation</td>
+</tr>
+<tr>
+<td><strong>Monthly score snapshots</strong></td>
+<td><code>monthly_score_snapshots</code> frozen 1st of month 02:00 UTC; dashboard month slider</td>
+</tr>
+<tr>
+<td><strong>Cross-framework propagation</strong></td>
+<td><code>assessment_answers</code> stores <code>propagated_from_*</code> + <code>propagation_strength</code>; full audit trail</td>
+</tr>
+<tr>
+<td><strong>Append-only answer history</strong></td>
+<td>Never update/delete answer rows; provenance preserved</td>
+</tr>
+<tr>
+<td><strong>Onboarding</strong></td>
+<td>Org profile → industry → framework picker (9 tiles) → meet Cypher → initialisation → tech stack discovery</td>
+</tr>
+<tr>
+<td><strong>Auth stack</strong></td>
+<td>Supabase Auth, MFA-capable, server-side session cookies, <code>auth_rate_limits</code>, soft delete</td>
+</tr>
+<tr>
+<td><strong>Autonomous QA harness</strong></td>
+<td><code>npm run test:autonomous</code> — Karpathy-style grading, framework ID validation, cross-mapping checks</td>
+</tr>
+</tbody></table>
+<h3>The Velocity Story</h3>
+<p>Zero to working multi-framework platform in ~3 months (March–May 2026). Built using specialist agent passes — each agent owns one layer with explicit handoffs. <strong>Agents 1–18 shipped</strong> (foundation → orchestration → API → UI → security → multi-user → auth → post-login Stitch pass → onboarding → Threat Readiness → industry multipliers → Cypher assessment → consolidated questions + snapshots). <strong>Agent 19 in scope:</strong> assessment orchestration and cross-framework conflict-resolution UX.</p>
+<h3>What Makes This Hard to Replicate</h3>
+<p>The product moat is not the UI or the chatbot. It is the <strong>mapping layer</strong>: 16,343 calibrated cross-framework control mappings that enable “answer once, score everywhere.” Every new framework creates N² mapping work — content plus calibration plus semantic alignment.</p>
+<p>The AI-first bundle (ISO 42001 + AU Voluntary AI Safety + NIST AI RMF) is timed for EU AI Act enforcement (August 2026). The SMB GRC space rarely ships this combination ready to assess.</p>
+<p><strong>Domain expertise moat:</strong> Vik&#39;s consulting background (enterprise CISO advisory, MSSP at Triskel Labs, vik.so) encoded in prompts, control libraries, and session state — not generic LLM wrappers.</p>
+<hr>
+<h2>What Is Honest and Incomplete</h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PDF export</td>
+<td>Spec&#39;d (internal checklist + executive summary); generator not fully wired</td>
+</tr>
+<tr>
+<td>CSRF protection</td>
+<td>Stubs exist; real token issuance pending</td>
+</tr>
+<tr>
+<td>MFA resend endpoint</td>
+<td>UI expects it; backend missing</td>
+</tr>
+<tr>
+<td>Rate limiting</td>
+<td>In-memory; needs Redis/Upstash before scale</td>
+</tr>
+<tr>
+<td>Some dashboard hooks</td>
+<td><code>usePostLogin</code> can still warn/mock when <code>NEXT_PUBLIC_USE_MOCKS</code> unset</td>
+</tr>
+<tr>
+<td>Multi-user collaboration</td>
+<td>Schema ready (<code>domain_assignments</code>, <code>final_answers</code>, <code>org_audit_trail</code>); not fully active in UX</td>
+</tr>
+<tr>
+<td>Maturity roadmap view</td>
+<td>Rebuild per UX feedback (Maintain / Uplift / Industry Shifts)</td>
+</tr>
+<tr>
+<td>Re-assessment UX</td>
+<td>Data model + cadence engine exist; end-user flow undesigned</td>
+</tr>
+<tr>
+<td>Conflict resolution UX</td>
+<td>Propagation vs direct answer conflicts captured in data; Agent 19 user flow</td>
+</tr>
+<tr>
+<td>Cypher persistent rail</td>
+<td>FAB/modal today; full workspace rail spec&#39;d not shipped</td>
+</tr>
+<tr>
+<td>Stripe webhook</td>
+<td>Verify signature enforcement before prod</td>
+</tr>
+<tr>
+<td>Health check / Sentry</td>
+<td><code>/api/health</code> and structured logging on P0 list</td>
+</tr>
+</tbody></table>
+<p>Tracked in <code>SOURCE_OF_TRUTH.md</code> §5 (P0–P3).</p>
+<hr>
+<h2>Strategic Roadmap (Refreshed May 2026)</h2>
+<p>Maps the original 24-month product roadmap against actual progress. ✅ shipped · 🔧 active · ◻ planned.</p>
+<p><em>Note: Original <code>SPEC.md</code> MVP listed two frameworks only; production UI and data model now support <strong>nine</strong> — ahead of the written MVP scope.</em></p>
+<h3>Phase 0 — Pre-Launch Foundations</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cypher conversational agent</td>
+<td>✅ Shipped</td>
+<td>Dual-path (form + chat), cross-session memory, user-renamable, RAG-backed</td>
+</tr>
+<tr>
+<td>ISO 27001 + NIST CSF 2.0 assessment</td>
+<td>✅ Shipped</td>
+<td>Plus 7 additional frameworks (9 total)</td>
+</tr>
+<tr>
+<td>Maturity scoring + dashboard</td>
+<td>✅ Shipped</td>
+<td>Live recalc, framework-native models, 9 executive views</td>
+</tr>
+<tr>
+<td>Cross-session memory</td>
+<td>✅ Shipped</td>
+<td>Append-only answers, <code>chat_transcripts</code> (user-private RLS)</td>
+</tr>
+<tr>
+<td>Threat Readiness + Tech Stack</td>
+<td>✅ Shipped</td>
+<td>Agent 15–16; not in original MVP spec</td>
+</tr>
+<tr>
+<td>PDF Export</td>
+<td>🔧 In progress</td>
+<td>Two modes spec&#39;d; branded executive summary pending</td>
+</tr>
+<tr>
+<td>Multi-user collaboration</td>
+<td>◻ Designed</td>
+<td>Agent 6 schema; roles, assignments, audit trail</td>
+</tr>
+</tbody></table>
+<h3>Phase 1 — Quick Wins Post-Launch (Months 1–3)</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Strategic Rationale</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AI Policy Generation</td>
+<td>◻ Planned</td>
+<td>Cypher drafts tailored policies mid-conversation</td>
+</tr>
+<tr>
+<td>Teams + Slack Bot</td>
+<td>◻ Planned</td>
+<td>Ambient compliance in Slack/Teams</td>
+</tr>
+<tr>
+<td>ASD Essential Eight</td>
+<td>✅ Shipped</td>
+<td>Australian federal / critical-infra resonance</td>
+</tr>
+<tr>
+<td>APRA CPS 234 + CPS 230</td>
+<td>✅ Shipped</td>
+<td>Australian financial services segment</td>
+</tr>
+<tr>
+<td>Shareable Trust Profile</td>
+<td>◻ Planned</td>
+<td>Public posture URL — viral growth</td>
+</tr>
+<tr>
+<td>Action Plan Generator</td>
+<td>◻ Planned</td>
+<td>Prioritised remediation post-assessment</td>
+</tr>
+</tbody></table>
+<h3>Phase 2 — System of Record (Months 3–8)</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Strategic Rationale</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ISMS Document Library</td>
+<td>◻ Planned</td>
+<td>Version-controlled policies linked to controls</td>
+</tr>
+<tr>
+<td>Document Upload + Signal Extraction</td>
+<td>◻ Planned</td>
+<td>Upload policies; Cypher maps signals to controls</td>
+</tr>
+<tr>
+<td>Vendor / Supplier Risk Module</td>
+<td>◻ Planned</td>
+<td>Supplier assessments → funnel</td>
+</tr>
+<tr>
+<td>Internal Audit Workflow</td>
+<td>◻ Planned</td>
+<td>ISO 27001 internal audit requirement</td>
+</tr>
+<tr>
+<td>Risk Register</td>
+<td>◻ Planned</td>
+<td>Auto-populated from Cypher (Clause 6.1)</td>
+</tr>
+<tr>
+<td>Employee Awareness Module</td>
+<td>◻ Planned</td>
+<td>Training + policy acknowledgment</td>
+</tr>
+</tbody></table>
+<h3>Phase 3 — Expansion (Months 8–18)</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Strategic Rationale</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ISO 42001 — AI Governance</td>
+<td>✅ Shipped</td>
+<td>EU AI Act Aug 2026; shipped ahead of original Phase 3 plan</td>
+</tr>
+<tr>
+<td>Consultant / Partner Tier</td>
+<td>◻ Planned</td>
+<td>White-label multi-client accounts</td>
+</tr>
+<tr>
+<td>PCI-DSS</td>
+<td>✅ Shipped</td>
+<td>Retail / e-commerce; originally Phase 3</td>
+</tr>
+<tr>
+<td>Peer Benchmarking</td>
+<td>◻ Planned</td>
+<td>Anonymised industry comparison</td>
+</tr>
+<tr>
+<td>Regulatory Change Monitoring</td>
+<td>◻ Planned</td>
+<td>Cypher alerts + impact analysis</td>
+</tr>
+<tr>
+<td>Board Reporting Pack</td>
+<td>◻ Planned</td>
+<td>Quarterly exec PDF</td>
+</tr>
+<tr>
+<td>Power BI / BI Export API</td>
+<td>◻ Planned</td>
+<td>Stub exists (<code>/api/v1/.../export/bi</code>)</td>
+</tr>
+</tbody></table>
+<h3>Phase 4 — Platform + Ecosystem (Months 18–36)</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Strategic Rationale</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MCP Integrations</td>
+<td>◻ Planned</td>
+<td>Okta, CrowdStrike, Entra, Jira live evidence</td>
+</tr>
+<tr>
+<td>Marketplace / Extensions</td>
+<td>◻ Planned</td>
+<td>Third-party consultants and developers</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Database at a Glance</h2>
+<p><strong>~45 tables</strong> in <code>simplify-dev</code> (41 listed in latest schema snapshot + maturity/consolidated tables from Agent 17–18 migrations). RLS on all tenant data. Largest tables by storage:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Size (snapshot)</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>audit_log</code></td>
+<td>~6 MB</td>
+<td>Mutation audit trail</td>
+</tr>
+<tr>
+<td><code>control_assessment_questions</code></td>
+<td>~4 MB</td>
+<td>Detail question bank (3,615 rows)</td>
+</tr>
+<tr>
+<td><code>control_mappings</code></td>
+<td>~3.4 MB</td>
+<td>Cross-framework mappings (16,343 rows)</td>
+</tr>
+<tr>
+<td><code>ft_iso_controls</code></td>
+<td>~2.1 MB</td>
+<td>ISO 27001:2022 library</td>
+</tr>
+<tr>
+<td><code>ft_nist_controls</code></td>
+<td>~1.9 MB</td>
+<td>NIST CSF 2.0 library</td>
+</tr>
+<tr>
+<td><code>controls</code></td>
+<td>~1.6 MB</td>
+<td>Control mesh for RAG</td>
+</tr>
+<tr>
+<td><code>chat_transcripts</code></td>
+<td>~1.1 MB</td>
+<td>Cypher conversation history</td>
+</tr>
+</tbody></table>
+<h3>Content scale</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Controls catalogued</td>
+<td>898</td>
+</tr>
+<tr>
+<td>Detail assessment questions</td>
+<td>3,615</td>
+</tr>
+<tr>
+<td>Consolidated user-facing questions</td>
+<td>~440</td>
+</tr>
+<tr>
+<td>Cross-framework control mappings</td>
+<td>16,343</td>
+</tr>
+<tr>
+<td>Question-level aliases</td>
+<td>415</td>
+</tr>
+<tr>
+<td>Industry domains</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Top-risk templates</td>
+<td>7 (<code>top_risks</code>)</td>
+</tr>
+</tbody></table>
+<h3>Tables by function</h3>
+<p><strong>Tenancy &amp; identity</strong></p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>users</code></td>
+<td>Profile, <code>agent_name</code>, org link, role, Claude usage counters</td>
+</tr>
+<tr>
+<td><code>organizations</code></td>
+<td>Tenant root; <code>selected_frameworks</code>, industry, onboarding metadata</td>
+</tr>
+<tr>
+<td><code>audit_log</code></td>
+<td>All mutations logged</td>
+</tr>
+<tr>
+<td><code>auth_rate_limits</code></td>
+<td>Auth endpoint throttling</td>
+</tr>
+<tr>
+<td><code>claude_api_usage</code></td>
+<td>Token / call accounting</td>
+</tr>
+</tbody></table>
+<p><strong>Framework libraries (pre-seeded — do not re-seed)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ft_iso_controls</code></td>
+<td>ISO 27001:2022</td>
+</tr>
+<tr>
+<td><code>ft_nist_controls</code></td>
+<td>NIST CSF 2.0</td>
+</tr>
+<tr>
+<td><code>ft_iso_42001_controls</code></td>
+<td>ISO 42001</td>
+</tr>
+<tr>
+<td><code>ft_nist_ai_rmf_controls</code></td>
+<td>NIST AI RMF</td>
+</tr>
+<tr>
+<td><code>ft_pci_dss_controls</code></td>
+<td>PCI DSS 4.0</td>
+</tr>
+<tr>
+<td><code>ft_apra_cps230_controls</code></td>
+<td>APRA CPS 230</td>
+</tr>
+<tr>
+<td><code>ft_apra_cps234_controls</code></td>
+<td>APRA CPS 234</td>
+</tr>
+<tr>
+<td><code>ft_essential_eight_controls</code></td>
+<td>ASD Essential Eight</td>
+</tr>
+<tr>
+<td><code>ft_au_voluntary_ai_safety_controls</code></td>
+<td>AU Voluntary AI Safety</td>
+</tr>
+<tr>
+<td><code>control_mappings</code></td>
+<td>Cross-framework propagation graph</td>
+</tr>
+<tr>
+<td><code>control_assessment_questions</code></td>
+<td>Detail question bank</td>
+</tr>
+<tr>
+<td><code>question_aliases</code></td>
+<td>Consolidated / legacy key aliasing</td>
+</tr>
+<tr>
+<td><code>controls</code></td>
+<td>Control mesh</td>
+</tr>
+<tr>
+<td><code>domains</code></td>
+<td>21 industry-standard groupings</td>
+</tr>
+<tr>
+<td><code>top_risks</code></td>
+<td>Risk templates</td>
+</tr>
+</tbody></table>
+<p><strong>Assessment runtime</strong></p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>assessment_sessions</code></td>
+<td>Session state, phase, scope JSONB, subdomain cursor</td>
+</tr>
+<tr>
+<td><code>assessment_questions</code></td>
+<td>Per-catalogue question rows</td>
+</tr>
+<tr>
+<td><code>assessment_answers</code></td>
+<td><strong>Append-only</strong> answers + propagation metadata</td>
+</tr>
+<tr>
+<td><code>consolidated_questions</code></td>
+<td>~1 prompt per control</td>
+</tr>
+<tr>
+<td><code>consolidated_question_detail_map</code></td>
+<td>Links consolidated → detail questions</td>
+</tr>
+<tr>
+<td><code>control_responses</code></td>
+<td>Legacy/alternate response path</td>
+</tr>
+<tr>
+<td><code>chat_transcripts</code></td>
+<td>Cypher messages (user-private RLS)</td>
+</tr>
+<tr>
+<td><code>extracted_signals</code></td>
+<td>Signals from freeflow chat</td>
+</tr>
+<tr>
+<td><code>session_metadata_log</code></td>
+<td>Session diagnostics</td>
+</tr>
+</tbody></table>
+<p><strong>Scoring outputs</strong></p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>organization_maturity_scores</code></td>
+<td>Framework-level scores</td>
+</tr>
+<tr>
+<td><code>domain_maturity_scores</code></td>
+<td>Domain rollups</td>
+</tr>
+<tr>
+<td><code>subdomain_maturity_scores</code></td>
+<td>Chart granularity</td>
+</tr>
+<tr>
+<td><code>monthly_score_snapshots</code></td>
+<td>Frozen monthly history</td>
+</tr>
+<tr>
+<td><code>framework_scores</code></td>
+<td>Legacy framework scores</td>
+</tr>
+<tr>
+<td><code>domain_scores</code></td>
+<td>Legacy domain scores</td>
+</tr>
+</tbody></table>
+<p><strong>Threat Readiness &amp; tech stack</strong></p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>organization_tech_stack</code></td>
+<td>Discovered stack profile</td>
+</tr>
+<tr>
+<td><code>tech_stack_discovery_sessions</code></td>
+<td>Discovery session state</td>
+</tr>
+<tr>
+<td><code>tech_stack_discovery_messages</code></td>
+<td>Discovery chat log</td>
+</tr>
+<tr>
+<td><code>threat_readiness_cache</code></td>
+<td>Generated scenarios (TTL)</td>
+</tr>
+<tr>
+<td><code>organization_threats</code></td>
+<td>Persisted threats + user buckets</td>
+</tr>
+<tr>
+<td><code>organization_risks</code></td>
+<td>Org risk register rows</td>
+</tr>
+<tr>
+<td><code>risk_control_mappings</code></td>
+<td>Risk ↔ control links</td>
+</tr>
+</tbody></table>
+<p><strong>Multi-user (schema ready)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>domain_assignments</code></td>
+<td>Assessor ↔ domain assignments</td>
+</tr>
+<tr>
+<td><code>team_responses</code></td>
+<td>Collaborative answers</td>
+</tr>
+<tr>
+<td><code>final_answers</code></td>
+<td>Locked team consensus</td>
+</tr>
+<tr>
+<td><code>org_audit_trail</code></td>
+<td>Multi-user audit events</td>
+</tr>
+</tbody></table>
+<p><strong>Operations &amp; compliance</strong></p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>compliance_tracker</code></td>
+<td>Reassessment due dates</td>
+</tr>
+<tr>
+<td><code>contact_submissions</code></td>
+<td>Marketing contact form</td>
+</tr>
+</tbody></table>
+<p>Full size listing: <a href="./Supabse-schema.md"><code>Supabse-schema.md</code></a>.</p>
+<hr>
+<h2>The Next Sprint: Agent 19</h2>
+<p>Assessment flow orchestration when users work across frameworks and propagated knowledge conflicts with new direct answers.</p>
+<p><strong>Decided:</strong> One framework per assessment session; answers propagate across frameworks. Users can work frameworks in any order. Full-strength mappings auto-fill silently; partial mappings require confirmation.</p>
+<p><strong>Being decided:</strong> Cascade direction on updates, confidence decay, re-assessment scope, recalculation depth, audit granularity, and how visible propagation is in the UI.</p>
+<hr>
+<h2>Tech Stack</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Choice</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Application</td>
+<td>Next.js 14 App Router, TypeScript strict, Tailwind</td>
+</tr>
+<tr>
+<td>Data + Auth</td>
+<td>Supabase (Postgres, RLS, Auth) — <code>simplify-dev</code></td>
+</tr>
+<tr>
+<td>AI</td>
+<td>Anthropic Claude — Sonnet for reasoning, Haiku for RAG resolution</td>
+</tr>
+<tr>
+<td>Email / Billing</td>
+<td>Resend, Stripe</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>Vercel (MVP) → AWS migration path documented in <code>SPEC.md</code></td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Jest + Playwright + autonomous Cypher harness</td>
+</tr>
+<tr>
+<td>Design</td>
+<td>Earthen Brutalism — Raleway / Montserrat / Josefin Sans; <code>--surface</code> <code>#141311</code>; marketing <code>#1A1917</code>; primary <code>#f2632d</code></td>
+</tr>
+</tbody></table>
+<p>Charts: bespoke SVG/CSS (D3, Recharts, Framer Motion removed in cleanup PRs; restore when richer interactivity needed).</p>
+<hr>
+<h2>Pricing Positioning</h2>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Frameworks</th>
+<th>Indicative Price</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Essential</td>
+<td>NIST CSF 2.0 only</td>
+<td>~AUD $290/mo</td>
+</tr>
+<tr>
+<td>Professional</td>
+<td>NIST + up to 3 additional</td>
+<td>~AUD $590/mo</td>
+</tr>
+</tbody></table>
+<p>All nine frameworks enabled on demo accounts (<code>wdata@demo.com</code> / <code>wodata@demo.com</code> — see <a href="./Demo%20account.md"><code>Demo account.md</code></a>).</p>
+<hr>
+<h2>Demo &amp; local dev</h2>
+<table>
+<thead>
+<tr>
+<th>Account</th>
+<th>Password</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>wdata@demo.com</code></td>
+<td><code>123</code></td>
+<td>Full seeded data — all dashboards populated</td>
+</tr>
+<tr>
+<td><code>wodata@demo.com</code></td>
+<td><code>123</code></td>
+<td>Blank — live assessment backfill testing</td>
+</tr>
+</tbody></table>
+<pre><code class="language-bash">npm run dev
+npx tsx scripts/provisionDemoAccounts.ts
+</code></pre>
+<p>Walkthrough: <a href="./Demo%20prep%20-%20product%20walkthrough.md"><code>Demo prep - product walkthrough.md</code></a>.</p>
+<hr>
+<p><em>Built by Vik + Claude · March–May 2026 · Nine frameworks live ahead of original two-framework MVP spec</em></p>
+</main>
+  <p class="print-footer">Simplify.is Product Briefing · May 2026 · Confidential</p>
+</body>
+</html>

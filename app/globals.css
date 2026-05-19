@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   APP DESIGN SYSTEM (dashboard, assessment, etc.)
+   Blue/cyan theme — DO NOT remove, used by all app pages
+   ───────────────────────────────────────────── */
+:root {
+  --bg-deep: #0A0F1E;
+  --bg-surface: #111827;
+  --bg-elevated: #1A2234;
+  --accent-primary: #00D4FF;
+  --accent-secondary: #7C3AED;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --text-primary: #F9FAFB;
+  --text-muted: #9CA3AF;
+  --border: #1E293B;
+  --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.15);
+  --glow-violet: 0 0 20px rgba(124, 58, 237, 0.15);
+  --font-dm-serif: "DM Serif Display";
+  --font-dm-sans: "DM Sans";
+  --font-jetbrains-mono: "JetBrains Mono";
+
+  /* ─────────────────────────────────────────────
+     EARTHEN BRUTALISM — post-login base palette
+     Stitch hero / onboarding / auth all use #141311
+     (marketing is slightly warmer — see body.marketing)
+     ───────────────────────────────────────────── */
+  --surface: #141311;
+  --surface-container-lowest: #0f0e0c;
+  --surface-container-low: #1c1b19;
+  --surface-container: #211f1d;
+  --surface-container-high: #2b2a28;
+  --surface-container-highest: #363432;
+  --surface-bright: #3a3937;
+  --surface-dim: #141311;
+  --bg-deep-warm: #1A1917;
+  --color-primary: #EB5E28;
+  --color-primary-deep: #C44A1A;
+  --color-primary-container: #f2632d;
+  --color-secondary: #CCC5B9;
+  --on-primary: #5c1900;
+  --on-primary-fixed: #390c00;
+  --on-primary-fixed-variant: #822700;
+  --on-primary-container: #511500;
+  --on-surface: #e6e2de;
+  --on-surface-variant: #e1bfb4;
+  --on-surface-muted: #CCC5B9;
+  --outline: #a88a80;
+  --outline-variant: #594139;
+  --glow-brand: 0 0 20px rgba(235, 94, 40, 0.15);
+  --glow-brand-lg: 0 0 40px rgba(235, 94, 40, 0.2);
+  --editorial-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Marketing pages sit on the slightly warmer #1A1917 per stitch landing refs. */
+body.marketing {
+  --surface: #1A1917;
+  --surface-dim: #1A1917;
+}
+
+/* Light mode: applies via html.light class — tokens from stitch *_light_mode refs */
+html.light {
+  --surface: #FDFCF0;
+  --surface-container-lowest: #FFFFFF;
+  --surface-container-low: #F9F6F0;
+  --surface-container: #F4F1E8;
+  --surface-container-high: #ECE9E1;
+  --surface-container-highest: #E6E2D6;
+  --surface-bright: #FFFBF7;
+  --surface-dim: #E6E2D6;
+  --on-surface: #211F1D;
+  --on-surface-variant: #594139;
+  --on-surface-muted: #4A463F;
+  --outline: #85736E;
+  --outline-variant: #D8C2BB;
+  --color-secondary: #4A463F;
+  /* primary accent stays #EB5E28 in light mode */
+}
+
+/* Marketing light mode uses the same cream base as post-login light mode */
+html.light body.marketing {
+  --surface: #FDFCF0;
+  --surface-dim: #E6E2D6;
+}
+
+/* Single shared body theme — Earthen Brutalism across pre- and post-login.
+   Surface token is flipped per body class; typography is shared. */
+body {
+  color: var(--on-surface);
+  background: var(--surface);
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+}
+
+/* Suppress browser default outlines on interactive elements — rely on custom focus indicators */
+body input,
+body select,
+body textarea,
+body button {
+  outline: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-surface {
+    @apply bg-bg-surface/90 border border-border backdrop-blur-sm;
+  }
+
+  /* Marketing glassmorphic nav */
+  .glass-nav {
+    background: rgba(26, 25, 23, 0.90);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  html.light .glass-nav {
+    background: rgba(253, 252, 240, 0.92);
+  }
+
+  /* Editorial tight tracking */
+  .editorial-tight {
+    letter-spacing: -0.02em;
+  }
+
+  /* Brand glow */
+  .glow-brand {
+    box-shadow: var(--glow-brand);
+  }
+
+  /* Ghost border — never use 100% opaque 1px lines */
+  .ghost-border {
+    border: 1px solid rgba(168, 138, 128, 0.15);
+  }
+
+  html.light .ghost-border {
+    border: 1px solid rgba(133, 115, 110, 0.25);
+  }
+
+  /* Glassmorphic surface for floating chrome */
+  .glass-surface-dark {
+    background: rgba(20, 19, 17, 0.80);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  html.light .glass-surface-dark {
+    background: rgba(253, 252, 240, 0.88);
+  }
+
+  /* Custom scrollbar (used inside feeds) */
+  .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: rgba(20, 19, 17, 0.5); }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(235, 94, 40, 0.3); border-radius: 4px; }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(235, 94, 40, 0.6); }
+
+  /* Section divider */
+  .divider-brand {
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    height: 1px;
+    width: 100%;
+  }
+
+  /* Editorial card shadow (per stitch onboarding spec) */
+  .editorial-shadow {
+    box-shadow: var(--editorial-shadow);
+  }
+
+  /* Input focus underline used across auth/onboarding forms */
+  .input-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: var(--color-primary);
+    box-shadow: 0 0 8px rgba(235, 94, 40, 0.5);
+    transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .group:focus-within > .input-underline { width: 100%; }
+
+  /* Button primary gradient */
+  .btn-primary {
+    background: linear-gradient(135deg, #EB5E28, #C44A1A);
+    color: #FFFCF2;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-primary:hover {
+    box-shadow: var(--glow-brand);
+    transform: translateY(-1px);
+  }
+
+  /* Subtle pulse used on Cypher CTA to draw attention */
+  .cypher-pulse {
+    animation: cypher-pulse 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes cypher-pulse {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(235, 94, 40, 0.4), var(--glow-brand);
+    }
+    50% {
+      box-shadow: 0 0 0 12px rgba(235, 94, 40, 0), var(--glow-brand-lg);
+    }
+  }
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

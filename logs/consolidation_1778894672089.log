@@ -1,0 +1,1228 @@
+Agent 18 consolidated question generation (v2)
+Started: 2026-05-16T01:24:32.089Z
+Flags: {"resume":true,"preview":false,"runAudit":false}
+
+=== Phase 1: Consolidated question generation ===
+Audit gate: DISABLED
+Fetching detail questions...
+Fetched 3615 detail rows.
+Grouped into 440 unique (framework, control_id) pairs.
+[1/440] SKIP (already generated) ISO_27001_2022:A.8.13
+[2/440] SKIP (already generated) ISO_27001_2022:A.8.30
+[3/440] SKIP (already generated) ISO_27001_2022:A.5.28
+[4/440] SKIP (already generated) ISO_27001_2022:A.7.3
+[5/440] SKIP (already generated) NIST_CSF_2.0:PR.IR-04
+[6/440] SKIP (already generated) ISO_27001_2022:A.8.23
+[7/440] SKIP (already generated) ISO_27001_2022:A.7.5
+[8/440] SKIP (already generated) ISO_27001_2022:A.5.29
+[9/440] SKIP (already generated) ISO_27001_2022:A.5.25
+[10/440] SKIP (already generated) ISO_27001_2022:A.5.33
+[11/440] SKIP (already generated) ISO_27001_2022:A.5.7
+[12/440] SKIP (already generated) ISO_27001_2022:A.5.23
+[13/440] SKIP (already generated) ISO_27001_2022:A.5.1
+[14/440] SKIP (already generated) ISO_27001_2022:C.9.3.1
+[15/440] SKIP (already generated) ISO_27001_2022:C.9.2.1
+[16/440] SKIP (already generated) ISO_27001_2022:A.8.26
+[17/440] SKIP (already generated) ISO_27001_2022:A.8.11
+[18/440] SKIP (already generated) ISO_27001_2022:C.10.1
+[19/440] SKIP (already generated) ISO_27001_2022:A.8.2
+[20/440] SKIP (already generated) ISO_27001_2022:A.8.34
+[21/440] SKIP (already generated) ISO_27001_2022:A.5.9
+[22/440] SKIP (already generated) ISO_27001_2022:A.8.22
+[23/440] SKIP (already generated) ISO_27001_2022:A.8.28
+[24/440] SKIP (already generated) ISO_27001_2022:A.5.4
+[25/440] SKIP (already generated) ISO_27001_2022:C.6.1.2
+[26/440] SKIP (already generated) ISO_27001_2022:A.7.13
+[27/440] SKIP (already generated) ISO_27001_2022:A.8.21
+[28/440] SKIP (already generated) ISO_27001_2022:A.8.9
+[29/440] SKIP (already generated) ISO_27001_2022:A.6.1
+[30/440] SKIP (already generated) ISO_27001_2022:A.5.5
+[31/440] SKIP (already generated) ISO_27001_2022:A.8.27
+[32/440] SKIP (already generated) ISO_27001_2022:C.6.3
+[33/440] SKIP (already generated) ISO_27001_2022:C.7.5.2
+[34/440] SKIP (already generated) ISO_27001_2022:C.6.2
+[35/440] SKIP (already generated) ISO_27001_2022:A.8.32
+[36/440] SKIP (already generated) ISO_27001_2022:A.7.8
+[37/440] SKIP (already generated) ISO_27001_2022:A.7.14
+[38/440] SKIP (already generated) ISO_27001_2022:A.8.14
+[39/440] SKIP (already generated) ISO_27001_2022:C.6.1.1
+[40/440] SKIP (already generated) ISO_27001_2022:C.7.5.1
+[41/440] SKIP (already generated) ISO_27001_2022:C.8.1
+[42/440] SKIP (already generated) ISO_27001_2022:C.7.3
+[43/440] SKIP (already generated) ISO_27001_2022:A.7.2
+[44/440] SKIP (already generated) ISO_27001_2022:A.8.17
+[45/440] SKIP (already generated) ISO_27001_2022:A.6.8
+[46/440] SKIP (already generated) NIST_CSF_2.0:ID.RA-08
+[47/440] SKIP (already generated) ISO_27001_2022:A.8.8
+[48/440] SKIP (already generated) ISO_27001_2022:C.4.3
+[49/440] SKIP (already generated) ISO_27001_2022:C.6.1.3
+[50/440] SKIP (already generated) ISO_27001_2022:A.5.3
+[51/440] SKIP (already generated) ISO_27001_2022:A.8.12
+[52/440] SKIP (already generated) ISO_27001_2022:C.7.1
+[53/440] SKIP (already generated) ISO_27001_2022:A.8.10
+[54/440] SKIP (already generated) ISO_27001_2022:A.5.21
+[55/440] SKIP (already generated) ISO_27001_2022:A.7.7
+[56/440] SKIP (already generated) ISO_27001_2022:A.5.35
+[57/440] ISO_27001_2022:C.7.5.3 (9 detail qs)
+  attempt 1 REJECTED: missing 1 detail mappings
+  attempt 2 REJECTED: missing 1 detail mappings
+  attempt 3 REJECTED: missing 1 detail mappings
+  FAIL ISO_27001_2022:C.7.5.3
+[58/440] SKIP (already generated) ISO_27001_2022:A.5.19
+[59/440] SKIP (already generated) ISO_27001_2022:C.7.2
+[60/440] SKIP (already generated) NIST_CSF_2.0:DE.CM-01
+[61/440] SKIP (already generated) ISO_27001_2022:A.8.5
+[62/440] SKIP (already generated) ISO_27001_2022:A.8.25
+[63/440] SKIP (already generated) ISO_27001_2022:C.5.1
+[64/440] SKIP (already generated) ISO_27001_2022:A.5.10
+[65/440] SKIP (already generated) ISO_27001_2022:A.5.37
+[66/440] SKIP (already generated) ISO_27001_2022:C.4.1
+[67/440] SKIP (already generated) ISO_27001_2022:A.5.32
+[68/440] SKIP (already generated) ISO_27001_2022:A.8.6
+[69/440] SKIP (already generated) ISO_27001_2022:A.8.3
+[70/440] SKIP (already generated) ISO_27001_2022:A.5.20
+[71/440] SKIP (already generated) ISO_27001_2022:C.5.3
+[72/440] SKIP (already generated) ISO_27001_2022:A.5.30
+[73/440] SKIP (already generated) ISO_27001_2022:A.6.3
+[74/440] SKIP (already generated) NIST_CSF_2.0:PR.PS-02
+[75/440] SKIP (already generated) ISO_27001_2022:A.5.11
+[76/440] SKIP (already generated) ISO_27001_2022:A.8.18
+[77/440] SKIP (already generated) ISO_27001_2022:A.5.12
+[78/440] SKIP (already generated) ISO_27001_2022:C.10.2
+[79/440] SKIP (already generated) ISO_27001_2022:A.5.6
+[80/440] SKIP (already generated) ISO_27001_2022:A.8.4
+[81/440] SKIP (already generated) ISO_27001_2022:A.5.31
+[82/440] SKIP (already generated) ISO_27001_2022:A.8.16
+[83/440] SKIP (already generated) ISO_27001_2022:C.5.2
+[84/440] SKIP (already generated) ISO_27001_2022:A.5.36
+[85/440] SKIP (already generated) ISO_27001_2022:A.8.19
+[86/440] SKIP (already generated) ISO_27001_2022:A.5.26
+[87/440] SKIP (already generated) ISO_27001_2022:A.5.16
+[88/440] SKIP (already generated) ISO_27001_2022:C.4.4
+[89/440] SKIP (already generated) PCI_DSS:PCI_DSS_9.1
+[90/440] SKIP (already generated) ISO_27001_2022:A.7.10
+[91/440] SKIP (already generated) ISO_27001_2022:A.6.5
+[92/440] SKIP (already generated) ISO_27001_2022:A.5.27
+[93/440] SKIP (already generated) ISO_27001_2022:C.9.3.2
+[94/440] SKIP (already generated) ISO_27001_2022:A.8.31
+[95/440] SKIP (already generated) ISO_27001_2022:C.4.2
+[96/440] ISO_27001_2022:A.8.15 (10 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.8.15 (attempts 1)
+[97/440] ISO_27001_2022:A.5.22 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.22 (attempts 1)
+[98/440] ISO_27001_2022:C.9.1 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:C.9.1 (attempts 1)
+[99/440] ISO_27001_2022:A.8.1 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.8.1 (attempts 1)
+[100/440] ISO_27001_2022:A.5.17 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.17 (attempts 1)
+[101/440] ISO_27001_2022:A.7.1 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.7.1 (attempts 1)
+[102/440] ISO_27001_2022:A.7.4 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.7.4 (attempts 1)
+[103/440] ISO_27001_2022:A.7.6 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.7.6 (attempts 1)
+[104/440] ISO_27001_2022:A.7.12 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.7.12 (attempts 1)
+[105/440] ISO_27001_2022:A.7.9 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.7.9 (attempts 1)
+[106/440] ISO_27001_2022:A.7.11 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.7.11 (attempts 1)
+[107/440] NIST_CSF_2.0:GV.RR-03 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RR-03 (attempts 1)
+[108/440] ISO_27001_2022:A.5.18 (10 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.18 (attempts 1)
+[109/440] ISO_27001_2022:A.8.7 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.8.7 (attempts 1)
+[110/440] ISO_27001_2022:C.9.2.2 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:C.9.2.2 (attempts 1)
+[111/440] ISO_27001_2022:C.8.3 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:C.8.3 (attempts 1)
+[112/440] ISO_27001_2022:A.5.24 (10 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.24 (attempts 1)
+[113/440] ISO_27001_2022:A.8.29 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.8.29 (attempts 1)
+[114/440] ISO_27001_2022:A.5.8 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.8 (attempts 1)
+[115/440] ISO_27001_2022:A.5.2 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.2 (attempts 1)
+[116/440] ISO_27001_2022:A.8.24 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.8.24 (attempts 1)
+[117/440] ISO_27001_2022:C.7.4 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:C.7.4 (attempts 1)
+[118/440] ISO_27001_2022:A.8.33 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.8.33 (attempts 1)
+[119/440] ISO_27001_2022:A.6.7 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.6.7 (attempts 1)
+[120/440] ISO_27001_2022:A.5.14 (10 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.14 (attempts 1)
+[121/440] ISO_27001_2022:A.6.4 (7 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.6.4 (attempts 1)
+[122/440] ISO_27001_2022:A.6.6 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.6.6 (attempts 1)
+[123/440] ISO_27001_2022:C.9.3.3 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:C.9.3.3 (attempts 1)
+[124/440] ISO_27001_2022:A.5.13 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.13 (attempts 1)
+[125/440] ISO_27001_2022:C.8.2 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:C.8.2 (attempts 1)
+[126/440] ISO_27001_2022:A.5.34 (10 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.34 (attempts 1)
+[127/440] ISO_27001_2022:A.5.15 (10 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.5.15 (attempts 1)
+[128/440] ISO_27001_2022:A.6.2 (8 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.6.2 (attempts 1)
+[129/440] ISO_27001_2022:A.8.20 (9 detail qs)
+  attempt 1 PASS
+  OK ISO_27001_2022:A.8.20 (attempts 1)
+[130/440] NIST_CSF_2.0:GV.SC-03 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-03 (attempts 1)
+[131/440] NIST_CSF_2.0:RC.RP-05 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RC.RP-05 (attempts 1)
+[132/440] NIST_CSF_2.0:ID.RA-04 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-04 (attempts 1)
+[133/440] NIST_CSF_2.0:ID.AM-01 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.AM-01 (attempts 1)
+[134/440] NIST_CSF_2.0:ID.AM-04 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.AM-04 (attempts 1)
+[135/440] NIST_CSF_2.0:ID.IM-03 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.IM-03 (attempts 1)
+[136/440] NIST_CSF_2.0:GV.RM-03 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RM-03 (attempts 1)
+[137/440] PCI_DSS:PCI_DSS_5.3 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_5.3 (attempts 1)
+[138/440] NIST_CSF_2.0:PR.AT-01 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.AT-01 (attempts 1)
+[139/440] NIST_CSF_2.0:PR.DS-10 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.DS-10 (attempts 1)
+[140/440] NIST_CSF_2.0:GV.SC-01 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-01 (attempts 1)
+[141/440] NIST_CSF_2.0:RC.RP-03 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RC.RP-03 (attempts 1)
+[142/440] NIST_CSF_2.0:ID.RA-05 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-05 (attempts 1)
+[143/440] NIST_CSF_2.0:GV.OC-05 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.OC-05 (attempts 1)
+[144/440] NIST_CSF_2.0:GV.RM-06 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RM-06 (attempts 1)
+[145/440] NIST_CSF_2.0:PR.AA-03 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.AA-03 (attempts 1)
+[146/440] NIST_CSF_2.0:ID.RA-10 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-10 (attempts 1)
+[147/440] NIST_CSF_2.0:GV.OC-01 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.OC-01 (attempts 1)
+[148/440] NIST_CSF_2.0:GV.SC-10 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-10 (attempts 1)
+[149/440] NIST_CSF_2.0:PR.DS-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.DS-02 (attempts 1)
+[150/440] NIST_CSF_2.0:ID.AM-03 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.AM-03 (attempts 1)
+[151/440] PCI_DSS:PCI_DSS_3.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_3.2 (attempts 1)
+[152/440] NIST_CSF_2.0:PR.AA-05 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.AA-05 (attempts 1)
+[153/440] PCI_DSS:PCI_DSS_6.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_6.2 (attempts 1)
+[154/440] NIST_CSF_2.0:ID.IM-04 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.IM-04 (attempts 1)
+[155/440] NIST_CSF_2.0:RS.AN-08 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.AN-08 (attempts 1)
+[156/440] NIST_CSF_2.0:PR.AA-01 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.AA-01 (attempts 1)
+[157/440] NIST_CSF_2.0:GV.RR-04 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RR-04 (attempts 1)
+[158/440] PCI_DSS:PCI_DSS_2.3 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_2.3 (attempts 1)
+[159/440] NIST_CSF_2.0:PR.IR-01 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.IR-01 (attempts 1)
+[160/440] NIST_CSF_2.0:PR.PS-05 (9 detail qs)
+  attempt 1 REJECTED: missing 1 detail mappings
+  attempt 2 PASS
+  OK NIST_CSF_2.0:PR.PS-05 (attempts 2)
+[161/440] NIST_CSF_2.0:DE.CM-06 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.CM-06 (attempts 1)
+[162/440] NIST_CSF_2.0:GV.RM-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RM-02 (attempts 1)
+[163/440] NIST_CSF_2.0:GV.PO-01 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.PO-01 (attempts 1)
+[164/440] NIST_CSF_2.0:GV.RR-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RR-02 (attempts 1)
+[165/440] NIST_CSF_2.0:ID.RA-02 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-02 (attempts 1)
+[166/440] NIST_CSF_2.0:ID.RA-01 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-01 (attempts 1)
+[167/440] NIST_CSF_2.0:PR.PS-04 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.PS-04 (attempts 1)
+[168/440] NIST_CSF_2.0:ID.IM-01 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.IM-01 (attempts 1)
+[169/440] NIST_CSF_2.0:RC.CO-04 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RC.CO-04 (attempts 1)
+[170/440] NIST_CSF_2.0:ID.RA-06 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-06 (attempts 1)
+[171/440] NIST_CSF_2.0:GV.SC-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-02 (attempts 1)
+[172/440] NIST_CSF_2.0:GV.OC-03 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.OC-03 (attempts 1)
+[173/440] NIST_CSF_2.0:ID.AM-07 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.AM-07 (attempts 1)
+[174/440] NIST_CSF_2.0:RS.MA-04 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.MA-04 (attempts 1)
+[175/440] NIST_CSF_2.0:RS.MA-03 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.MA-03 (attempts 1)
+[176/440] NIST_CSF_2.0:ID.IM-02 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.IM-02 (attempts 1)
+[177/440] NIST_CSF_2.0:ID.RA-09 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-09 (attempts 1)
+[178/440] NIST_CSF_2.0:RS.MA-01 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.MA-01 (attempts 1)
+[179/440] NIST_CSF_2.0:GV.OC-04 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.OC-04 (attempts 1)
+[180/440] ISO42001:A.4.5 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.4.5 (attempts 1)
+[181/440] NIST_CSF_2.0:DE.AE-07 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.AE-07 (attempts 1)
+[182/440] NIST_CSF_2.0:GV.OV-01 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.OV-01 (attempts 1)
+[183/440] NIST_CSF_2.0:RS.MA-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.MA-02 (attempts 1)
+[184/440] NIST_CSF_2.0:RS.CO-03 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.CO-03 (attempts 1)
+[185/440] NIST_CSF_2.0:PR.IR-03 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.IR-03 (attempts 1)
+[186/440] NIST_CSF_2.0:PR.PS-06 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.PS-06 (attempts 1)
+[187/440] NIST_CSF_2.0:RC.RP-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RC.RP-02 (attempts 1)
+[188/440] NIST_CSF_2.0:GV.OV-03 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.OV-03 (attempts 1)
+[189/440] NIST_CSF_2.0:GV.RR-01 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RR-01 (attempts 1)
+[190/440] NIST_CSF_2.0:PR.AA-04 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.AA-04 (attempts 1)
+[191/440] NIST_CSF_2.0:PR.IR-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.IR-02 (attempts 1)
+[192/440] NIST_CSF_2.0:PR.AA-06 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.AA-06 (attempts 1)
+[193/440] ISO42001:A.5.4 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.5.4 (attempts 1)
+[194/440] ISO42001:A.6.1.2 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.1.2 (attempts 1)
+[195/440] NIST_CSF_2.0:RC.RP-04 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RC.RP-04 (attempts 1)
+[196/440] NIST_CSF_2.0:GV.RM-05 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RM-05 (attempts 1)
+[197/440] NIST_CSF_2.0:GV.SC-07 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-07 (attempts 1)
+[198/440] NIST_CSF_2.0:PR.AA-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.AA-02 (attempts 1)
+[199/440] NIST_CSF_2.0:DE.AE-06 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.AE-06 (attempts 1)
+[200/440] NIST_CSF_2.0:GV.PO-02 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.PO-02 (attempts 1)
+[201/440] NIST_CSF_2.0:RS.MA-05 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.MA-05 (attempts 1)
+[202/440] NIST_CSF_2.0:DE.AE-04 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.AE-04 (attempts 1)
+[203/440] NIST_CSF_2.0:GV.OV-02 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.OV-02 (attempts 1)
+[204/440] NIST_CSF_2.0:GV.SC-04 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-04 (attempts 1)
+[205/440] NIST_CSF_2.0:GV.SC-06 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-06 (attempts 1)
+[206/440] NIST_CSF_2.0:RS.CO-02 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.CO-02 (attempts 1)
+[207/440] NIST_CSF_2.0:RS.AN-03 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.AN-03 (attempts 1)
+[208/440] NIST_CSF_2.0:RC.RP-06 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RC.RP-06 (attempts 1)
+[209/440] NIST_CSF_2.0:ID.AM-05 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.AM-05 (attempts 1)
+[210/440] NIST_CSF_2.0:RS.AN-07 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.AN-07 (attempts 1)
+[211/440] NIST_CSF_2.0:DE.AE-08 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.AE-08 (attempts 1)
+[212/440] NIST_CSF_2.0:PR.PS-01 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.PS-01 (attempts 1)
+[213/440] NIST_CSF_2.0:ID.RA-07 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-07 (attempts 1)
+[214/440] PCI_DSS:PCI_DSS_6.1 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_6.1 (attempts 1)
+[215/440] NIST_CSF_2.0:DE.AE-03 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.AE-03 (attempts 1)
+[216/440] NIST_CSF_2.0:DE.AE-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.AE-02 (attempts 1)
+[217/440] NIST_CSF_2.0:GV.RM-01 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RM-01 (attempts 1)
+[218/440] NIST_CSF_2.0:DE.CM-09 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.CM-09 (attempts 1)
+[219/440] NIST_CSF_2.0:GV.SC-08 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-08 (attempts 1)
+[220/440] NIST_CSF_2.0:DE.CM-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.CM-02 (attempts 1)
+[221/440] NIST_CSF_2.0:DE.CM-03 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:DE.CM-03 (attempts 1)
+[222/440] NIST_CSF_2.0:PR.AT-02 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.AT-02 (attempts 1)
+[223/440] NIST_CSF_2.0:RC.CO-03 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RC.CO-03 (attempts 1)
+[224/440] NIST_CSF_2.0:PR.DS-01 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.DS-01 (attempts 1)
+[225/440] NIST_CSF_2.0:RC.RP-01 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RC.RP-01 (attempts 1)
+[226/440] NIST_CSF_2.0:GV.OC-02 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.OC-02 (attempts 1)
+[227/440] NIST_CSF_2.0:ID.AM-08 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.AM-08 (attempts 1)
+[228/440] NIST_CSF_2.0:RS.MI-01 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.MI-01 (attempts 1)
+[229/440] NIST_CSF_2.0:GV.RM-04 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RM-04 (attempts 1)
+[230/440] NIST_CSF_2.0:GV.SC-09 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-09 (attempts 1)
+[231/440] PCI_DSS:PCI_DSS_9.4 (8 detail qs)
+  attempt 1 ERROR: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "uuid",
+    "pattern": "/^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$/",
+    "path": [
+      "detail_map",
+      3,
+      "detail_question_id"
+    ],
+    "message": "Invalid UUID"
+  }
+]
+  attempt 2 PASS
+  OK PCI_DSS:PCI_DSS_9.4 (attempts 2)
+[232/440] NIST_CSF_2.0:GV.RM-07 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.RM-07 (attempts 1)
+[233/440] NIST_CSF_2.0:ID.RA-03 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.RA-03 (attempts 1)
+[234/440] NIST_CSF_2.0:PR.DS-11 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.DS-11 (attempts 1)
+[235/440] NIST_CSF_2.0:RS.MI-02 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.MI-02 (attempts 1)
+[236/440] NIST_CSF_2.0:PR.PS-03 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:PR.PS-03 (attempts 1)
+[237/440] NIST_CSF_2.0:RS.AN-06 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:RS.AN-06 (attempts 1)
+[238/440] NIST_CSF_2.0:ID.AM-02 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:ID.AM-02 (attempts 1)
+[239/440] NIST_CSF_2.0:GV.SC-05 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_CSF_2.0:GV.SC-05 (attempts 1)
+[240/440] APRA_CPS_234:CPS234-1 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-1 (attempts 1)
+[241/440] APRA_CPS_234:CPS234-2 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-2 (attempts 1)
+[242/440] APRA_CPS_234:CPS234-3 (9 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-3 (attempts 1)
+[243/440] APRA_CPS_234:CPS234-5 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-5 (attempts 1)
+[244/440] APRA_CPS_234:CPS234-4 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-4 (attempts 1)
+[245/440] APRA_CPS_234:CPS234-6 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-6 (attempts 1)
+[246/440] APRA_CPS_234:CPS234-7 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-7 (attempts 1)
+[247/440] APRA_CPS_234:CPS234-8 (9 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-8 (attempts 1)
+[248/440] APRA_CPS_234:CPS234-9 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-9 (attempts 1)
+[249/440] APRA_CPS_234:CPS234-10 (8 detail qs)
+  attempt 1 REJECTED: missing 1 detail mappings
+  attempt 2 PASS
+  OK APRA_CPS_234:CPS234-10 (attempts 2)
+[250/440] APRA_CPS_234:CPS234-11 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-11 (attempts 1)
+[251/440] APRA_CPS_234:CPS234-12 (10 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-12 (attempts 1)
+[252/440] APRA_CPS_234:CPS234-13 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_234:CPS234-13 (attempts 1)
+[253/440] APRA_CPS_230:CPS230-02 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_230:CPS230-02 (attempts 1)
+[254/440] APRA_CPS_230:CPS230-01 (9 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_230:CPS230-01 (attempts 1)
+[255/440] ISO42001:A.4.6 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.4.6 (attempts 1)
+[256/440] APRA_CPS_230:CPS230-03 (9 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_230:CPS230-03 (attempts 1)
+[257/440] APRA_CPS_230:CPS230-05 (8 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_230:CPS230-05 (attempts 1)
+[258/440] APRA_CPS_230:CPS230-04 (9 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_230:CPS230-04 (attempts 1)
+[259/440] APRA_CPS_230:CPS230-06 (9 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_230:CPS230-06 (attempts 1)
+[260/440] APRA_CPS_230:CPS230-07 (10 detail qs)
+  attempt 1 PASS
+  OK APRA_CPS_230:CPS230-07 (attempts 1)
+[261/440] PCI_DSS:PCI_DSS_5.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_5.2 (attempts 1)
+[262/440] PCI_DSS:PCI_DSS_7.1 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_7.1 (attempts 1)
+[263/440] PCI_DSS:PCI_DSS_11.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_11.2 (attempts 1)
+[264/440] PCI_DSS:PCI_DSS_12.3 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.3 (attempts 1)
+[265/440] ISO42001:A.5.5 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.5.5 (attempts 1)
+[266/440] ISO42001:A.5.3 (9 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.5.3 (attempts 1)
+[267/440] PCI_DSS:PCI_DSS_10.5 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_10.5 (attempts 1)
+[268/440] PCI_DSS:PCI_DSS_8.1 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_8.1 (attempts 1)
+[269/440] PCI_DSS:PCI_DSS_12.2 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.2 (attempts 1)
+[270/440] PCI_DSS:PCI_DSS_6.4 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_6.4 (attempts 1)
+[271/440] PCI_DSS:PCI_DSS_11.5 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_11.5 (attempts 1)
+[272/440] PCI_DSS:PCI_DSS_12.8 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.8 (attempts 1)
+[273/440] PCI_DSS:PCI_DSS_6.5 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_6.5 (attempts 1)
+[274/440] PCI_DSS:PCI_DSS_9.2 (9 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_9.2 (attempts 1)
+[275/440] PCI_DSS:PCI_DSS_11.1 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_11.1 (attempts 1)
+[276/440] PCI_DSS:PCI_DSS_9.3 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_9.3 (attempts 1)
+[277/440] PCI_DSS:PCI_DSS_11.3 (9 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_11.3 (attempts 1)
+[278/440] PCI_DSS:PCI_DSS_2.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_2.2 (attempts 1)
+[279/440] PCI_DSS:PCI_DSS_9.5 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_9.5 (attempts 1)
+[280/440] PCI_DSS:PCI_DSS_3.3 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_3.3 (attempts 1)
+[281/440] PCI_DSS:PCI_DSS_3.6 (9 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_3.6 (attempts 1)
+[282/440] PCI_DSS:PCI_DSS_10.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_10.2 (attempts 1)
+[283/440] PCI_DSS:PCI_DSS_7.3 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_7.3 (attempts 1)
+[284/440] PCI_DSS:PCI_DSS_10.1 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_10.1 (attempts 1)
+[285/440] PCI_DSS:PCI_DSS_12.9 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.9 (attempts 1)
+[286/440] PCI_DSS:PCI_DSS_8.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_8.2 (attempts 1)
+[287/440] PCI_DSS:PCI_DSS_12.1 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.1 (attempts 1)
+[288/440] PCI_DSS:PCI_DSS_4.1 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_4.1 (attempts 1)
+[289/440] PCI_DSS:PCI_DSS_1.1 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_1.1 (attempts 1)
+[290/440] PCI_DSS:PCI_DSS_1.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_1.2 (attempts 1)
+[291/440] PCI_DSS:PCI_DSS_8.5 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_8.5 (attempts 1)
+[292/440] PCI_DSS:PCI_DSS_4.2 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_4.2 (attempts 1)
+[293/440] PCI_DSS:PCI_DSS_1.3 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_1.3 (attempts 1)
+[294/440] PCI_DSS:PCI_DSS_1.4 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_1.4 (attempts 1)
+[295/440] PCI_DSS:PCI_DSS_2.1 (9 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_2.1 (attempts 1)
+[296/440] PCI_DSS:PCI_DSS_1.5 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_1.5 (attempts 1)
+[297/440] PCI_DSS:PCI_DSS_3.1 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_3.1 (attempts 1)
+[298/440] PCI_DSS:PCI_DSS_8.4 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_8.4 (attempts 1)
+[299/440] PCI_DSS:PCI_DSS_5.1 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_5.1 (attempts 1)
+[300/440] PCI_DSS:PCI_DSS_3.7 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_3.7 (attempts 1)
+[301/440] PCI_DSS:PCI_DSS_5.4 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_5.4 (attempts 1)
+[302/440] PCI_DSS:PCI_DSS_6.3 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_6.3 (attempts 1)
+[303/440] PCI_DSS:PCI_DSS_10.7 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_10.7 (attempts 1)
+[304/440] PCI_DSS:PCI_DSS_7.2 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_7.2 (attempts 1)
+[305/440] PCI_DSS:PCI_DSS_8.3 (9 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_8.3 (attempts 1)
+[306/440] PCI_DSS:PCI_DSS_8.6 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_8.6 (attempts 1)
+[307/440] PCI_DSS:PCI_DSS_10.3 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_10.3 (attempts 1)
+[308/440] PCI_DSS:PCI_DSS_10.4 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_10.4 (attempts 1)
+[309/440] PCI_DSS:PCI_DSS_10.6 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_10.6 (attempts 1)
+[310/440] PCI_DSS:PCI_DSS_12.5 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.5 (attempts 1)
+[311/440] PCI_DSS:PCI_DSS_11.4 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_11.4 (attempts 1)
+[312/440] PCI_DSS:PCI_DSS_11.6 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_11.6 (attempts 1)
+[313/440] PCI_DSS:PCI_DSS_12.4 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.4 (attempts 1)
+[314/440] PCI_DSS:PCI_DSS_12.7 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.7 (attempts 1)
+[315/440] PCI_DSS:PCI_DSS_12.6 (7 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.6 (attempts 1)
+[316/440] PCI_DSS:PCI_DSS_12.10 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_12.10 (attempts 1)
+[317/440] PCI_DSS:PCI_DSS_3.4 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_3.4 (attempts 1)
+[318/440] PCI_DSS:PCI_DSS_3.5 (8 detail qs)
+  attempt 1 PASS
+  OK PCI_DSS:PCI_DSS_3.5 (attempts 1)
+[319/440] ASD_E8:E8-01-PATCH_APPLICATIONS (8 detail qs)
+  attempt 1 PASS
+  OK ASD_E8:E8-01-PATCH_APPLICATIONS (attempts 1)
+[320/440] ASD_E8:E8-02-PATCH_OPERATING_SYSTEMS (8 detail qs)
+  attempt 1 PASS
+  OK ASD_E8:E8-02-PATCH_OPERATING_SYSTEMS (attempts 1)
+[321/440] ASD_E8:E8-03-MULTI_FACTOR_AUTHENTICATION (9 detail qs)
+  attempt 1 PASS
+  OK ASD_E8:E8-03-MULTI_FACTOR_AUTHENTICATION (attempts 1)
+[322/440] ASD_E8:E8-04-RESTRICT_ADMINISTRATIVE_PRIVILEGES (7 detail qs)
+  attempt 1 PASS
+  OK ASD_E8:E8-04-RESTRICT_ADMINISTRATIVE_PRIVILEGES (attempts 1)
+[323/440] ASD_E8:E8-05-APPLICATION_CONTROL (9 detail qs)
+  attempt 1 PASS
+  OK ASD_E8:E8-05-APPLICATION_CONTROL (attempts 1)
+[324/440] ASD_E8:E8-06-RESTRICT_MS_OFFICE_MACROS (9 detail qs)
+  attempt 1 PASS
+  OK ASD_E8:E8-06-RESTRICT_MS_OFFICE_MACROS (attempts 1)
+[325/440] ASD_E8:E8-07-USER_APPLICATION_HARDENING (8 detail qs)
+  attempt 1 PASS
+  OK ASD_E8:E8-07-USER_APPLICATION_HARDENING (attempts 1)
+[326/440] ASD_E8:E8-08-REGULAR_BACKUPS (8 detail qs)
+  attempt 1 PASS
+  OK ASD_E8:E8-08-REGULAR_BACKUPS (attempts 1)
+[327/440] ISO42001:A.3.3 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.3.3 (attempts 1)
+[328/440] ISO42001:A.6.2.4 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.2.4 (attempts 1)
+[329/440] ISO42001:A.5.2 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.5.2 (attempts 1)
+[330/440] ISO42001:A.3.2 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.3.2 (attempts 1)
+[331/440] ISO42001:A.2.2 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.2.2 (attempts 1)
+[332/440] ISO42001:A.2.3 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.2.3 (attempts 1)
+[333/440] ISO42001:A.2.4 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.2.4 (attempts 1)
+[334/440] ISO42001:A.4.2 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.4.2 (attempts 1)
+[335/440] ISO42001:A.4.3 (9 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.4.3 (attempts 1)
+[336/440] ISO42001:A.4.4 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.4.4 (attempts 1)
+[337/440] ISO42001:A.6.1.3 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.1.3 (attempts 1)
+[338/440] ISO42001:A.6.2.2 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.2.2 (attempts 1)
+[339/440] NIST_AI_RMF:MEASURE-2.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.2 (attempts 1)
+[340/440] ISO42001:A.6.2.3 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.2.3 (attempts 1)
+[341/440] ISO42001:A.6.2.5 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.2.5 (attempts 1)
+[342/440] ISO42001:A.6.2.6 (9 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.2.6 (attempts 1)
+[343/440] ISO42001:A.6.2.7 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.2.7 (attempts 1)
+[344/440] ISO42001:A.6.2.8 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.6.2.8 (attempts 1)
+[345/440] ISO42001:A.7.2 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.7.2 (attempts 1)
+[346/440] ISO42001:A.7.3 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.7.3 (attempts 1)
+[347/440] ISO42001:A.7.4 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.7.4 (attempts 1)
+[348/440] ISO42001:A.7.5 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.7.5 (attempts 1)
+[349/440] ISO42001:A.7.6 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.7.6 (attempts 1)
+[350/440] ISO42001:A.8.2 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.8.2 (attempts 1)
+[351/440] ISO42001:A.8.3 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.8.3 (attempts 1)
+[352/440] AU_VAISS:AU-VAISS-G03 (8 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G03 (attempts 1)
+[353/440] ISO42001:A.8.4 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.8.4 (attempts 1)
+[354/440] NIST_AI_RMF:MAP-2.1 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-2.1 (attempts 1)
+[355/440] ISO42001:A.8.5 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.8.5 (attempts 1)
+[356/440] ISO42001:A.9.4 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.9.4 (attempts 1)
+[357/440] ISO42001:A.9.2 (8 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.9.2 (attempts 1)
+[358/440] ISO42001:A.9.3 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.9.3 (attempts 1)
+[359/440] ISO42001:A.10.2 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.10.2 (attempts 1)
+[360/440] ISO42001:A.10.3 (9 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.10.3 (attempts 1)
+[361/440] ISO42001:A.10.4 (7 detail qs)
+  attempt 1 PASS
+  OK ISO42001:A.10.4 (attempts 1)
+[362/440] AU_VAISS:AU-VAISS-G01 (8 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G01 (attempts 1)
+[363/440] AU_VAISS:AU-VAISS-G02 (8 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G02 (attempts 1)
+[364/440] AU_VAISS:AU-VAISS-G04 (7 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G04 (attempts 1)
+[365/440] AU_VAISS:AU-VAISS-G05 (8 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G05 (attempts 1)
+[366/440] AU_VAISS:AU-VAISS-G06 (9 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G06 (attempts 1)
+[367/440] AU_VAISS:AU-VAISS-G07 (9 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G07 (attempts 1)
+[368/440] AU_VAISS:AU-VAISS-G08 (7 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G08 (attempts 1)
+[369/440] AU_VAISS:AU-VAISS-G09 (7 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G09 (attempts 1)
+[370/440] AU_VAISS:AU-VAISS-G10 (8 detail qs)
+  attempt 1 PASS
+  OK AU_VAISS:AU-VAISS-G10 (attempts 1)
+[371/440] NIST_AI_RMF:MAP-1.1 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-1.1 (attempts 1)
+[372/440] NIST_AI_RMF:MANAGE-1.4 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-1.4 (attempts 1)
+[373/440] NIST_AI_RMF:MANAGE-1.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-1.2 (attempts 1)
+[374/440] NIST_AI_RMF:GOVERN-1.1 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-1.1 (attempts 1)
+[375/440] NIST_AI_RMF:GOVERN-1.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-1.2 (attempts 1)
+[376/440] NIST_AI_RMF:GOVERN-1.3 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-1.3 (attempts 1)
+[377/440] NIST_AI_RMF:GOVERN-1.4 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-1.4 (attempts 1)
+[378/440] NIST_AI_RMF:GOVERN-2.3 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-2.3 (attempts 1)
+[379/440] NIST_AI_RMF:GOVERN-1.5 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-1.5 (attempts 1)
+[380/440] NIST_AI_RMF:GOVERN-1.6 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-1.6 (attempts 1)
+[381/440] NIST_AI_RMF:GOVERN-1.7 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-1.7 (attempts 1)
+[382/440] NIST_AI_RMF:GOVERN-2.1 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-2.1 (attempts 1)
+[383/440] NIST_AI_RMF:MANAGE-1.1 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-1.1 (attempts 1)
+[384/440] NIST_AI_RMF:GOVERN-2.2 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-2.2 (attempts 1)
+[385/440] NIST_AI_RMF:MANAGE-4.2 (8 detail qs)
+  attempt 1 REJECTED: missing 1 detail mappings
+  attempt 2 REJECTED: missing 1 detail mappings
+  attempt 3 REJECTED: missing 1 detail mappings
+  FAIL NIST_AI_RMF:MANAGE-4.2
+[386/440] NIST_AI_RMF:GOVERN-3.1 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-3.1 (attempts 1)
+[387/440] NIST_AI_RMF:GOVERN-3.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-3.2 (attempts 1)
+[388/440] NIST_AI_RMF:GOVERN-4.1 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-4.1 (attempts 1)
+[389/440] NIST_AI_RMF:GOVERN-4.2 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-4.2 (attempts 1)
+[390/440] NIST_AI_RMF:GOVERN-4.3 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-4.3 (attempts 1)
+[391/440] NIST_AI_RMF:GOVERN-5.1 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-5.1 (attempts 1)
+[392/440] NIST_AI_RMF:GOVERN-5.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-5.2 (attempts 1)
+[393/440] NIST_AI_RMF:MANAGE-4.3 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-4.3 (attempts 1)
+[394/440] NIST_AI_RMF:GOVERN-6.1 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-6.1 (attempts 1)
+[395/440] NIST_AI_RMF:GOVERN-6.2 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:GOVERN-6.2 (attempts 1)
+[396/440] NIST_AI_RMF:MANAGE-1.3 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-1.3 (attempts 1)
+[397/440] NIST_AI_RMF:MANAGE-2.1 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-2.1 (attempts 1)
+[398/440] NIST_AI_RMF:MANAGE-2.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-2.2 (attempts 1)
+[399/440] NIST_AI_RMF:MANAGE-2.3 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-2.3 (attempts 1)
+[400/440] NIST_AI_RMF:MAP-1.4 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-1.4 (attempts 1)
+[401/440] NIST_AI_RMF:MANAGE-2.4 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-2.4 (attempts 1)
+[402/440] NIST_AI_RMF:MANAGE-3.1 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-3.1 (attempts 1)
+[403/440] NIST_AI_RMF:MANAGE-3.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-3.2 (attempts 1)
+[404/440] NIST_AI_RMF:MANAGE-4.1 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MANAGE-4.1 (attempts 1)
+[405/440] NIST_AI_RMF:MAP-1.2 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-1.2 (attempts 1)
+[406/440] NIST_AI_RMF:MAP-1.3 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-1.3 (attempts 1)
+[407/440] NIST_AI_RMF:MAP-1.5 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-1.5 (attempts 1)
+[408/440] NIST_AI_RMF:MAP-1.6 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-1.6 (attempts 1)
+[409/440] NIST_AI_RMF:MAP-2.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-2.2 (attempts 1)
+[410/440] NIST_AI_RMF:MAP-2.3 (9 detail qs)
+  attempt 1 REJECTED: banned phrase /\bdoes your organi[sz]ation maintain\b/i
+  attempt 2 PASS
+  OK NIST_AI_RMF:MAP-2.3 (attempts 2)
+[411/440] NIST_AI_RMF:MAP-3.1 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-3.1 (attempts 1)
+[412/440] NIST_AI_RMF:MAP-3.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-3.2 (attempts 1)
+[413/440] NIST_AI_RMF:MAP-3.3 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-3.3 (attempts 1)
+[414/440] NIST_AI_RMF:MAP-3.4 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-3.4 (attempts 1)
+[415/440] NIST_AI_RMF:MEASURE-2.1 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.1 (attempts 1)
+[416/440] NIST_AI_RMF:MAP-3.5 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-3.5 (attempts 1)
+[417/440] NIST_AI_RMF:MAP-4.1 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-4.1 (attempts 1)
+[418/440] NIST_AI_RMF:MAP-4.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-4.2 (attempts 1)
+[419/440] NIST_AI_RMF:MAP-5.1 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-5.1 (attempts 1)
+[420/440] NIST_AI_RMF:MAP-5.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MAP-5.2 (attempts 1)
+[421/440] NIST_AI_RMF:MEASURE-1.1 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-1.1 (attempts 1)
+[422/440] NIST_AI_RMF:MEASURE-1.2 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-1.2 (attempts 1)
+[423/440] NIST_AI_RMF:MEASURE-1.3 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-1.3 (attempts 1)
+[424/440] NIST_AI_RMF:MEASURE-2.10 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.10 (attempts 1)
+[425/440] NIST_AI_RMF:MEASURE-2.11 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.11 (attempts 1)
+[426/440] NIST_AI_RMF:MEASURE-2.12 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.12 (attempts 1)
+[427/440] NIST_AI_RMF:MEASURE-2.13 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.13 (attempts 1)
+[428/440] NIST_AI_RMF:MEASURE-2.3 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.3 (attempts 1)
+[429/440] NIST_AI_RMF:MEASURE-2.4 (10 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.4 (attempts 1)
+[430/440] NIST_AI_RMF:MEASURE-2.5 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.5 (attempts 1)
+[431/440] NIST_AI_RMF:MEASURE-2.6 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.6 (attempts 1)
+[432/440] NIST_AI_RMF:MEASURE-2.7 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.7 (attempts 1)
+[433/440] NIST_AI_RMF:MEASURE-2.8 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.8 (attempts 1)
+[434/440] NIST_AI_RMF:MEASURE-2.9 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-2.9 (attempts 1)
+[435/440] NIST_AI_RMF:MEASURE-3.1 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-3.1 (attempts 1)
+[436/440] NIST_AI_RMF:MEASURE-3.2 (9 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-3.2 (attempts 1)
+[437/440] NIST_AI_RMF:MEASURE-3.3 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-3.3 (attempts 1)
+[438/440] NIST_AI_RMF:MEASURE-4.1 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-4.1 (attempts 1)
+[439/440] NIST_AI_RMF:MEASURE-4.2 (8 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-4.2 (attempts 1)
+[440/440] NIST_AI_RMF:MEASURE-4.3 (7 detail qs)
+  attempt 1 PASS
+  OK NIST_AI_RMF:MEASURE-4.3 (attempts 1)
+
+Phase 1 complete. OK=438 FAIL=2
+Failures:
+  - ISO_27001_2022:C.7.5.3 — Failed after 3 attempts. Last reason: detail_map is missing 1 of 9 detail questions. Include EVERY detail question id from the list above.
+  - NIST_AI_RMF:MANAGE-4.2 — Failed after 3 attempts. Last reason: detail_map is missing 1 of 8 detail questions. Include EVERY detail question id from the list above.
+
+=== Phase 2: Cross-framework propagation diagnostic ===
+control_mappings has 16343 rows. Runtime saveAnswer reads this table directly.
+
+=== Phase 3: Quality audit (10% sample) ===
+Auditing 43 of 438.
+[1/43] AUDIT ERROR NIST_AI_RMF:GOVERN-4.3 — Unexpected non-whitespace character after JSON at position 634 (line 6 column 1)
+[2/43] PASS NIST_CSF_2.0:DE.CM-01
+[3/43] PASS NIST_CSF_2.0:PR.DS-10
+[4/43] AUDIT ERROR NIST_CSF_2.0:GV.SC-01 — Unexpected non-whitespace character after JSON at position 347 (line 6 column 1)
+[5/43] AUDIT ERROR ISO_27001_2022:A.8.12 — Unexpected non-whitespace character after JSON at position 271 (line 7 column 1)
+[6/43] PASS PCI_DSS:PCI_DSS_2.3
+[7/43] AUDIT ERROR NIST_AI_RMF:GOVERN-1.1 — Unexpected non-whitespace character after JSON at position 368 (line 6 column 1)
+[8/43] AUDIT ERROR ISO_27001_2022:C.9.1 — Unexpected non-whitespace character after JSON at position 346 (line 7 column 1)
+[9/43] PASS ISO_27001_2022:A.8.5
+[10/43] PASS NIST_AI_RMF:MEASURE-2.2
+[11/43] PASS NIST_CSF_2.0:PR.IR-04
+[12/43] PASS ISO42001:A.10.3
+[13/43] PASS NIST_AI_RMF:MEASURE-2.1
+[14/43] FAIL ISO_27001_2022:C.7.5.2 — American spelling 'organisation' appears in the consolidated question - should be 'organisation' in Australian English... wait, that IS Australian English; Actually reviewing again - 'organisation' is correct Australian English spelling; Re-examining for actual American spellings... none found; The 'Yes' level describes 'automated systems that enforce document standards with continuous monitoring and improvement' which goes beyond what most detail questions ask for - this seems overly advanced for a simple 'Yes' level
+[15/43] AUDIT ERROR NIST_CSF_2.0:GV.OC-05 — Unexpected non-whitespace character after JSON at position 309 (line 6 column 1)
+[16/43] PASS NIST_CSF_2.0:RC.RP-06
+[17/43] FAIL NIST_AI_RMF:MAP-3.2 — American spelling: 'organization' appears in the consolidated question instead of Australian 'organisation'
+[18/43] PASS ISO_27001_2022:A.8.19
+[19/43] PASS NIST_AI_RMF:MANAGE-2.4
+[20/43] PASS NIST_AI_RMF:MAP-1.6
+[21/43] AUDIT ERROR ISO_27001_2022:A.5.19 — Unexpected non-whitespace character after JSON at position 246 (line 6 column 1)
+[22/43] FAIL ISO_27001_2022:A.8.14 — Coverage gap: consolidated question focuses only on backup systems and basic testing, but missing critical themes from detail questions including Business Impact Analysis (BIA), single points of failure identification, formal change control processes, post-incident reviews, and automated self-healing capabilities
+[23/43] PASS AU_VAISS:AU-VAISS-G09
+[24/43] FAIL ISO_27001_2022:A.6.7 — American spelling 'organization' appears in the consolidated question; Major coverage gap: lowest maturity level 'No' fails to address critical themes like formal policies, MFA, secure access technology, device management, monitoring, and access revocation - it only mentions trusting people without specific requirements
+[25/43] PASS ISO42001:A.4.3
+[26/43] PASS ISO_27001_2022:A.7.6
+[27/43] FAIL NIST_AI_RMF:GOVERN-6.2 — American spelling 'organization' appears in the consolidated question
+[28/43] PASS ISO42001:A.8.3
+[29/43] AUDIT ERROR NIST_AI_RMF:MAP-1.3 — Unexpected non-whitespace character after JSON at position 349 (line 6 column 1)
+[30/43] AUDIT ERROR NIST_CSF_2.0:PR.AA-05 — Unexpected non-whitespace character after JSON at position 381 (line 7 column 1)
+[31/43] PASS NIST_CSF_2.0:RS.MA-05
+[32/43] PASS NIST_CSF_2.0:ID.IM-04
+[33/43] PASS NIST_CSF_2.0:GV.SC-05
+[34/43] PASS ISO_27001_2022:A.8.13
+[35/43] AUDIT ERROR NIST_AI_RMF:GOVERN-2.1 — Unexpected non-whitespace character after JSON at position 431 (line 7 column 1)
+[36/43] PASS NIST_CSF_2.0:DE.AE-03
+[37/43] PASS ISO_27001_2022:C.6.1.1
+[38/43] AUDIT ERROR NIST_CSF_2.0:RS.MA-02 — Unexpected non-whitespace character after JSON at position 516 (line 6 column 1)
+[39/43] AUDIT ERROR ISO_27001_2022:A.8.10 — Unexpected non-whitespace character after JSON at position 348 (line 6 column 1)
+[40/43] PASS ISO_27001_2022:A.5.28
+[41/43] PASS NIST_AI_RMF:MEASURE-2.4
+[42/43] FAIL APRA_CPS_234:CPS234-13 — American spelling 'organisation' appears in the consolidated question - should be 'organisation' in Australian English; Major coverage gap: the maturity levels don't address key themes from detail questions including threat profiling, risk assessments for information asset criticality, monitoring/measuring compliance, or dynamic adaptation to emerging threats
+[43/43] PASS ISO_27001_2022:A.7.1
+
+Phase 3 complete. 6 of 43 flagged.
+Flagged:
+  - ISO_27001_2022:C.7.5.2 — American spelling 'organisation' appears in the consolidated question - should be 'organisation' in Australian English... wait, that IS Australian English; Actually reviewing again - 'organisation' is correct Australian English spelling; Re-examining for actual American spellings... none found; The 'Yes' level describes 'automated systems that enforce document standards with continuous monitoring and improvement' which goes beyond what most detail questions ask for - this seems overly advanced for a simple 'Yes' level
+  - NIST_AI_RMF:MAP-3.2 — American spelling: 'organization' appears in the consolidated question instead of Australian 'organisation'
+  - ISO_27001_2022:A.8.14 — Coverage gap: consolidated question focuses only on backup systems and basic testing, but missing critical themes from detail questions including Business Impact Analysis (BIA), single points of failure identification, formal change control processes, post-incident reviews, and automated self-healing capabilities
+  - ISO_27001_2022:A.6.7 — American spelling 'organization' appears in the consolidated question; Major coverage gap: lowest maturity level 'No' fails to address critical themes like formal policies, MFA, secure access technology, device management, monitoring, and access revocation - it only mentions trusting people without specific requirements
+  - NIST_AI_RMF:GOVERN-6.2 — American spelling 'organization' appears in the consolidated question
+  - APRA_CPS_234:CPS234-13 — American spelling 'organisation' appears in the consolidated question - should be 'organisation' in Australian English; Major coverage gap: the maturity levels don't address key themes from detail questions including threat profiling, risk assessments for information asset criticality, monitoring/measuring compliance, or dynamic adaptation to emerging threats
+
+Finished: 2026-05-16T06:00:11.152Z
+OK=438 FAIL=2

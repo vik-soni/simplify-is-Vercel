@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Simplify IS | Frameworks &amp; Compliance Maturity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&amp;family=Josefin+Sans:wght@300;400;600&amp;family=Montserrat:wght@300;400;600&amp;family=Epilogue:wght@400;700;800&amp;family=Manrope:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Geist+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#FFFCF2",
+                    "on-background": "#1A1917",
+                    "primary": "#EB5E28",
+                    "on-primary": "#FFFFFF",
+                    "primary-container": "#EB5E28",
+                    "on-primary-container": "#1A1917",
+                    "surface": "#FFFCF2",
+                    "on-surface": "#1A1917",
+                    "surface-variant": "#E6E2DE",
+                    "on-surface-variant": "#4F4B42",
+                    "surface-container-lowest": "#FFFFFF",
+                    "surface-container-low": "#F5F2E9",
+                    "surface-container": "#E9E2D5",
+                    "surface-container-high": "#E2DACD",
+                    "surface-container-highest": "#D7CFC1",
+                    "outline": "#827768",
+                    "outline-variant": "#D0C4B4",
+                    "secondary": "#4F4B42",
+                    "on-secondary": "#FFFFFF",
+                    "error": "#BA1A1A",
+                    "on-error": "#FFFFFF"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Epilogue"],
+                    "label": ["Plus Jakarta Sans"],
+                    "raleway": ["Raleway"],
+                    "geist": ["Geist Mono"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        background-color: #FFFCF2;
+        color: #1A1917;
+        font-family: 'Epilogue', sans-serif;
+      }
+      .glass-card {
+        background: rgba(233, 226, 213, 0.4);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(130, 119, 104, 0.2);
+      }
+      .glow-brand {
+        box-shadow: 0 4px 20px rgba(235, 94, 40, 0.2);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .text-burnt-orange { color: #EB5E28; }
+      .text-warm-stone { color: #4F4B42; }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="h-20 fixed top-0 right-0 left-0 z-50 flex justify-between items-center px-6 md:px-12 w-full bg-[#FFFCF2]/90 backdrop-blur-lg border-b border-[#827768]/10">
+<div class="flex items-center gap-2">
+<span class="text-lg md:text-xl font-bold text-[#1A1917] font-raleway tracking-tight uppercase">Simplify IS</span>
+</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#1A1917] text-xs font-raleway font-bold uppercase tracking-[0.2em] transition-colors hover:text-[#EB5E28]" href="#">How it works</a>
+<a class="text-[#EB5E28] text-xs font-raleway font-bold uppercase tracking-[0.2em] transition-colors" href="#">Frameworks</a>
+<a class="text-[#1A1917] text-xs font-raleway font-bold uppercase tracking-[0.2em] transition-colors hover:text-[#EB5E28]" href="#">Pricing</a>
+</div>
+<div class="flex items-center">
+<a class="bg-[#EB5E28] text-white px-4 md:px-6 py-2 rounded-sm text-[10px] md:text-xs font-raleway font-bold uppercase tracking-[0.2em] transition-transform hover:scale-105 active:scale-95 shadow-lg" href="#">Login</a>
+</div>
+</nav>
+<main class="pt-24 md:pt-32 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 md:px-8 mb-16 md:mb-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+<div class="order-2 md:order-1">
+<h4 class="font-geist text-primary uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4">Strategic Architecture</h4>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 md:mb-8 leading-[1.05] text-[#1A1917]">
+                        Compliance <span class="text-primary italic">Automated</span> at the Core.
+                    </h1>
+<p class="font-body text-lg md:text-xl text-warm-stone max-w-md leading-relaxed mb-8 md:mb-10">
+                        Move beyond spreadsheets. Cypher integrates directly with your infrastructure to maintain real-time maturity across global standards.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-[#EB5E28] text-white px-8 py-4 font-raleway font-black uppercase text-xs tracking-widest hover:bg-[#ff6a33] transition-all glow-brand text-center">Get Started</button>
+<button class="border border-outline/30 text-on-surface px-8 py-4 font-raleway font-bold uppercase text-xs tracking-widest hover:bg-surface-container transition-all text-center">Book a Demo</button>
+</div>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="aspect-square rounded-lg overflow-hidden glass-card p-2">
+<img alt="Data visualisation dashboard" class="w-full h-full object-cover opacity-90 grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwkbDwjIqC_fT_TPP75I9B446LZDp9SDOUyujLvWV7tiJq4T6IvSgu_I58JGvTU73UMGvC8j3Yep5VZrK0iHYEPMbvd9o-YcmO4NbU86EFx0JkvEw-54gLmlnm556nBBAH00wEK3qgx8rTUInk-cwFlKsr8cpiEO2snoE-OhgDE1jnAwZLlNmqyteA1VjkkyD9zP1DB13R40cLjEfBMcx8tA_k8IY2n3qn9a4LKzz6Y3arq2qZZ-bZwh28Dl_qnic7CbUnfzpgdCY"/>
+</div>
+<div class="absolute -bottom-4 -left-4 md:-bottom-8 md:-left-8 glass-card p-4 md:p-6 max-w-[240px] md:max-w-xs shadow-xl">
+<span class="font-geist text-[9px] md:text-[10px] text-primary block mb-2 uppercase font-bold">Cypher Engine Status</span>
+<p class="text-xs md:text-sm font-medium leading-snug text-[#1A1917]">Active monitoring across 14 cloud environments with 99.4% automated control coverage.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Frameworks Bento Grid -->
+<section class="max-w-7xl mx-auto px-6 md:px-8 mb-24 md:mb-32">
+<h2 class="font-headline text-3xl font-bold mb-8 md:mb-12 tracking-tight text-[#1A1917]">Active Framework Integration</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4">
+<!-- ISO 27001 -->
+<div class="md:col-span-2 bg-surface-container-low p-8 md:p-10 rounded-lg border border-outline/10 group hover:border-primary/40 transition-colors">
+<div class="flex justify-between items-start mb-12 md:mb-16">
+<div>
+<span class="text-primary font-geist text-[10px] md:text-xs border border-primary/20 px-2 py-1 mb-4 inline-block font-bold">PRODUCTION READY</span>
+<h3 class="text-4xl md:text-5xl font-bold font-headline tracking-tighter text-[#1A1917]">ISO 27001</h3>
+</div>
+<span class="material-symbols-outlined text-3xl md:text-4xl text-outline/40" data-icon="verified">verified</span>
+</div>
+<p class="text-warm-stone text-sm md:text-base max-w-md mb-8">Comprehensive ISMS automation. Cypher continuously audits Annex A controls against your production environment logs, analysed in real-time.</p>
+<div class="flex gap-8 md:gap-12 border-t border-outline/10 pt-8">
+<div>
+<span class="block text-[10px] uppercase font-geist text-outline/60 font-bold">Last Audit</span>
+<span class="font-bold text-sm md:text-base text-[#1A1917]">OCT 2025</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-geist text-outline/60 font-bold">Maturity Score</span>
+<span class="font-bold text-primary text-sm md:text-base">Level 4.8</span>
+</div>
+</div>
+</div>
+<!-- NIST CSF -->
+<div class="bg-surface-container-high p-8 rounded-lg flex flex-col justify-between border border-outline/10">
+<div>
+<span class="material-symbols-outlined text-primary mb-6" data-icon="shield_lock" data-weight="fill" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+<h3 class="text-2xl font-bold mb-4 text-[#1A1917]">NIST CSF 2.0</h3>
+<p class="text-sm text-warm-stone font-body leading-relaxed">Modernised risk management for your organisation. Real-time mapping for Identify, Protect, Detect, Respond, and Recover.</p>
+</div>
+<div class="mt-8">
+<span class="inline-flex items-center text-xs font-bold text-primary tracking-widest uppercase group cursor-pointer">
+                            Configure Live <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- PCI DSS -->
+<div class="bg-surface-container p-8 rounded-lg border border-outline/10 hover:bg-surface-container-high transition-all">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-2xl font-bold font-headline text-[#1A1917]">PCI DSS 4.0</h3>
+<span class="font-geist text-[10px] text-primary bg-primary/10 px-2 py-1 flex-shrink-0 font-bold">COMING SOON</span>
+</div>
+<p class="text-sm text-warm-stone mb-6">Automated evidence collection for Level 1 Service Providers. Zero-touch reporting cycles.</p>
+<div class="space-y-3">
+<div class="h-1 bg-outline/20 w-full rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%]"></div>
+</div>
+<div class="flex justify-between text-[10px] font-geist uppercase font-bold text-outline">
+<span>Compliance Coverage</span>
+<span>92%</span>
+</div>
+</div>
+</div>
+<!-- CPS 234 -->
+<div class="md:col-span-2 bg-gradient-to-br from-surface-container-high to-surface-container p-8 md:p-10 rounded-lg border border-primary/20 relative overflow-hidden group">
+<div class="absolute -right-12 -top-12 opacity-5 hidden md:block">
+<span class="material-symbols-outlined text-[200px]" data-icon="account_balance">account_balance</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-primary font-geist text-[10px] md:text-xs tracking-widest font-bold">DEVELOPMENT PHASE</span>
+</div>
+<div class="flex flex-wrap items-center gap-3 md:gap-4 mb-4">
+<h3 class="text-3xl md:text-4xl font-bold font-headline text-[#1A1917]">APRA CPS 234</h3>
+<span class="font-geist text-[10px] text-primary border border-primary/30 px-2 py-1 font-bold">COMING SOON</span>
+</div>
+<p class="text-warm-stone text-sm md:text-base max-w-lg mb-8">Engineered for the 2026 Australian Financial Services mandate. Early access for strategic partners begins Q1 2026.</p>
+<button class="border-b border-primary text-primary font-bold text-xs md:text-sm uppercase tracking-tighter pb-1">Register for Early Access</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Automation Explainer -->
+<section class="max-w-7xl mx-auto px-6 md:px-8 mb-24 md:mb-32">
+<div class="glass-card rounded-xl p-8 md:p-16 overflow-hidden relative border-outline/10">
+<div class="absolute inset-0 opacity-5 pointer-events-none">
+<img alt="Architectural blueprint" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATSsMqFTFS1v0clgBRmV-ecp_kPLNPcFfYgpKslVTkIpEldMvgXWK41-_u9hZL1shvMFditPpkCqg3E1MiEtFHhoUN3xv-9u0QhsgWamgcc24XkbewjiOzaYjUVxxBDB0CgxLSOzXzjMXNaIRhTNe8O18GFt2W6lxBENBAcPMJ-Yn1DbY5dzz_I27EZGnl6xMe1lVFFIbEwRe0fomKjdHOHNXFOxSxwbsdMWYURhffHLyqObaC2mxmoKI5VbCd4cGUhb-tKJYAn90"/>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="text-3xl md:text-4xl font-headline font-extrabold mb-8 text-[#1A1917]">How Cypher Automates Maturity</h2>
+<div class="space-y-8 md:space-y-12">
+<!-- Conversations Point -->
+<div class="flex gap-4 md:gap-6">
+<div class="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base">1</div>
+<div>
+<h4 class="text-lg md:text-xl font-bold mb-2 text-[#1A1917]">Human-Like Conversations</h4>
+<p class="text-warm-stone text-sm md:text-base leading-relaxed">Cypher focuses on asking critical questions and capturing deep signals from human-like conversations to uncover nuanced security states.</p>
+</div>
+</div>
+<!-- Centralised Mapping Point -->
+<div class="flex gap-4 md:gap-6">
+<div class="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 bg-surface-container-highest border border-outline/30 rounded-full flex items-center justify-center font-bold text-[#1A1917] text-sm md:text-base">2</div>
+<div>
+<h4 class="text-lg md:text-xl font-bold mb-2 text-[#1A1917]">Centralised Control Mapping</h4>
+<p class="text-warm-stone text-sm md:text-base leading-relaxed">Map once, comply many. A single control remediation satisfying requirements across ISO, NIST, and PCI simultaneously through our engine.</p>
+</div>
+</div>
+<!-- Coming Soon Section inside list -->
+<div class="pt-8 md:pt-12 border-t border-outline/20">
+<h5 class="font-geist text-[10px] text-primary uppercase tracking-[0.3em] mb-6 font-bold">Coming Soon</h5>
+<div class="space-y-6 md:space-y-8">
+<div class="flex gap-4 md:gap-6 opacity-70">
+<div class="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 bg-surface-container-high border border-outline/10 rounded-full flex items-center justify-center text-[10px] md:text-xs font-bold text-[#1A1917]">3</div>
+<div>
+<h4 class="text-base md:text-lg font-bold mb-1 text-[#1A1917]">Continuous Discovery</h4>
+<p class="text-xs md:text-sm text-warm-stone">Agent crawling across multi-cloud deployments to identify compliance drift automatically.</p>
+</div>
+</div>
+<div class="flex gap-4 md:gap-6 opacity-70">
+<div class="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 bg-surface-container-high border border-outline/10 rounded-full flex items-center justify-center text-[10px] md:text-xs font-bold text-[#1A1917]">4</div>
+<div>
+<h4 class="text-base md:text-lg font-bold mb-1 text-[#1A1917]">Auto-Generated Evidence</h4>
+<p class="text-xs md:text-sm text-warm-stone">Cryptographically signed portals containing logs and snapshots for audit-ready reporting.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-4xl mx-auto px-6 md:px-8 text-center">
+<h3 class="text-4xl md:text-5xl font-headline font-black mb-6 text-[#1A1917]">Future-Proof Your Security Posture.</h3>
+<p class="text-lg md:text-xl text-warm-stone mb-10 md:mb-12">Join 200+ organisations automating their pathway to absolute compliance authority.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6">
+<a class="bg-primary text-white px-10 py-5 font-raleway font-black uppercase tracking-widest text-xs glow-brand" href="#">Get Started</a>
+<a class="border border-outline text-[#1A1917] px-10 py-5 font-raleway font-bold uppercase tracking-widest text-xs hover:bg-surface-container transition-colors" href="#">Book a Demo</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low pt-20 md:pt-32 pb-16 px-6 md:px-12 border-t border-outline/10">
+<div class="max-w-6xl mx-auto space-y-16 md:space-y-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16">
+<div class="col-span-1 md:col-span-2 space-y-8">
+<span class="text-xl md:text-2xl font-bold text-[#1A1917] font-raleway tracking-tighter">simplify.is</span>
+<div class="space-y-4">
+<h6 class="font-geist font-bold text-primary uppercase text-[10px] tracking-[0.3em]">About</h6>
+<p class="text-warm-stone text-xs md:text-sm leading-relaxed max-w-xl font-medium">
+                            Simplify.IS — short for “Simplify Information Security” — is dedicated to making cybersecurity clear, accessible, and actionable.
+                        </p>
+<p class="text-warm-stone text-xs md:text-sm leading-relaxed max-w-xl font-medium">
+                            At the heart of Simplify.IS is Cypher, your AI Security Consultant. Cypher asks the right questions to help you understand your organisation’s security maturity.
+                        </p>
+</div>
+</div>
+<div class="space-y-6">
+<h6 class="font-geist font-bold text-primary uppercase text-[10px] tracking-[0.3em]">Platform</h6>
+<ul class="space-y-3 md:space-y-4 text-[#1A1917] text-[10px] md:text-xs font-bold tracking-wide">
+<li><a class="hover:text-primary transition-colors" href="#">How it Works</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Frameworks</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pricing</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h6 class="font-geist font-bold text-primary uppercase text-[10px] tracking-[0.3em]">Resources</h6>
+<ul class="space-y-3 md:space-y-4 text-[#1A1917] text-[10px] md:text-xs font-bold tracking-wide">
+<li><a class="hover:text-primary transition-colors" href="#">Maturity Model</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-outline/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-geist text-[8px] md:text-[9px] text-outline uppercase tracking-[0.4em] font-bold text-center md:text-left">
+                    © 2026 SIMPLIFY.IS. SECURED AUTHORITY.
+                </p>
+<div class="font-josefin text-xs md:text-sm text-warm-stone/80 flex items-center gap-2 font-semibold">
+                    Built in Australia <span class="text-base">🇦🇺</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en-AU"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cypher | Cyber Security Intelligence for Leaders</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700;900&amp;family=Raleway:wght@400;700;900&amp;family=Josefin+Sans:wght@400;500;700&amp;family=Montserrat:wght@300;400;700&amp;family=Geist+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#E9E2D5",
+                        "inverse-on-surface": "#F5F0E1",
+                        "on-secondary": "#1A1917",
+                        "tertiary-container": "#EB5E28",
+                        "outline-variant": "#D1C7B7",
+                        "error-container": "#F9DEDC",
+                        "on-tertiary": "#FFFFFF",
+                        "on-secondary-fixed": "#1A1917",
+                        "surface-container-low": "#F5F0E1",
+                        "surface-dim": "#E5E0D0",
+                        "primary": "#EB5E28",
+                        "surface-container-high": "#EDE7D9",
+                        "outline": "#85736E",
+                        "inverse-surface": "#1A1917",
+                        "surface": "#FFFCF2",
+                        "inverse-primary": "#FFB59C",
+                        "surface-container": "#F0E9DA",
+                        "on-secondary-fixed-variant": "#4A463D",
+                        "on-primary-fixed-variant": "#822700",
+                        "on-primary-fixed": "#390C00",
+                        "tertiary-fixed-dim": "#EB5E28",
+                        "on-surface-variant": "#4A463D",
+                        "background": "#FFFCF2",
+                        "on-tertiary-fixed": "#390C00",
+                        "on-background": "#1A1917",
+                        "error": "#B3261E",
+                        "on-primary-container": "#FFFFFF",
+                        "on-tertiary-fixed-variant": "#7D2C0D",
+                        "on-error-container": "#410E0B",
+                        "surface-tint": "#EB5E28",
+                        "surface-container-lowest": "#FFFFFF",
+                        "secondary": "#4A463D",
+                        "secondary-fixed": "#E9E2D5",
+                        "tertiary-fixed": "#FFDBD0",
+                        "primary-fixed": "#FFDBCF",
+                        "secondary-container": "#D1C7B7",
+                        "tertiary": "#EB5E28",
+                        "on-error": "#FFFFFF",
+                        "on-primary": "#FFFFFF",
+                        "primary-fixed-dim": "#EB5E28",
+                        "on-secondary-container": "#1A1917",
+                        "secondary-fixed-dim": "#CCC5B9",
+                        "primary-container": "#EB5E28",
+                        "surface-container-highest": "#E6E0D0",
+                        "surface-bright": "#FFFBF0",
+                        "on-tertiary-container": "#FFFFFF",
+                        "on-surface": "#1A1917"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue", "Raleway", "sans-serif"],
+                        "body": ["Montserrat", "sans-serif"],
+                        "label": ["Josefin Sans", "sans-serif"],
+                        "mono": ["Geist Mono", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            background: rgba(255, 252, 242, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .glow-brand {
+            box-shadow: 0 4px 20px rgba(235, 94, 40, 0.2);
+        }
+        body {
+            background-color: #FFFCF2;
+            color: #1A1917;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary/20 selection:text-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FFFCF2]/80 backdrop-blur-xl flex justify-between items-center px-8 py-4 max-w-full border-b border-[#1A1917]/5">
+<div class="text-2xl font-black text-[#1A1917] tracking-tighter font-headline">Cypher</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#EB5E28] border-b-2 border-[#EB5E28] pb-1 font-headline tracking-tight transition-all duration-300" href="#">Platform</a>
+<a class="text-[#4A463D] hover:text-[#EB5E28] font-headline tracking-tight transition-all duration-300" href="#">Security Docs</a>
+<a class="text-[#4A463D] hover:text-[#EB5E28] font-headline tracking-tight transition-all duration-300" href="#">Enterprise</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#4A463D] font-headline tracking-tight hover:text-[#EB5E28] transition-all duration-300 scale-95 active:opacity-80">Login</button>
+<button class="bg-[#EB5E28] text-white px-6 py-2 rounded-lg font-headline font-bold tracking-tight glow-brand hover:bg-[#C44A1A] transition-all duration-300 scale-95 active:opacity-80">Get Started</button>
+</div>
+</nav>
+<main class="pt-24 pb-12 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section: Consultant Persona -->
+<section class="mt-16 mb-24 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-block px-4 py-1 bg-surface-container-high text-primary font-mono text-xs tracking-widest rounded-full border border-outline/15">
+                EXECUTIVE SECURITY ADVISORY
+            </div>
+<h1 class="text-5xl md:text-6xl font-black font-headline leading-tight tracking-tighter text-on-surface">
+                Designed for cyber <span class="text-primary">executives</span> and leaders.
+            </h1>
+<p class="text-lg text-secondary leading-relaxed max-w-lg">
+                Navigate the complex threat landscape with an AI security consultant that speaks the language of risk, compliance, and strategic resilience. We provide high-fidelity intelligence for those who bear the weight of digital sovereignty.
+            </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-gradient-to-r from-[#EB5E28] to-[#C44A1A] text-white font-label font-bold rounded-lg glow-brand hover:scale-105 transition-all duration-300">
+                    Enquire for Enterprise
+                </button>
+<button class="px-8 py-4 bg-transparent border border-outline/30 text-secondary font-label font-bold rounded-lg hover:bg-surface-container-high transition-all duration-300">
+                    View Capability Statement
+                </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="relative rounded-2xl overflow-hidden aspect-square shadow-xl border border-outline/10">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Portrait of a professional cyber security consultant in a dark minimalist office, reflecting warm orange light from monitors with data visualizations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRXqceA9V350O2-0XZ9KeVQSnp81ETVU67JnG6H08Zjx8ZSGPiweWKuLyrmJYlnM_OBzHzAA6BxvGwNDj22FYVG7spdXzJLG1PS4nv9IBaBxdm_C048InhlkWY1KZINWpTFYJPH8HnH15l9sCvWOomY8KBnhZJC2XBohthN-3VQV1ArCUVsEm0tH-QyCTkGuyJXhMo8_YuNdlCCyo2YR4l1mK65rIe-y3XlSP3Rf_JofZ77xnUd-vKlzm2dNxdkiXWo5o7eDUWlqU"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-bright p-6 rounded-xl border border-outline/20 shadow-xl max-w-xs">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<span class="font-label font-bold text-sm uppercase tracking-wider text-on-surface">Verified Pulse</span>
+</div>
+<p class="font-mono text-[10px] text-secondary">REAL-TIME THREAT INDEX: 4.2 | AUSTRALIA REGION</p>
+</div>
+</div>
+</section>
+<!-- Bento Grid: The Archive Modules -->
+<section class="grid md:grid-cols-12 gap-6 mb-24">
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 border border-outline/10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="fingerprint">fingerprint</span>
+</div>
+<h3 class="font-label text-2xl font-bold mb-4 text-primary">Identity Sovereignty</h3>
+<p class="text-secondary mb-8 max-w-md">Our consultants implement biometric-first protocols to ensure every executive login is immutable and verified through our decentralized vault.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-high rounded-lg border border-outline/5">
+<div class="text-primary font-mono text-xl font-bold">99.9%</div>
+<div class="text-xs text-outline uppercase tracking-widest font-label">MFA Efficiency</div>
+</div>
+<div class="p-4 bg-surface-container-high rounded-lg border border-outline/5">
+<div class="text-primary font-mono text-xl font-bold">&lt;10ms</div>
+<div class="text-xs text-outline uppercase tracking-widest font-label">Latency Response</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-high rounded-xl p-8 border border-outline/10 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+<h3 class="font-label text-xl font-bold text-on-surface mb-2">Threat Intel</h3>
+<p class="text-sm text-secondary leading-relaxed">Predictive modelling for emerging vulnerabilities in the Australian APAC sector.</p>
+</div>
+<div class="mt-8 border-t border-outline/15 pt-4">
+<a class="text-primary text-xs font-mono flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                    ACCESS ARCHIVE <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-high rounded-xl p-8 border border-outline/10 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<h3 class="font-label text-xl font-bold text-on-surface mb-2">Digital Vault</h3>
+<p class="text-sm text-secondary leading-relaxed">Encrypted storage for high-level security clearance documents and audit trails.</p>
+</div>
+<div class="mt-8 border-t border-outline/15 pt-4">
+<a class="text-primary text-xs font-mono flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                    OPEN VAULT <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-8 bg-surface-container rounded-xl p-8 border border-outline/10 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<h3 class="font-label text-2xl font-bold text-on-surface mb-4">Audit Logs &amp; Compliance</h3>
+<p class="text-secondary text-sm">Real-time reporting structured for board-level reviews. Compliant with Essential Eight and international standards.</p>
+<div class="mt-6 flex gap-3">
+<span class="px-3 py-1 bg-surface-container-high text-[10px] font-mono text-outline rounded uppercase">ISO 27001</span>
+<span class="px-3 py-1 bg-surface-container-high text-[10px] font-mono text-outline rounded uppercase">SOC 2</span>
+<span class="px-3 py-1 bg-surface-container-high text-[10px] font-mono text-outline rounded uppercase">ASR</span>
+</div>
+</div>
+<div class="w-full md:w-48 aspect-square rounded-lg bg-surface-container-high overflow-hidden border border-outline/10">
+<img class="w-full h-full object-cover opacity-80" data-alt="Digital dashboard showing complex data streams and geometric code structures in amber and charcoal tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI14KSJAsPK-AJU33blJAXCHIwvUJZO23wCpZQSBmXU4zqEWz2kujVG9PROxMr4HYw0LqtWrdVuqhCHP4fdXcn4aj-eImHtQqPJw6Hu2NeFKsrBYymNhGF3tLbNuv463-mQsO9PfHDoP8q2e9-pSfENsJIaT8DACHlY6kLZ7fK5Rsu9laPQWlcPjzi7NepynDCOBfQXWkuPSAXeW724c5WCqtlgx6GGGvv9Bw6lKdj4BpYdbXQHANtq8TCZsEeAu1XCIxHr9B4yQM"/>
+</div>
+</div>
+</section>
+<!-- Feature Spotlight: The Consultant Persona -->
+<section class="mb-24 py-16 px-8 bg-surface-container-low rounded-3xl border border-outline/5 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 to-transparent"></div>
+<div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/3 text-center md:text-left">
+<div class="w-24 h-24 rounded-full mx-auto md:mx-0 overflow-hidden mb-6 ring-4 ring-primary/10 border-2 border-primary shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a senior security executive with silver hair, professional attire, sharp focus, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ2gPelJ5aTp9aqTWjY93hxcYM2sJ65QA_ZCnbsuKe_fxyXel28Ja6A8gwwm23l2ACBwZqMIfTUZfeyVXQHlehlmMv40Rd8NYaS5sUJiCE9G0SG_NvsvkG-mdfP7FGppmoN0yHewtehy9kUUBTTIY-U3f-__NTYLAGFMgwB0nhB52mjFAJatmbRwYo2kcewP9OFZmM3_8_R6dpsWmAqGCknJnhaNPxewMxAYXUR-fUfEfVlsjRg7ErBjRwyiGMcV9gEu6A6V5pr84"/>
+</div>
+<h4 class="font-headline font-bold text-xl text-on-surface">Meet your AI Pulse</h4>
+<p class="font-label text-primary uppercase text-xs tracking-widest mt-1">Cypher AI Security Consultant</p>
+</div>
+<div class="md:w-2/3">
+<p class="text-2xl font-headline font-medium text-on-surface italic leading-relaxed mb-8">
+                    "In the realm of high-stakes security, clarity is our greatest asset. Cypher doesn't just provide data; it provides wisdom—filtered through the lens of executive accountability."
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="terminal">terminal</span>
+<div>
+<h5 class="font-label font-bold text-sm text-on-surface">Strategic Synthesis</h5>
+<p class="text-xs text-secondary mt-1">Translating technical vulnerabilities into business risk impacts.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="psychology">psychology</span>
+<div>
+<h5 class="font-label font-bold text-sm text-on-surface">Proactive Mitigation</h5>
+<p class="text-xs text-secondary mt-1">Anticipating threat actors before they target your infrastructure.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-[#FFFCF2] flex flex-col items-center gap-6 px-8 border-t border-[#1A1917]/10">
+<div class="text-[#1A1917] font-headline text-2xl font-black tracking-tighter">Cypher</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#4A463D] hover:text-[#1A1917] transition-colors font-body text-xs uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-[#4A463D] hover:text-[#1A1917] transition-colors font-body text-xs uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-[#4A463D] hover:text-[#1A1917] transition-colors font-body text-xs uppercase tracking-widest" href="#">Security Disclosure</a>
+</div>
+<div class="mt-8 text-[#4A463D] font-body text-[10px] tracking-widest opacity-80 uppercase">
+        © 2024 The Monolithic Archive. All Rights Reserved.
+    </div>
+</footer>
+<!-- FAB: Contextual Action -->
+<div class="fixed bottom-8 right-8 z-40">
+<button class="flex items-center gap-3 bg-[#EB5E28] text-white px-6 py-4 rounded-full font-label font-bold shadow-2xl hover:scale-105 active:opacity-80 transition-all">
+<span class="material-symbols-outlined" data-icon="scan">scan</span>
+<span>New Scan</span>
+</button>
+</div>
+</body></html>

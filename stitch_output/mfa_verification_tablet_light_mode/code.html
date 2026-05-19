@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&amp;family=Josefin+Sans:wght@300;400;600&amp;family=Montserrat:wght@400;500;600&amp;family=Epilogue:wght@400;700&amp;family=Manrope:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Geist+Mono&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#F2F0ED",
+                    "inverse-on-surface": "#F5F5F5",
+                    "on-secondary": "#1A1917",
+                    "tertiary-container": "#EB5E28",
+                    "outline-variant": "#D6D3D1",
+                    "error-container": "#FEE2E2",
+                    "on-tertiary": "#FFFFFF",
+                    "on-secondary-fixed": "#1A1917",
+                    "surface-container-low": "#F9F8F6",
+                    "surface-dim": "#E5E5E5",
+                    "primary": "#EB5E28",
+                    "surface-container-high": "#FFFFFF",
+                    "outline": "#A88A80",
+                    "inverse-surface": "#1A1917",
+                    "surface": "#FFFCF2",
+                    "inverse-primary": "#EB5E28",
+                    "surface-container": "#F2F0ED",
+                    "on-secondary-fixed-variant": "#4A463D",
+                    "on-primary-fixed-variant": "#822700",
+                    "on-primary-fixed": "#1A1917",
+                    "tertiary-fixed-dim": "#EB5E28",
+                    "on-surface-variant": "#444444",
+                    "background": "#FFFCF2",
+                    "on-tertiary-fixed": "#1A1917",
+                    "on-background": "#1A1917",
+                    "error": "#B91C1C",
+                    "on-primary-container": "#FFFFFF",
+                    "on-tertiary-fixed-variant": "#7d2c0d",
+                    "on-error-container": "#450A0A",
+                    "surface-tint": "#EB5E28",
+                    "surface-container-lowest": "#FFFFFF",
+                    "secondary": "#4A463F",
+                    "secondary-fixed": "#E9E2D5",
+                    "tertiary-fixed": "#FFDBD0",
+                    "primary-fixed": "#1A1917",
+                    "secondary-container": "#E5E1D8",
+                    "tertiary": "#EB5E28",
+                    "on-error": "#FFFFFF",
+                    "on-primary": "#FFFFFF",
+                    "primary-fixed-dim": "#EB5E28",
+                    "on-secondary-container": "#1A1917",
+                    "secondary-fixed-dim": "#4A463F",
+                    "primary-container": "#EB5E28",
+                    "surface-container-highest": "#E5E1D8",
+                    "surface-bright": "#FFFFFF",
+                    "on-tertiary-container": "#FFFFFF",
+                    "on-surface": "#1A1917"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue", "Raleway"],
+                    "body": ["Montserrat", "Manrope"],
+                    "label": ["Josefin Sans", "Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-brand {
+            box-shadow: 0 10px 40px rgba(235, 94, 40, 0.08);
+        }
+        .three-d-card {
+            transform: perspective(1000px) rotateX(2deg);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+        }
+        .otp-input:focus {
+            box-shadow: 0 4px 12px rgba(235, 94, 40, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FFFCF2]/80 backdrop-blur-md shadow-sm border-b border-[#A88A80]/10">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#1A1917] font-headline">
+                Simplify IS
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#4A463F] font-medium hover:text-[#EB5E28] transition-all duration-300 ease-in-out" href="#">Dashboard</a>
+<a class="text-[#4A463F] font-medium hover:text-[#EB5E28] transition-all duration-300 ease-in-out" href="#">Archive</a>
+<a class="text-[#EB5E28] font-bold border-b-2 border-[#EB5E28] pb-1 hover:text-[#EB5E28] transition-all duration-300 ease-in-out" href="#">Identity</a>
+<button class="scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined text-[#EB5E28]" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content: MFA Modal Container -->
+<main class="flex-grow flex items-center justify-center pt-24 pb-12 px-6 bg-surface relative overflow-hidden">
+<!-- Abstract Background Element -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+<!-- MFA Verification Modal (Tablet Optimized) -->
+<div class="relative z-10 w-full max-w-xl">
+<div class="three-d-card bg-surface-container-high rounded-xl p-10 md:p-14 border border-outline/10 glow-brand">
+<!-- Close Button (Top Right) -->
+<div class="absolute top-6 right-6">
+<button class="text-outline hover:text-primary transition-colors p-2">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<!-- Header Section -->
+<div class="mb-10 text-center">
+<div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-surface-container-highest border border-outline/10 mb-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="shield_person">shield_person</span>
+</div>
+<h1 class="font-headline text-3xl font-extrabold tracking-tight text-on-surface mb-3">Two-Step Verification</h1>
+<p class="text-secondary font-label text-sm max-w-sm mx-auto">Enter the 6-digit verification code sent to your registered sentinel device to proceed.</p>
+</div>
+<!-- OTP Input Grid -->
+<form action="#" class="space-y-10" method="POST">
+<div class="flex justify-between gap-3 md:gap-4">
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 text-center text-2xl font-headline font-bold bg-surface-container-low border-b-2 border-outline/30 focus:border-primary-container text-on-surface outline-none transition-all rounded-lg" maxlength="1" type="text" value="8"/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 text-center text-2xl font-headline font-bold bg-surface-container-low border-b-2 border-outline/30 focus:border-primary-container text-on-surface outline-none transition-all rounded-lg" maxlength="1" type="text" value="4"/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 text-center text-2xl font-headline font-bold bg-surface-container-low border-b-2 border-outline/30 focus:border-primary-container text-on-surface outline-none transition-all rounded-lg" maxlength="1" type="text" value="2"/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 text-center text-2xl font-headline font-bold bg-surface-container-low border-b-2 border-outline/30 focus:border-primary-container text-on-surface outline-none transition-all rounded-lg" maxlength="1" placeholder="•" type="text"/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 text-center text-2xl font-headline font-bold bg-surface-container-low border-b-2 border-outline/30 focus:border-primary-container text-on-surface outline-none transition-all rounded-lg" maxlength="1" placeholder="•" type="text"/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 text-center text-2xl font-headline font-bold bg-surface-container-low border-b-2 border-outline/30 focus:border-primary-container text-on-surface outline-none transition-all rounded-lg" maxlength="1" placeholder="•" type="text"/>
+</div>
+<div class="space-y-6">
+<button class="w-full py-4 px-6 rounded-lg bg-primary text-on-primary font-headline font-bold text-lg shadow-lg shadow-primary/20 hover:opacity-90 transition-all duration-300 transform active:scale-95" type="submit">
+                            Verify Identity
+                        </button>
+<div class="flex flex-col items-center gap-2">
+<p class="text-secondary/60 text-xs font-label tracking-widest uppercase">Secured by Earthen Protocol</p>
+<div class="h-px w-12 bg-outline/20"></div>
+<button class="text-secondary hover:text-primary transition-colors text-sm font-medium" type="button">
+                                Didn't receive a code? <span class="text-primary">Resend in 0:45</span>
+</button>
+</div>
+</div>
+</form>
+<!-- 3D Decorative Texture -->
+<div class="absolute -bottom-4 -right-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]" data-icon="fingerprint" data-weight="fill" style="font-variation-settings: 'FILL' 1;">fingerprint</span>
+</div>
+</div>
+<!-- Footer Meta Info -->
+<div class="mt-8 flex justify-center gap-6">
+<div class="flex items-center gap-2 text-secondary/40 text-xs font-['Geist_Mono']">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+                    ENCRYPTED NODE 429
+                </div>
+<div class="flex items-center gap-2 text-secondary/40 text-xs font-['Geist_Mono']">
+<span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+                    MFA_AUTH_V2
+                </div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-12 border-t border-[#A88A80]/15">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-8">
+<div class="space-y-4 max-w-sm">
+<div class="text-[#1A1917] font-headline font-bold text-lg">Simplify IS</div>
+<p class="font-body leading-relaxed text-sm text-[#4A463F]/80">
+                    Establishing digital permanence through strategic oversight. Our mission is to secure the monolithic archive of modern enterprise.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-4">
+<a class="text-[#4A463F]/80 hover:text-[#1A1917] transition-colors duration-300 font-body text-sm" href="#">Privacy Policy</a>
+<a class="text-[#4A463F]/80 hover:text-[#1A1917] transition-colors duration-300 font-body text-sm" href="#">Terms of Service</a>
+<a class="text-[#4A463F]/80 hover:text-[#1A1917] transition-colors duration-300 font-body text-sm" href="#">Security Charter</a>
+<a class="text-[#4A463F]/80 hover:text-[#1A1917] transition-colors duration-300 font-body text-sm" href="#">Legal Compliance</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-8 text-center md:text-left">
+<span class="text-[#EB5E28] text-[10px] font-['Geist_Mono'] tracking-[0.2em] uppercase">Status: Secure Operations Center Active</span>
+</div>
+</footer>
+</body></html>

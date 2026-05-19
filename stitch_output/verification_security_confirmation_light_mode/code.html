@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&amp;family=Josefin+Sans:wght@400;600&amp;family=Montserrat:wght@400;500&amp;family=Epilogue:wght@700&amp;family=Manrope:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600&amp;family=Geist+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#EB5E28",
+                    "secondary-container": "#F4F1E8",
+                    "on-primary": "#FFFFFF",
+                    "secondary-fixed-dim": "#403D39",
+                    "primary-container": "#EB5E28",
+                    "primary-fixed": "#FFDBCE",
+                    "on-tertiary-fixed": "#390c00",
+                    "tertiary-fixed": "#ffdbd0",
+                    "inverse-on-surface": "#FFFCF2",
+                    "surface-bright": "#FFFFFF",
+                    "on-secondary-fixed": "#252422",
+                    "on-error-container": "#410002",
+                    "surface-dim": "#E6E2D3",
+                    "on-secondary-fixed-variant": "#403D39",
+                    "tertiary-container": "#FFDBCE",
+                    "on-tertiary-fixed-variant": "#7d2c0d",
+                    "on-surface-variant": "#403D39",
+                    "background": "#FFFCF2",
+                    "outline-variant": "#CCC5B9",
+                    "outline": "#403D39",
+                    "on-primary-fixed-variant": "#822700",
+                    "on-primary-fixed": "#390c00",
+                    "surface": "#FFFCF2",
+                    "on-tertiary": "#FFFFFF",
+                    "surface-container-lowest": "#FFFFFF",
+                    "on-secondary-container": "#252422",
+                    "surface-container-highest": "#E6E2D3",
+                    "inverse-primary": "#FFB59C",
+                    "surface-container-high": "#F4F1E8",
+                    "on-error": "#FFFFFF",
+                    "on-surface": "#1A1917",
+                    "surface-container-low": "#FFFCF2",
+                    "surface-container": "#FFFCF2",
+                    "surface-variant": "#F4F1E8",
+                    "on-secondary": "#FFFFFF",
+                    "inverse-surface": "#252422",
+                    "secondary": "#403D39",
+                    "error": "#BA1A1A",
+                    "primary-fixed-dim": "#FFB59C",
+                    "secondary-fixed": "#CCC5B9",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "surface-tint": "#EB5E28",
+                    "on-primary-container": "#FFFFFF",
+                    "error-container": "#FFDAD6",
+                    "primary": "#EB5E28",
+                    "on-tertiary-container": "#390c00",
+                    "on-background": "#1A1917"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue", "Raleway", "sans-serif"],
+                    "body": ["Montserrat", "Manrope", "sans-serif"],
+                    "label": ["Josefin Sans", "Plus Jakarta Sans", "sans-serif"],
+                    "mono": ["Geist Mono", "monospace"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #FFFCF2;
+            color: #1A1917;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-brand {
+            box-shadow: 0 4px 20px rgba(235,94,40,0.15);
+        }
+        .glass-panel {
+            background: rgba(255, 252, 242, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .otp-input:focus {
+            box-shadow: 0 0 10px rgba(235, 94, 40, 0.1);
+            border-color: #EB5E28;
+        }
+        /* Custom scrollbar for brand feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FFFCF2; }
+        ::-webkit-scrollbar-thumb { background: #CCC5B9; border-radius: 3px; }
+    </style>
+</head>
+<body class="font-body min-h-screen flex flex-col items-center">
+<!-- TopNavBar (Shell Suppression: Task-Focused Screen) -->
+<main class="flex-grow flex items-center justify-center w-full px-4 py-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-surface-container-high via-surface to-surface">
+<!-- Verification Modal Container -->
+<div class="relative w-full max-w-xl bg-surface-container-high rounded-xl p-1 shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-all duration-300">
+<!-- Subtle Inner Border/Glow -->
+<div class="absolute inset-0 border border-outline/5 rounded-xl pointer-events-none"></div>
+<div class="bg-surface-container-high rounded-lg overflow-hidden flex flex-col">
+<!-- Modal Header -->
+<div class="flex justify-end p-6">
+<button class="group p-2 hover:bg-surface-dim rounded-full transition-all duration-300 active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">close</span>
+</button>
+</div>
+<!-- Modal Content -->
+<div class="px-8 md:px-12 pb-12 text-center">
+<!-- Branding Accent Icon -->
+<div class="mb-8 flex justify-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center border border-outline/5 glow-brand">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+</div>
+<h1 class="font-headline text-3xl font-extrabold tracking-tight text-on-surface mb-4">
+                        Verify Your Identity
+                    </h1>
+<p class="text-on-surface-variant text-base leading-relaxed max-w-sm mx-auto mb-10">
+                        We've sent a 6-digit verification code to your email. Please enter it below to secure your account.
+                    </p>
+<!-- OTP Input Grid -->
+<form action="#" class="space-y-10" method="POST">
+<div class="flex justify-center gap-2 md:gap-4">
+<!-- 6 Individual OTP Boxes -->
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 bg-surface-container-lowest border-b-2 border-outline/20 text-3xl text-center font-mono text-primary focus:border-primary focus:outline-none transition-all duration-300 rounded-lg shadow-sm" maxlength="1" type="text" value=""/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 bg-surface-container-lowest border-b-2 border-outline/20 text-3xl text-center font-mono text-primary focus:border-primary focus:outline-none transition-all duration-300 rounded-lg shadow-sm" maxlength="1" type="text" value=""/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 bg-surface-container-lowest border-b-2 border-outline/20 text-3xl text-center font-mono text-primary focus:border-primary focus:outline-none transition-all duration-300 rounded-lg shadow-sm" maxlength="1" type="text" value=""/>
+<div class="w-2"></div> <!-- Spacer -->
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 bg-surface-container-lowest border-b-2 border-outline/20 text-3xl text-center font-mono text-primary focus:border-primary focus:outline-none transition-all duration-300 rounded-lg shadow-sm" maxlength="1" type="text" value=""/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 bg-surface-container-lowest border-b-2 border-outline/20 text-3xl text-center font-mono text-primary focus:border-primary focus:outline-none transition-all duration-300 rounded-lg shadow-sm" maxlength="1" type="text" value=""/>
+<input class="otp-input w-12 h-16 md:w-16 md:h-20 bg-surface-container-lowest border-b-2 border-outline/20 text-3xl text-center font-mono text-primary focus:border-primary focus:outline-none transition-all duration-300 rounded-lg shadow-sm" maxlength="1" type="text" value=""/>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-4">
+<button class="w-full py-4 bg-primary text-white font-label font-semibold text-lg rounded-lg glow-brand hover:brightness-105 active:scale-[0.98] transition-all duration-300" type="submit">
+                                Verify &amp; Continue
+                            </button>
+<div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-4">
+<button class="text-secondary font-label hover:text-on-surface transition-colors flex items-center gap-2 group" type="button">
+<span class="material-symbols-outlined text-sm">refresh</span>
+                                    Resend Code
+                                </button>
+<button class="text-outline hover:text-primary transition-colors font-label border-b border-transparent hover:border-primary" type="button">
+                                    Update Email Address
+                                </button>
+</div>
+</div>
+</form>
+<!-- Footer Link -->
+<div class="mt-12 pt-8 border-t border-outline/10">
+<a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-on-surface font-label transition-all group" href="#">
+<span class="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            Back to Login
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Segment (Mandatory Shell) -->
+<footer class="w-full py-12 bg-surface-container-high border-t border-outline/10 mt-auto">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-8">
+<div class="flex flex-col gap-4 max-w-md">
+<span class="text-on-surface font-headline font-bold text-xl tracking-tighter">Simplify IS</span>
+<p class="text-on-surface-variant font-body leading-relaxed text-sm">
+                    Establishing digital permanence through strategic oversight. Our mission is to secure the monolithic archive of modern enterprise.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-4">
+<a class="text-on-surface-variant hover:text-primary text-sm transition-colors duration-300 font-body" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary text-sm transition-colors duration-300 font-body" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary text-sm transition-colors duration-300 font-body" href="#">Security Charter</a>
+<a class="text-on-surface-variant hover:text-primary text-sm transition-colors duration-300 font-body" href="#">Legal Compliance</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-12">
+<div class="flex items-center gap-4 text-on-surface-variant/40 text-xs font-mono uppercase tracking-widest">
+<span>© 2024 SIMPLIFY IS</span>
+<span class="w-8 h-px bg-outline/20"></span>
+<span>GLOBAL VERIFICATION GATEWAY</span>
+</div>
+</div>
+</footer>
+</body></html>

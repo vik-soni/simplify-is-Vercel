@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&amp;family=Josefin+Sans:wght@300;400;600;700&amp;family=Montserrat:wght@300;400;500;600&amp;family=Epilogue:wght@400;700;800&amp;family=Manrope:wght@300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#2b2a28",
+                        "surface-container": "#211f1d",
+                        "surface-container-lowest": "#0f0e0c",
+                        "on-secondary": "#343028",
+                        "on-primary": "#5c1900",
+                        "inverse-primary": "#ab3600",
+                        "error-container": "#93000a",
+                        "surface-dim": "#141311",
+                        "surface-container-low": "#1c1b19",
+                        "secondary-fixed": "#e9e2d5",
+                        "outline-variant": "#594139",
+                        "on-secondary-fixed-variant": "#4a463d",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "error": "#ffb4ab",
+                        "on-background": "#e6e2de",
+                        "primary-fixed-dim": "#ffb59c",
+                        "on-secondary-container": "#c2bbaf",
+                        "tertiary-fixed": "#ffdbd0",
+                        "tertiary": "#ffb59d",
+                        "secondary-fixed-dim": "#cdc6ba",
+                        "on-primary-container": "#511500",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#141311",
+                        "background": "#141311",
+                        "on-primary-fixed-variant": "#822700",
+                        "on-tertiary": "#5d1900",
+                        "surface-bright": "#3a3937",
+                        "secondary": "#cdc6ba",
+                        "primary-fixed": "#ffdbcf",
+                        "tertiary-container": "#dc734f",
+                        "on-tertiary-fixed-variant": "#7d2c0d",
+                        "inverse-surface": "#e6e2de",
+                        "on-tertiary-container": "#511500",
+                        "on-primary-fixed": "#390c00",
+                        "on-surface-variant": "#e1bfb4",
+                        "surface-container-highest": "#363432",
+                        "secondary-container": "#4f4b42",
+                        "on-surface": "#e6e2de",
+                        "on-secondary-fixed": "#1e1b14",
+                        "inverse-on-surface": "#32302e",
+                        "on-error": "#690005",
+                        "surface-variant": "#363432",
+                        "on-tertiary-fixed": "#390c00",
+                        "primary-container": "#EB5E28",
+                        "primary": "#EB5E28",
+                        "surface-tint": "#ffb59c",
+                        "outline": "#a88a80"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Raleway", "Epilogue", "sans-serif"],
+                        "body": ["Montserrat", "Manrope", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "Josefin Sans", "sans-serif"],
+                        "mono": ["Geist Mono", "monospace"],
+                        "raleway": ["Raleway"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #141311;
+            color: #e6e2de;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .ghost-border {
+            border: 1px solid rgba(168, 138, 128, 0.15);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="h-16 md:h-20 fixed top-0 right-0 left-0 z-50 flex justify-between items-center px-6 md:px-12 w-full bg-[#1A1917]/95 backdrop-blur-lg border-b border-[#A88A80]/5">
+<div class="flex items-center gap-2">
+<span class="text-lg md:text-xl font-bold text-[#E6E2DE] font-raleway tracking-tight uppercase font-headline">Simplify IS</span>
+</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#CCC5B9] text-xs font-['Raleway'] uppercase tracking-[0.2em] transition-colors hover:text-[#EB5E28]" href="/">Home</a>
+<a class="text-[#CCC5B9] text-xs font-['Raleway'] uppercase tracking-[0.2em] transition-colors hover:text-[#EB5E28]" href="#how-it-works">How it works</a>
+<a class="text-[#CCC5B9] text-xs font-['Raleway'] uppercase tracking-[0.2em] transition-colors hover:text-[#EB5E28]" href="#frameworks">Frameworks</a>
+<a class="text-[#CCC5B9] text-xs font-['Raleway'] uppercase tracking-[0.2em] transition-colors hover:text-[#EB5E28]" href="#pricing">Pricing</a>
+</div>
+<div class="flex items-center">
+<a class="bg-[#EB5E28] text-white px-4 md:px-6 py-2 rounded-sm font-['Raleway'] font-bold uppercase text-[9px] md:text-[10px] tracking-widest hover:bg-[#ff6a33] transition-colors shadow-lg shadow-[#EB5E28]/20" href="#login">Login</a>
+</div>
+</nav>
+<main class="flex-grow pt-24 md:pt-32 pb-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+<!-- Table of Contents / Sidebar - Mobile Friendly Carousel/Stack -->
+<aside class="md:col-span-4 lg:col-span-3 space-y-6 md:space-y-8">
+<div class="md:sticky md:top-32 space-y-6 md:space-y-8">
+<!-- Mobile Navigation Header -->
+<div class="bg-surface-container-low p-6 md:p-8 editorial-shadow rounded-lg space-y-6">
+<div class="space-y-1">
+<h2 class="font-label text-[10px] md:text-xs uppercase tracking-widest text-[#EB5E28] font-bold">Navigation</h2>
+<h3 class="font-headline text-lg md:text-xl font-bold tracking-tight">Legal Index</h3>
+</div>
+<nav class="flex flex-col gap-2 md:gap-3 overflow-x-auto no-scrollbar md:overflow-visible">
+<a class="font-label text-[10px] md:text-xs uppercase tracking-widest text-[#EB5E28] border-l-4 md:border-l-0 md:border-r-4 border-[#EB5E28] bg-[#2B2A28] py-3 px-4 transition-all duration-300 block whitespace-nowrap" href="#introduction">1. Acceptance</a>
+<a class="font-label text-[10px] md:text-xs uppercase tracking-widest text-[#CCC5B9] hover:bg-[#2B2A28] hover:text-[#E6E2DE] py-3 px-4 transition-all duration-300 block whitespace-nowrap" href="#account">2. Access Tiers</a>
+<a class="font-label text-[10px] md:text-xs uppercase tracking-widest text-[#CCC5B9] hover:bg-[#2B2A28] hover:text-[#E6E2DE] py-3 px-4 transition-all duration-300 block whitespace-nowrap" href="#cypher">3. Cypher AI</a>
+<a class="font-label text-[10px] md:text-xs uppercase tracking-widest text-[#CCC5B9] hover:bg-[#2B2A28] hover:text-[#E6E2DE] py-3 px-4 transition-all duration-300 block whitespace-nowrap" href="#retention">4. Data Retention</a>
+<a class="font-label text-[10px] md:text-xs uppercase tracking-widest text-[#CCC5B9] hover:bg-[#2B2A28] hover:text-[#E6E2DE] py-3 px-4 transition-all duration-300 block whitespace-nowrap" href="#liability">5. Liability</a>
+</nav>
+</div>
+<div class="bg-[#EB5E28]/5 p-6 md:p-8 border border-[#EB5E28]/20 rounded-lg flex flex-row md:flex-col justify-between md:justify-start gap-4">
+<div>
+<p class="font-label text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-[#EB5E28] mb-1 md:mb-2">Effective Date</p>
+<p class="font-mono text-xs md:text-sm">01/01/2026</p>
+</div>
+<div>
+<p class="font-label text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-[#EB5E28] md:mt-6 mb-1 md:mb-2">Version</p>
+<p class="font-mono text-xs md:text-sm">v.5.1.0-CYPHER</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<article class="md:col-span-8 lg:col-span-9 space-y-12 md:space-y-20">
+<header class="space-y-4 md:space-y-6">
+<span class="font-mono text-[#EB5E28] text-xs md:text-sm tracking-tighter uppercase">EST. 2026 / UPDATED 2026</span>
+<h1 class="font-headline text-4xl md:text-7xl font-black tracking-tighter leading-none">Terms of <br class="hidden md:block"/><span class="text-secondary">Service.</span></h1>
+<p class="font-body text-lg md:text-xl text-secondary max-w-2xl leading-relaxed">
+                    This document constitutes a binding legal agreement between the User and Simplify IS, including its centralised AI agent, Cypher.
+                </p>
+</header>
+<!-- Sections -->
+<section class="space-y-6 md:space-y-8 scroll-mt-24 md:scroll-mt-32" id="introduction">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-3xl md:text-4xl text-[#EB5E28]/40">01</span>
+<h2 class="font-headline text-2xl md:text-3xl font-bold tracking-tight">Purpose &amp; Acceptance</h2>
+</div>
+<div class="space-y-6 text-[#CCC5B9] font-body leading-relaxed md:leading-loose bg-surface-container-low p-6 md:p-8 rounded-lg editorial-shadow">
+<p class="text-sm md:text-base">
+                        By accessing or using Simplify IS (the "Service"), you agree to be bound by these Terms of Service. Simplify IS provides a platform for corporate entities to assess security maturity with Cypher acting as an automated AI consultant. 
+                    </p>
+<p class="text-sm md:text-base">
+                        The Service is designed for professional use by organisations to manage security frameworks and governance protocols. All interactions with the Service are governed by these terms as established by Simplify IS (Australia).
+                    </p>
+</div>
+</section>
+<section class="space-y-6 md:space-y-8 scroll-mt-24 md:scroll-mt-32" id="account">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-3xl md:text-4xl text-[#EB5E28]/40">02</span>
+<h2 class="font-headline text-2xl md:text-3xl font-bold tracking-tight">Access Tiers</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
+<div class="bg-surface-container-high p-6 md:p-8 rounded-lg ghost-border">
+<div class="flex items-center gap-3 mb-3 md:mb-4">
+<span class="material-symbols-outlined text-[#EB5E28]" data-icon="groups">groups</span>
+<h4 class="font-headline font-bold text-sm md:text-base">Multi-User Access</h4>
+</div>
+<p class="text-xs md:text-sm text-[#CCC5B9] leading-relaxed">While single-user accounts are available on the Essentials tier, all multi-user access and organisational collaboration requires an active Professional or Enterprise tier subscription.</p>
+</div>
+<div class="bg-surface-container-high p-6 md:p-8 rounded-lg ghost-border">
+<div class="flex items-center gap-3 mb-3 md:mb-4">
+<span class="material-symbols-outlined text-[#EB5E28]" data-icon="corporate_fare">corporate_fare</span>
+<h4 class="font-headline font-bold text-sm md:text-base">Entity Responsibility</h4>
+</div>
+<p class="text-xs md:text-sm text-[#CCC5B9] leading-relaxed">The subscribing organisation is responsible for all activities occurring under its account, ensuring internal security compliance matches the platform's requirements.</p>
+</div>
+</div>
+</section>
+<section class="space-y-6 md:space-y-8 scroll-mt-24 md:scroll-mt-32" id="cypher">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-3xl md:text-4xl text-[#EB5E28]/40">03</span>
+<h2 class="font-headline text-2xl md:text-3xl font-bold tracking-tight">Cypher &amp; AI Advice</h2>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-[#EB5E28]/20 to-transparent blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+<div class="relative bg-surface-container-low p-6 md:p-10 rounded-lg space-y-6">
+<p class="font-body text-[#E6E2DE] text-sm md:text-base leading-relaxed italic border-l-2 border-[#EB5E28] pl-6">
+                            "Cypher is designed to provide security assessment and advice based on current industry frameworks. No user data provided to the Service is used to train our underlying AI models."
+                        </p>
+<div class="space-y-4 text-[#CCC5B9] text-xs md:text-sm leading-relaxed">
+<p>The model is provided strictly for self-assessment purposes. Users and their organisations are solely responsible for their own decisions, implementations, and final security posture based on the advice provided by Cypher.</p>
+<p>Simplify IS maintains a strict policy of data isolation; your organisational intelligence remains yours alone and is never fed back into the centralised learning engine.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-6 md:space-y-8 scroll-mt-24 md:scroll-mt-32" id="retention">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-3xl md:text-4xl text-[#EB5E28]/40">04</span>
+<h2 class="font-headline text-2xl md:text-3xl font-bold tracking-tight">Data Retention</h2>
+</div>
+<div class="bg-surface-container-low p-6 md:p-10 rounded-lg border border-[#A88A80]/15">
+<div class="space-y-6">
+<h4 class="font-label text-[10px] md:text-xs uppercase tracking-widest text-[#EB5E28]">Retention Policy</h4>
+<p class="font-body text-[#CCC5B9] text-sm md:text-base leading-relaxed">
+                            Data ingested into the Simplify IS platform is retained as long as the user account remains active. Upon account termination, data is kept for the minimum legal term required.
+                        </p>
+<div class="overflow-x-auto no-scrollbar -mx-6 md:mx-0 px-6 md:px-0">
+<table class="w-full text-left font-mono text-[10px] md:text-sm min-w-[300px]">
+<thead>
+<tr class="border-b border-[#A88A80]/15">
+<th class="py-4 font-label font-medium uppercase text-[#CCC5B9]">Status</th>
+<th class="py-4 font-label font-medium uppercase text-[#CCC5B9]">Policy</th>
+</tr>
+</thead>
+<tbody class="text-[#CCC5B9]">
+<tr class="border-b border-[#A88A80]/10">
+<td class="py-4 pr-4">Active Account</td>
+<td class="py-4">Indefinite (Duration)</td>
+</tr>
+<tr>
+<td class="py-4 pr-4">Inactive/Terminated</td>
+<td class="py-4">Statutory Minimum</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-6 md:space-y-8 scroll-mt-24 md:scroll-mt-32" id="liability">
+<div class="flex items-baseline gap-4">
+<span class="font-mono text-3xl md:text-4xl text-[#EB5E28]/40">05</span>
+<h2 class="font-headline text-2xl md:text-3xl font-bold tracking-tight">Limitation of Liability</h2>
+</div>
+<div class="bg-surface-container-highest p-6 md:p-10 rounded-lg ghost-border">
+<p class="font-body text-[#CCC5B9] text-xs md:text-sm leading-relaxed md:leading-loose mb-6">
+                        SIMPLIFY IS TAKES NO RESPONSIBILITY FOR ANY LOSS EXPERIENCED, FINANCIAL OR OTHERWISE, RESULTING FROM THE USE OF THE SERVICE OR THE ADVICE RENDERED BY CYPHER. USERS ACKNOWLEDGE THAT SIMPLIFY IS DOES NOT MAINTAIN A DEDICATED LEGAL TEAM FOR EXTERNAL CONSULTATION AND PROVIDES THE SERVICE "AS IS" WITHOUT WARRANTY.
+                    </p>
+<p class="font-body text-[#CCC5B9] text-xs md:text-sm leading-relaxed md:leading-loose">
+                        TO THE MAXIMUM EXTENT PERMITTED BY LAW, SIMPLIFY IS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES RESULTING FROM UNAUTHORISED ACCESS, ALTERATION OF DATA, OR RELIANCE ON AUTOMATED SECURITY MATURITY ASSESSMENTS.
+                    </p>
+</div>
+</section>
+<div class="pt-12 border-t border-[#A88A80]/15 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+<div class="space-y-2">
+<p class="font-headline font-bold text-lg">Need clarification?</p>
+<p class="text-[#CCC5B9] text-sm">Our support team is available for platform-related enquiries.</p>
+</div>
+<button class="w-full md:w-auto bg-surface-bright hover:bg-[#EB5E28] text-on-surface px-8 py-4 font-headline font-bold transition-all duration-300 editorial-shadow uppercase text-xs tracking-widest">
+                    Contact Support
+                </button>
+</div>
+</article>
+</main>
+<!-- Standardized Footer -->
+<footer class="bg-[#0f0e0c] pt-16 md:pt-32 pb-12 md:pb-16 px-6 md:px-12 border-t border-outline/5">
+<div class="max-w-6xl mx-auto space-y-16 md:space-y-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16">
+<div class="col-span-1 md:col-span-2 space-y-6 md:space-y-8 text-center md:text-left">
+<span class="text-xl md:text-2xl font-bold text-[#E6E2DE] font-raleway tracking-tighter">simplify.is</span>
+<div class="space-y-4">
+<h6 class="font-mono font-bold text-primary uppercase text-[9px] md:text-[10px] tracking-[0.3em]">About</h6>
+<p class="text-outline text-xs md:text-sm leading-relaxed max-w-xl font-light">
+                            Simplify.IS — short for “Simplify Information Security” — is dedicated to making cybersecurity clear, accessible, and actionable.
+                        </p>
+<p class="text-outline text-xs md:text-sm leading-relaxed max-w-xl font-light">
+                            At the heart of Simplify.IS is Cypher, your AI Security Consultant. Cypher asks the right questions, performs a tailored security assessment, and helps you understand your organisation’s security maturity level.
+                        </p>
+</div>
+</div>
+<div class="space-y-6 text-center md:text-left">
+<h6 class="font-mono font-bold text-primary uppercase text-[9px] md:text-[10px] tracking-[0.3em]">Platform</h6>
+<ul class="space-y-4 text-secondary text-[10px] md:text-xs font-light tracking-wide uppercase">
+<li><a class="hover:text-primary transition-colors" href="#">How it Works</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Frameworks</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pricing</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+</ul>
+</div>
+<div class="space-y-6 text-center md:text-left">
+<h6 class="font-mono font-bold text-primary uppercase text-[9px] md:text-[10px] tracking-[0.3em]">Resources</h6>
+<ul class="space-y-4 text-secondary text-[10px] md:text-xs font-light tracking-wide uppercase">
+<li><a class="hover:text-primary transition-colors" href="#">Maturity Model</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 md:pt-16 border-t border-outline/5 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+<p class="font-mono text-[8px] md:text-[9px] text-outline uppercase tracking-[0.4em] opacity-40">
+                    © 2026 SIMPLIFY.IS. SECURED AUTHORITY.
+                </p>
+<div class="font-label text-xs text-secondary/60 flex items-center gap-2">
+                    Built in Australia <span class="text-sm">🇦🇺</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

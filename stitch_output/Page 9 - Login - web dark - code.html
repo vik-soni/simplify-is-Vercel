@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Log in to Simplify IS | Earthy Sentinel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&amp;family=Montserrat:wght@400;500;600&amp;family=Josefin+Sans:wght@400;500;600&amp;family=Geist+Mono&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#141311",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "inverse-primary": "#ab3600",
+                        "on-primary-container": "#511500",
+                        "surface-container": "#211f1d",
+                        "outline": "#a88a80",
+                        "surface-container-highest": "#363432",
+                        "surface-bright": "#3a3937",
+                        "inverse-on-surface": "#32302e",
+                        "secondary-fixed": "#e9e2d5",
+                        "on-primary": "#5c1900",
+                        "surface-container-low": "#1c1b19",
+                        "on-surface": "#e6e2de",
+                        "primary-fixed-dim": "#ffb59c",
+                        "on-tertiary": "#5d1900",
+                        "secondary-fixed-dim": "#cdc6ba",
+                        "surface-container-high": "#2b2a28",
+                        "primary": "#ffb59c",
+                        "secondary": "#cdc6ba",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#dc734f",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-secondary-container": "#c2bbaf",
+                        "inverse-surface": "#e6e2de",
+                        "on-primary-fixed-variant": "#822700",
+                        "on-tertiary-fixed-variant": "#7d2c0d",
+                        "on-surface-variant": "#e1bfb4",
+                        "surface-tint": "#ffb59c",
+                        "surface-container-lowest": "#0f0e0c",
+                        "on-secondary-fixed-variant": "#4a463d",
+                        "outline-variant": "#594139",
+                        "secondary-container": "#4f4b42",
+                        "surface-variant": "#363432",
+                        "primary-fixed": "#ffdbcf",
+                        "on-secondary-fixed": "#1e1b14",
+                        "on-primary-fixed": "#390c00",
+                        "on-background": "#e6e2de",
+                        "surface": "#141311",
+                        "error-container": "#93000a",
+                        "on-secondary": "#343028",
+                        "primary-container": "#f2632d",
+                        "surface-dim": "#141311",
+                        "tertiary": "#ffb59d",
+                        "on-tertiary-container": "#511500"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "raleway": ["Raleway", "sans-serif"],
+                        "montserrat": ["Montserrat", "sans-serif"],
+                        "josefin": ["Josefin Sans", "sans-serif"],
+                        "mono": ["Geist Mono", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glow-brand {
+            box-shadow: 0 0 20px rgba(235, 94, 40, 0.15);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #141311;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-montserrat min-h-screen flex flex-col items-center justify-center p-6 selection:bg-primary-container selection:text-on-primary-container backdrop-brightness-50">
+<!-- Login Container -->
+<main class="w-full max-w-md flex flex-col items-center space-y-10">
+<!-- Branding Section -->
+<header class="text-center space-y-6">
+<div class="space-y-2">
+<h1 class="font-raleway text-3xl font-black tracking-tight text-on-surface" style="">
+                    Log in to Simplify IS
+                </h1>
+<p class="font-montserrat text-secondary text-sm font-medium tracking-wide" style="">
+                    Continue your security assessment
+                </p>
+</div>
+</header>
+<!-- Form Card -->
+<div class="w-full bg-surface-container-high/80 backdrop-blur-xl p-8 rounded-xl glow-brand border border-outline/10 transition-all duration-300 relative shadow-2xl shadow-black/50 border-t-white/10 border-l-white/10"><button aria-label="Close" class="absolute top-4 right-4 text-outline/40 hover:text-on-surface transition-colors p-1">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<form class="space-y-6">
+<!-- Email Input -->
+<div class="space-y-2">
+<label class="font-josefin text-sm font-semibold tracking-wider text-secondary uppercase" for="email" style="">login Email
+                    </label>
+<div class="relative group">
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline/20 px-0 py-3 text-on-surface placeholder:text-outline/40 focus:ring-0 focus:border-[#EB5E28] transition-all duration-300 font-montserrat" id="email" placeholder="name@organization.com" type="email"/>
+<div class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#EB5E28] group-focus-within:w-full transition-all duration-500 shadow-[0_0_8px_rgba(235,94,40,0.5)]"></div>
+</div>
+</div>
+<!-- Access Key Input -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="font-josefin text-sm font-semibold tracking-wider text-secondary uppercase" for="key" style="">password </label>
+<a class="font-josefin text-xs text-[#EB5E28] hover:text-primary transition-colors" href="#" style="">Forgot password?</a>
+</div>
+<div class="relative group">
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline/20 px-0 py-3 text-on-surface placeholder:text-outline/40 focus:ring-0 focus:border-[#EB5E28] transition-all duration-300 font-montserrat" id="key" placeholder="••••••••••••" type="password"/>
+<div class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#EB5E28] group-focus-within:w-full transition-all duration-500 shadow-[0_0_8px_rgba(235,94,40,0.5)]"></div>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="pt-4">
+<button class="group w-full bg-gradient-to-r from-[#EB5E28] to-[#C44A1A] text-on-primary-fixed font-raleway font-bold py-4 rounded-lg shadow-lg hover:shadow-[#EB5E28]/20 transition-all duration-300 flex items-center justify-center space-x-2 active:scale-[0.98]" style="" type="submit">
+<span class="" style="">Sign in</span>
+<span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform" data-icon="arrow_forward" style="">
+                            arrow_forward
+                        </span>
+</button>
+</div>
+<!-- Secondary Action -->
+<div class="relative py-4 flex items-center">
+<div class="flex-grow border-t border-outline/10"></div>
+<span class="flex-shrink mx-4 font-mono text-[10px] text-outline/40 uppercase tracking-widest" style="">or</span>
+<div class="flex-grow border-t border-outline/10"></div>
+</div>
+<button class="w-full bg-transparent border border-outline/20 text-secondary hover:bg-surface-bright hover:text-on-surface py-3 rounded-lg transition-all duration-300 font-josefin font-medium text-sm flex items-center justify-center space-x-2 opacity-50 cursor-not-allowed grayscale pointer-events-none" style="" type="button"><span>SSO Enterprise Login (Coming Soon)</span></button>
+</form>
+</div>
+<!-- Footer -->
+<footer class="w-full pt-8 border-t border-outline/5">
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[11px] font-mono uppercase tracking-[0.2em] text-[#CCC5B9]/60"><a class="hover:text-[#EB5E28] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="hover:text-[#EB5E28] transition-colors duration-300" href="#">Terms of Service</a></div>
+<div class="mt-8 text-center">
+<p class="font-josefin text-[10px] text-outline/30 uppercase tracking-widest" style="">
+                    © 2026 simplify.is</p>
+</div>
+</footer>
+</main>
+<!-- Decorative Element: Texture Overlay -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] mix-blend-overlay">
+<img class="w-full h-full object-cover" data-alt="subtle organic paper texture with fine grain and warm tonal shifts for background depth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6r41R3BLzfzLpoFthItgWUEMAJTooNjSYUmc2ixgEkO4TYl8KCK7WdDoI6d5OKuh3D7dTTT79X1PgopxqYOuMqmQvfGGE7K5Nd9c0xernLHnyKyi9IiOneB3wSEMKMOjW_tIb2v0HaJraCrvShcPK5ajxXc4mkHphOjvyXUaKL_CIDL8x_rWecmPtR2naDIMxwfa_4tKFElkpRiCf34t4xJJmuPWQLk0qgCVsjgCqjmEaLbJ0EhkmlJ24wJakUABw8y1Vab13RmE" style=""/>
+</div>
+<!-- Decorative Subtle Ember Glows -->
+<div class="fixed -top-24 -left-24 w-96 h-96 bg-[#EB5E28]/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="fixed -bottom-24 -right-24 w-96 h-96 bg-[#EB5E28]/5 blur-[120px] rounded-full pointer-events-none"></div>
+</body></html>

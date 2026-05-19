@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&amp;family=Josefin+Sans:wght@400;500;600&amp;family=Montserrat:wght@400;500&amp;family=Epilogue:wght@700&amp;family=Manrope:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600&amp;family=Geist+Mono&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-surface": "#1A1917",
+                        "secondary": "#635f59",
+                        "primary-container": "#ffdbcf",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1A1917",
+                        "surface-container-highest": "#e6e2de",
+                        "secondary-container": "#ebf2e8",
+                        "surface-dim": "#ded9d2",
+                        "inverse-on-surface": "#f5f0e7",
+                        "surface-tint": "#eb5e28",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#FFFCF2",
+                        "tertiary-container": "#ffdbd0",
+                        "surface-container": "#f0ede6",
+                        "outline-variant": "#d4c5c1",
+                        "inverse-surface": "#32302e",
+                        "inverse-primary": "#ffb59c",
+                        "error-container": "#ffdad6",
+                        "primary": "#EB5E28",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#eae6df",
+                        "surface-container-low": "#f6f3eb",
+                        "background": "#FFFCF2",
+                        "outline": "#85736e",
+                        "surface-variant": "#f4ded7",
+                        "surface-bright": "#fffcf2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Plus Jakarta Sans"],
+                        "raleway": ["Raleway"],
+                        "josefin": ["Josefin Sans"],
+                        "montserrat": ["Montserrat"],
+                        "mono": ["Geist Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glow-brand { box-shadow: 0 0 20px rgba(235, 94, 40, 0.1); }
+        .mfa-shadow { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(168, 138, 128, 0.1); }
+        .depth-3d { transform: perspective(1000px) rotateX(2deg); }
+        @media (max-width: 640px) {
+            .depth-3d { transform: none; }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface overflow-hidden">
+<!-- Background Canvas (Simulating the Dashboard behind the modal) -->
+<div class="fixed inset-0 z-0 bg-[#FFFCF2] grid grid-cols-12 gap-6 p-8 opacity-40 blur-[2px]">
+<div class="col-span-3 h-full bg-surface-container-low rounded-lg"></div>
+<div class="col-span-9 flex flex-col gap-6">
+<div class="h-14 bg-surface-container-high rounded-lg w-full"></div>
+<div class="grid grid-cols-3 gap-6 h-40">
+<div class="bg-surface-container-high rounded-lg"></div>
+<div class="bg-surface-container-high rounded-lg"></div>
+<div class="bg-surface-container-high rounded-lg"></div>
+</div>
+<div class="flex-grow bg-surface-container-high rounded-lg"></div>
+</div>
+</div>
+<!-- MFA Backdrop Overlay -->
+<div class="fixed inset-0 z-10 bg-black/5 backdrop-blur-sm flex items-center justify-center p-4">
+<!-- 3D Popup Modal -->
+<div class="relative w-full max-w-lg bg-white rounded-xl overflow-hidden mfa-shadow depth-3d border border-outline/5">
+<!-- Close Button -->
+<button aria-label="Close" class="absolute top-4 right-4 text-secondary hover:text-primary transition-colors p-2">
+<span class="material-symbols-outlined text-2xl" data-icon="close">close</span>
+</button>
+<div class="px-6 py-10 sm:p-10 flex flex-col items-center text-center">
+<!-- Security Icon -->
+<div class="w-14 h-14 sm:w-16 sm:h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 sm:mb-8 border border-outline/10 glow-brand">
+<span class="material-symbols-outlined text-[#EB5E28] text-3xl sm:text-4xl" data-icon="verified_user">verified_user</span>
+</div>
+<!-- Typography: Raleway for Command, Josefin for Metadata -->
+<h1 class="font-raleway text-2xl sm:text-3xl font-bold tracking-tight text-on-surface mb-3">Enter Verification Code</h1>
+<p class="font-josefin text-secondary text-sm max-w-[280px] leading-relaxed mb-8 sm:mb-10">
+                A 6-digit code has been sent to your authenticator app.
+            </p>
+<!-- OTP Inputs -->
+<div class="flex gap-2 sm:gap-3 mb-10 sm:mb-12">
+<input autocomplete="one-time-code" class="w-10 h-14 sm:w-12 sm:h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+<input autocomplete="one-time-code" class="w-10 h-14 sm:w-12 sm:h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+<input autocomplete="one-time-code" class="w-10 h-14 sm:w-12 sm:h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+<div class="w-2 sm:w-4"></div> <!-- Spacer for chunking digits -->
+<input autocomplete="one-time-code" class="w-10 h-14 sm:w-12 sm:h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+<input autocomplete="one-time-code" class="w-10 h-14 sm:w-12 sm:h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+<input autocomplete="one-time-code" class="w-10 h-14 sm:w-12 sm:h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+</div>
+<!-- Action Button -->
+<button class="w-full py-4 bg-gradient-to-r from-[#EB5E28] to-[#C44A1A] text-white font-josefin font-semibold text-lg rounded-lg glow-brand hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg touch-manipulation">
+                Verify
+            </button>
+<!-- Help Link -->
+<div class="mt-6">
+<button class="text-secondary hover:text-on-surface font-josefin text-xs tracking-wider uppercase transition-colors p-2">
+                    Resend Code
+                </button>
+</div>
+</div>
+<!-- Footer Meta -->
+<div class="bg-surface-container-lowest py-5 sm:py-6 px-6 sm:px-10 border-t border-outline/5 flex justify-center gap-6 sm:gap-8">
+<a class="font-josefin text-[10px] uppercase tracking-[0.2em] text-outline hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-josefin text-[10px] uppercase tracking-[0.2em] text-outline hover:text-secondary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<!-- Decorative Elements (Monolithic Accents) -->
+<div class="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#EB5E28] to-transparent opacity-10 z-20"></div>
+<div class="fixed bottom-0 left-0 w-full h-px bg-outline/5 z-20"></div>
+</body></html>

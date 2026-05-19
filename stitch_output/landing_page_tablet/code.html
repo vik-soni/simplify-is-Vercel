@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Simplify IS | The Monolithic Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&amp;family=Montserrat:wght@400;500;600&amp;family=Josefin+Sans:wght@400;500;600;700&amp;family=Geist+Mono&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#363432",
+                    "inverse-on-surface": "#32302e",
+                    "on-secondary": "#343028",
+                    "tertiary-container": "#dc734f",
+                    "outline-variant": "#594139",
+                    "error-container": "#93000a",
+                    "on-tertiary": "#5d1900",
+                    "on-secondary-fixed": "#1e1b14",
+                    "surface-container-low": "#1c1b19",
+                    "surface-dim": "#141311",
+                    "primary": "#ffb59c",
+                    "surface-container-high": "#2b2a28",
+                    "outline": "#a88a80",
+                    "inverse-surface": "#e6e2de",
+                    "surface": "#141311",
+                    "inverse-primary": "#ab3600",
+                    "surface-container": "#211f1d",
+                    "on-secondary-fixed-variant": "#4a463d",
+                    "on-primary-fixed-variant": "#822700",
+                    "on-primary-fixed": "#390c00",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "on-surface-variant": "#e1bfb4",
+                    "background": "#141311",
+                    "on-tertiary-fixed": "#390c00",
+                    "on-background": "#e6e2de",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#511500",
+                    "on-tertiary-fixed-variant": "#7d2c0d",
+                    "on-error-container": "#ffdad6",
+                    "surface-tint": "#ffb59c",
+                    "surface-container-lowest": "#0f0e0c",
+                    "secondary": "#cdc6ba",
+                    "secondary-fixed": "#e9e2d5",
+                    "tertiary-fixed": "#ffdbd0",
+                    "primary-fixed": "#ffdbcf",
+                    "secondary-container": "#4f4b42",
+                    "tertiary": "#ffb59d",
+                    "on-error": "#690005",
+                    "on-primary": "#5c1900",
+                    "primary-fixed-dim": "#ffb59c",
+                    "on-secondary-container": "#c2bbaf",
+                    "secondary-fixed-dim": "#cdc6ba",
+                    "primary-container": "#f2632d",
+                    "surface-container-highest": "#363432",
+                    "surface-bright": "#3a3937",
+                    "on-tertiary-container": "#511500",
+                    "on-surface": "#e6e2de"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Raleway"],
+                    "body": ["Montserrat"],
+                    "label": ["Josefin Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glow-brand { box-shadow: 0 0 20px rgba(235, 94, 40, 0.15); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #141311;
+            color: #e6e2de;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar Implementation -->
+<nav class="fixed top-0 w-full z-50 bg-[#141311]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center px-8 py-4 w-full">
+<div class="flex items-center">
+<span class="text-2xl font-black text-[#E6E2DE] tracking-tighter font-['Raleway']">Simplify IS</span>
+</div>
+<div class="hidden md:flex items-center space-x-8 font-['Raleway'] tracking-tight font-bold">
+<a class="text-[#CCC5B9] hover:text-[#EB5E28] transition-colors duration-300" href="#">How It Works</a>
+<a class="text-[#CCC5B9] hover:text-[#EB5E28] transition-colors duration-300" href="#">Frameworks</a>
+<a class="text-[#CCC5B9] hover:text-[#EB5E28] transition-colors duration-300" href="#">Pricing</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="bg-[#EB5E28] text-[#E6E2DE] px-6 py-2 font-['Raleway'] font-bold tracking-tight scale-95 active:scale-90 transition-transform glow-brand">
+                Login
+            </button>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-[#CCC5B9] hover:text-[#EB5E28] cursor-pointer transition-colors duration-300">notifications</span>
+<span class="material-symbols-outlined text-[#CCC5B9] hover:text-[#EB5E28] cursor-pointer transition-colors duration-300">settings</span>
+</div>
+</div>
+</nav>
+<main class="pt-28 pb-20">
+<!-- Hero Section: Earthen Brutalism -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="editorial-grid">
+<div class="col-span-12 md:col-span-7 flex flex-col justify-center">
+<span class="font-['Josefin_Sans'] font-medium uppercase tracking-widest text-xs text-[#EB5E28] mb-4">The Monolithic Archive</span>
+<h1 class="font-['Raleway'] text-6xl font-black tracking-tighter text-[#E6E2DE] leading-none mb-8">
+                        Permanent Structures <br/>for Digital Assets.
+                    </h1>
+<p class="font-['Montserrat'] text-lg text-[#CCC5B9] leading-relaxed max-w-lg mb-10">
+                        Simplify IS provides an architectural foundation for your organization's data. We treat information not as ephemeral bits, but as artifacts carved into the digital bedrock.
+                    </p>
+<div class="flex space-x-4">
+<button class="bg-gradient-to-r from-[#EB5E28] to-[#C44A1A] text-white px-8 py-4 font-['Raleway'] font-extrabold tracking-tight transition-all duration-300 hover:opacity-90">
+                            Establish Archive
+                        </button>
+<button class="border border-[#A88A80]/30 text-[#CCC5B9] px-8 py-4 font-['Raleway'] font-extrabold tracking-tight hover:bg-[#2B2A28] transition-all duration-300">
+                            Our Framework
+                        </button>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 relative">
+<div class="aspect-square bg-surface-container-high rounded-lg overflow-hidden glow-brand">
+<img class="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 transition-all duration-700" data-alt="Modern brutalist architecture building with sharp concrete angles and warm sunset light reflecting off dark glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAZMyrRoZREYqLNyDBfXz3ifuTcgUT2LHPGNeujblpS3CPxWlAscOZo98zCAiuTjtT1ukzw74NEnAQGreKA3FlrbnmCUUBqVNtEhcjFGUMKjqfSXxOVICtE12Sv0B922Xa8wkGDnsAIRrS2oGKb6jP3P2KUJUmftabMPjuQGpKjJiBNPRerWlnX8KHpdl3-GxnMEzdxtEsIks3yjML9QGN7PaaBs85jj3u5Vty-WDp1a7m1ZJijVvuR8E01VtsmGaiv6paVO_gSpE"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-bright p-8 shadow-[0_20px_40px_rgba(0,0,0,0.4)] max-w-[240px]">
+<span class="font-['Geist_Mono'] text-[#EB5E28] text-sm block mb-2">VERIFIED_0.1</span>
+<p class="font-['Josefin_Sans'] text-xs uppercase tracking-widest text-[#E6E2DE]">Built for Longevity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Core Pillars -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-['Raleway'] text-4xl font-bold tracking-tight text-[#E6E2DE]">System Governance</h2>
+<div class="w-16 h-1 bg-[#EB5E28] mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Column 1 -->
+<div class="md:col-span-2 space-y-8">
+<div class="bg-surface-container-high p-10 group hover:bg-surface-bright transition-all duration-300">
+<span class="material-symbols-outlined text-[#EB5E28] text-4xl mb-6">shield_person</span>
+<h3 class="font-['Raleway'] text-2xl font-bold text-[#E6E2DE] mb-4">Immutable Security</h3>
+<p class="text-[#CCC5B9] font-['Montserrat'] leading-relaxed">Our security protocols are woven into the very fabric of our containers. Using quantum-resistant encryption, we ensure your archive remains unassailable.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="bg-surface-container p-8 border-b-2 border-transparent hover:border-[#EB5E28] transition-all">
+<span class="font-['Geist_Mono'] text-[#EB5E28] text-xs">001</span>
+<h4 class="font-['Raleway'] font-bold text-lg mt-2">Audit Logs</h4>
+<p class="text-sm text-[#CCC5B9] mt-2">Real-time ledger of every interaction.</p>
+</div>
+<div class="bg-surface-container p-8 border-b-2 border-transparent hover:border-[#EB5E28] transition-all">
+<span class="font-['Geist_Mono'] text-[#EB5E28] text-xs">002</span>
+<h4 class="font-['Raleway'] font-bold text-lg mt-2">Legal Vault</h4>
+<p class="text-sm text-[#CCC5B9] mt-2">Compliance-ready document storage.</p>
+</div>
+</div>
+</div>
+<!-- Column 2 (Asymmetric Tall Card) -->
+<div class="bg-[#EB5E28] p-10 flex flex-col justify-between text-[#141311]">
+<div>
+<span class="material-symbols-outlined text-4xl mb-8" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h3 class="font-['Raleway'] text-3xl font-black leading-tight mb-6">Superior Performance Frameworks</h3>
+<p class="font-['Montserrat'] font-medium">Built Australia-wide for global resilience. Our edge-computing mesh ensures latency is never an obstacle to access.</p>
+</div>
+<div class="pt-12">
+<button class="bg-[#141311] text-white px-6 py-3 font-['Raleway'] font-bold text-sm tracking-widest uppercase">View Specs</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats / Proof Section -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center border-t border-[#A88A80]/15 pt-12">
+<div class="mb-8 md:mb-0">
+<span class="font-['Geist_Mono'] text-6xl font-black text-[#E6E2DE]">99.9%</span>
+<p class="font-['Josefin_Sans'] text-xs uppercase tracking-[0.3em] text-[#EB5E28] mt-2">Uptime Reliability</p>
+</div>
+<div class="mb-8 md:mb-0">
+<span class="font-['Geist_Mono'] text-6xl font-black text-[#E6E2DE]">20+</span>
+<p class="font-['Josefin_Sans'] text-xs uppercase tracking-[0.3em] text-[#EB5E28] mt-2">Global Data Sockets</p>
+</div>
+<div>
+<span class="font-['Geist_Mono'] text-6xl font-black text-[#E6E2DE]">ZERO</span>
+<p class="font-['Josefin_Sans'] text-xs uppercase tracking-[0.3em] text-[#EB5E28] mt-2">Breach Incidents</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Implementation -->
+<footer class="w-full py-12 mt-auto bg-[#141311] border-t border-[#A88A80]/15">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+<div class="flex flex-col items-center md:items-start">
+<span class="text-[#E6E2DE] font-black font-['Raleway'] text-xl mb-2">Simplify IS</span>
+<p class="font-['Montserrat'] text-sm leading-relaxed text-[#CCC5B9] opacity-80">
+                    © 2024 Simplify IS. Built upon The Monolithic Archive.
+                </p>
+<div class="flex items-center mt-4 space-x-2">
+<span class="text-xs font-['Josefin_Sans'] text-[#CCC5B9] uppercase tracking-widest">Built in Australia</span>
+<span class="text-lg">🇦🇺</span>
+</div>
+</div>
+<div class="flex space-x-12 font-['Montserrat'] text-sm">
+<div class="flex flex-col space-y-3">
+<a class="text-[#CCC5B9] hover:text-[#E6E2DE] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#CCC5B9] hover:text-[#E6E2DE] transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="text-[#CCC5B9] hover:text-[#E6E2DE] transition-colors" href="#">Cookie Settings</a>
+<a class="text-[#CCC5B9] hover:text-[#E6E2DE] transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="flex space-x-6">
+<a class="text-[#CCC5B9] hover:text-[#EB5E28] transition-all opacity-80 hover:opacity-100" href="#">
+<span class="material-symbols-outlined text-2xl">share</span>
+</a>
+<a class="text-[#CCC5B9] hover:text-[#EB5E28] transition-all opacity-80 hover:opacity-100" href="#">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

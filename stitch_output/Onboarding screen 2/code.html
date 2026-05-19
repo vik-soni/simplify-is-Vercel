@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en-AU"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Operational Core | Simplify IS</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&amp;family=Josefin+Sans:wght@300;400;600&amp;family=Montserrat:wght@400;500;600&amp;family=Epilogue:wght@700&amp;family=Manrope:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@500;700&amp;family=Geist+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "secondary": "#cdc6ba",
+                        "secondary-fixed": "#e9e2d5",
+                        "background": "#141311",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "surface": "#141311",
+                        "secondary-fixed-dim": "#cdc6ba",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#ffdbcf",
+                        "on-surface-variant": "#e1bfb4",
+                        "tertiary": "#ffb59d",
+                        "surface-dim": "#141311",
+                        "on-tertiary-container": "#511500",
+                        "on-error": "#690005",
+                        "surface-container-low": "#1c1b19",
+                        "inverse-surface": "#e6e2de",
+                        "on-surface": "#e6e2de",
+                        "primary": "#ffb59c",
+                        "on-tertiary-fixed-variant": "#7d2c0d",
+                        "secondary-container": "#4f4b42",
+                        "outline": "#a88a80",
+                        "on-background": "#e6e2de",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#ffb59c",
+                        "tertiary-container": "#dc734f",
+                        "surface-bright": "#3a3937",
+                        "on-primary-fixed-variant": "#822700",
+                        "surface-container-high": "#2b2a28",
+                        "on-secondary-fixed-variant": "#4a463d",
+                        "surface-variant": "#363432",
+                        "on-secondary-fixed": "#1e1b14",
+                        "on-secondary-container": "#c2bbaf",
+                        "on-primary-container": "#511500",
+                        "on-tertiary": "#5d1900",
+                        "inverse-on-surface": "#32302e",
+                        "surface-container-lowest": "#0f0e0c",
+                        "primary-fixed-dim": "#ffb59c",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-primary": "#5c1900",
+                        "outline-variant": "#594139",
+                        "primary-container": "#f2632d",
+                        "on-primary-fixed": "#390c00",
+                        "surface-container-highest": "#363432",
+                        "on-secondary": "#343028",
+                        "inverse-primary": "#ab3600",
+                        "surface-container": "#211f1d"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                },
+                "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Plus Jakarta Sans"]
+                }
+              },
+            },
+          }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-brand {
+            box-shadow: 0 0 20px rgba(235,94,40,0.15);
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .premium-gradient {
+            background: linear-gradient(135deg, #EB5E28 0%, #C44A1A 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#141311]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-7xl mx-auto">
+<!-- Text Logo -->
+<div class="text-[#E6E2DE] font-['Raleway'] font-bold text-lg">
+                Simplify IS
+            </div>
+<div class="flex items-center gap-12">
+<!-- Progress Indicator -->
+<div class="flex flex-col items-end gap-2">
+<div class="flex items-center gap-4">
+<span class="font-['Geist_Mono'] text-[10px] uppercase tracking-[0.2em] text-secondary/60">
+                            Step 02 / 04
+                        </span>
+<span class="font-['Geist_Mono'] text-[10px] uppercase tracking-[0.2em] text-primary">
+                            50% Complete
+                        </span>
+</div>
+<div class="flex gap-1 w-32">
+<div class="h-1 flex-1 bg-[#EB5E28]"></div>
+<div class="h-1 flex-1 bg-[#EB5E28]"></div>
+<div class="h-1 flex-1 bg-outline/20"></div>
+<div class="h-1 flex-1 bg-outline/20"></div>
+</div>
+</div>
+<!-- Close Button -->
+<button aria-label="Close" class="text-on-surface hover:text-[#EB5E28] transition-colors p-2">
+<span class="material-symbols-outlined text-3xl" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center pt-32 pb-20 px-4 sm:px-8">
+<!-- Modal Container -->
+<div class="max-w-4xl w-full surface-container-high editorial-shadow rounded-lg overflow-hidden border border-[#A88A80]/15 relative">
+<!-- Abstract Background Visual Component -->
+<div class="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+<div class="absolute -top-1/4 -right-1/4 w-96 h-96 rounded-full bg-primary-container blur-[100px]"></div>
+<div class="absolute -bottom-1/4 -left-1/4 w-64 h-64 rounded-full bg-secondary-container blur-[80px]"></div>
+</div>
+<div class="relative z-10 p-8 md:p-12">
+<!-- Progress Metadata (Mini) -->
+<div class="mb-8 flex items-center gap-4">
+<span class="font-['Geist_Mono'] text-xs uppercase tracking-[0.2em] text-primary">
+                        Organizational Identity
+                    </span>
+<div class="h-[1px] flex-grow bg-outline/20"></div>
+</div>
+<!-- Header Section -->
+<div class="mb-12 text-center">
+<h1 class="font-['Raleway'] text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-6 leading-tight">
+                        Establish your <span class="text-[#EB5E28] italic">Operational Core.</span>
+</h1>
+<p class="font-body text-secondary text-lg max-w-2xl mx-auto leading-relaxed opacity-80">
+                        Calibrate your security posture and resource allocation by defining your organisation's scope within the framework.
+                    </p>
+</div>
+<!-- Form Section -->
+<div class="space-y-10">
+<!-- Organization Name -->
+<div class="group">
+<label class="block font-['Josefin_Sans'] text-xs font-semibold tracking-[0.2em] text-secondary/60 mb-3 uppercase">
+                            Organisation Legal Name
+                        </label>
+<input class="w-full bg-surface-container-lowest border border-outline/20 rounded-lg px-6 py-4 text-on-surface placeholder:text-outline/40 focus:ring-1 focus:ring-primary-container focus:border-primary-container transition-all duration-300 outline-none" placeholder="e.g. Aether Dynamics Corp" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Industry -->
+<div>
+<label class="block font-['Josefin_Sans'] text-xs font-semibold tracking-[0.2em] text-secondary/60 mb-3 uppercase">
+                                Industry Sector
+                            </label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border border-outline/20 rounded-lg px-6 py-4 text-on-surface focus:ring-1 focus:ring-primary-container transition-all duration-300 outline-none appearance-none cursor-pointer">
+<option value="">Select Industry</option>
+<option value="tech">Technology &amp; SaaS</option>
+<option value="finance">Financial Services</option>
+<option value="health">Healthcare</option>
+<option value="manufacturing">Manufacturing</option>
+<option value="retail">Retail &amp; Commerce</option>
+<option value="government">Public Sector</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-secondary/50" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Country -->
+<div>
+<label class="block font-['Josefin_Sans'] text-xs font-semibold tracking-[0.2em] text-secondary/60 mb-3 uppercase">
+                                Headquarters Country
+                            </label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border border-outline/20 rounded-lg px-6 py-4 text-on-surface focus:ring-1 focus:ring-primary-container transition-all duration-300 outline-none appearance-none cursor-pointer">
+<option value="">Select Country</option>
+<option value="au">Australia</option>
+<option value="us">United States</option>
+<option value="uk">United Kingdom</option>
+<option value="de">Germany</option>
+<option value="sg">Singapore</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-secondary/50" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Workforce Scale -->
+<div>
+<label class="block font-['Josefin_Sans'] text-xs font-semibold tracking-[0.2em] text-secondary/60 mb-6 uppercase text-center">
+                            Workforce Scale
+                        </label>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Small -->
+<label class="cursor-pointer group">
+<input class="hidden peer" name="scale" type="radio"/>
+<div class="h-full p-5 border border-outline/20 rounded-lg bg-surface-container-lowest transition-all duration-300 group-hover:border-primary-container/50 peer-checked:border-primary-container peer-checked:bg-primary-container/5 text-center">
+<span class="font-headline font-bold text-on-surface block text-base mb-1">Small</span>
+<span class="font-['Geist_Mono'] text-[9px] text-primary block mb-3 uppercase">1-50 FTE</span>
+<p class="text-[10px] text-secondary/60 leading-tight">Lean agility protocols.</p>
+</div>
+</label>
+<!-- Medium -->
+<label class="cursor-pointer group">
+<input checked="" class="hidden peer" name="scale" type="radio"/>
+<div class="h-full p-5 border border-outline/20 rounded-lg bg-surface-container-lowest transition-all duration-300 group-hover:border-primary-container/50 peer-checked:border-primary-container peer-checked:bg-primary-container/5 text-center">
+<span class="font-headline font-bold text-on-surface block text-base mb-1">Medium</span>
+<span class="font-['Geist_Mono'] text-[9px] text-primary block mb-3 uppercase">51-500 FTE</span>
+<p class="text-[10px] text-secondary/60 leading-tight">Departmental isolation.</p>
+</div>
+</label>
+<!-- Large -->
+<label class="cursor-pointer group">
+<input class="hidden peer" name="scale" type="radio"/>
+<div class="h-full p-5 border border-outline/20 rounded-lg bg-surface-container-lowest transition-all duration-300 group-hover:border-primary-container/50 peer-checked:border-primary-container peer-checked:bg-primary-container/5 text-center">
+<span class="font-headline font-bold text-on-surface block text-base mb-1">Large</span>
+<span class="font-['Geist_Mono'] text-[9px] text-primary block mb-3 uppercase">501-2000 FTE</span>
+<p class="text-[10px] text-secondary/60 leading-tight">Global multi-tenant.</p>
+</div>
+</label>
+<!-- Enterprise -->
+<label class="cursor-pointer group">
+<input class="hidden peer" name="scale" type="radio"/>
+<div class="h-full p-5 border border-outline/20 rounded-lg bg-surface-container-lowest transition-all duration-300 group-hover:border-primary-container/50 peer-checked:border-primary-container peer-checked:bg-primary-container/5 text-center">
+<span class="font-headline font-bold text-on-surface block text-base mb-1">Enterprise</span>
+<span class="font-['Geist_Mono'] text-[9px] text-primary block mb-3 uppercase">2000+ FTE</span>
+<p class="text-[10px] text-secondary/60 leading-tight">Complex audit rigor.</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 pt-8 border-t border-outline/15">
+<button class="w-full md:w-auto px-8 py-4 font-['Josefin_Sans'] text-xs font-semibold tracking-widest text-secondary/60 uppercase hover:text-on-surface transition-colors">
+                            Back
+                        </button>
+<button class="w-full md:w-auto px-10 py-5 premium-gradient text-on-primary-fixed font-['Josefin_Sans'] font-bold tracking-widest uppercase rounded-lg glow-brand transition-all duration-300 hover:scale-[1.01] active:scale-[0.98] flex items-center justify-center gap-3">
+                            Continue Setup
+                            <span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Blueprint -->
+<footer class="bg-[#141311] border-t border-[#A88A80]/15 w-full pt-12 pb-8 mt-auto">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-8 items-center">
+<!-- Left -->
+<div class="text-[#E6E2DE] font-['Raleway'] font-bold text-lg text-center md:text-left">
+                Simplify IS
+            </div>
+<!-- Right Links -->
+<div class="flex justify-center md:justify-end gap-8">
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Terms of Service</a>
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Contact</a>
+</div>
+</div>
+<!-- Bottom Center -->
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-[#A88A80]/5 text-center">
+<span class="font-['Geist_Mono'] text-[10px] text-outline/30 uppercase tracking-[0.3em]">
+                © 2026 SIMPLIFY IS. SYSTEMS ONLINE.
+            </span>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en-AU"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&amp;family=Josefin+Sans:wght@300;400;500;600;700&amp;family=Montserrat:wght@300;400;500;600&amp;family=Epilogue:wght@400;600;700&amp;family=Manrope:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#363432",
+                        "inverse-on-surface": "#32302e",
+                        "on-secondary": "#343028",
+                        "tertiary-container": "#dc734f",
+                        "outline-variant": "#594139",
+                        "error-container": "#93000a",
+                        "on-tertiary": "#5d1900",
+                        "on-secondary-fixed": "#1e1b14",
+                        "surface-container-low": "#1c1b19",
+                        "surface-dim": "#141311",
+                        "primary": "#ffb59c",
+                        "surface-container-high": "#2b2a28",
+                        "outline": "#a88a80",
+                        "inverse-surface": "#e6e2de",
+                        "surface": "#141311",
+                        "inverse-primary": "#ab3600",
+                        "surface-container": "#211f1d",
+                        "on-secondary-fixed-variant": "#4a463d",
+                        "on-primary-fixed-variant": "#822700",
+                        "on-primary-fixed": "#390c00",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "on-surface-variant": "#e1bfb4",
+                        "background": "#141311",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-background": "#e6e2de",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#511500",
+                        "on-tertiary-fixed-variant": "#7d2c0d",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#ffb59c",
+                        "surface-container-lowest": "#0f0e0c",
+                        "secondary": "#cdc6ba",
+                        "secondary-fixed": "#e9e2d5",
+                        "tertiary-fixed": "#ffdbd0",
+                        "primary-fixed": "#ffdbcf",
+                        "secondary-container": "#4f4b42",
+                        "tertiary": "#ffb59d",
+                        "on-error": "#690005",
+                        "on-primary": "#5c1900",
+                        "primary-fixed-dim": "#ffb59c",
+                        "on-secondary-container": "#c2bbaf",
+                        "secondary-fixed-dim": "#cdc6ba",
+                        "primary-container": "#f2632d",
+                        "surface-container-highest": "#363432",
+                        "surface-bright": "#3a3937",
+                        "on-tertiary-container": "#511500",
+                        "on-surface": "#e6e2de"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue", "Raleway"],
+                        "body": ["Manrope", "Montserrat"],
+                        "label": ["Plus Jakarta Sans", "Josefin Sans"],
+                        "mono": ["Geist Mono"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-brand {
+            box-shadow: 0 0 20px rgba(235, 94, 40, 0.15);
+        }
+        .glass {
+            background: rgba(20, 19, 17, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- SideNavBar Anchor -->
+<aside class="w-[240px] h-full fixed left-0 top-0 bg-[#141311] shadow-2xl flex flex-col py-8 px-4 z-50 border-r border-[#A88A80]/15">
+<div class="mb-10 px-2">
+<h1 class="text-2xl font-black text-[#E6E2DE] font-headline tracking-tighter">Monolithic Archive</h1>
+<p class="font-label text-xs font-medium text-[#EB5E28] tracking-widest uppercase mt-1">Earthy Sentinel Platform</p>
+</div>
+<nav class="flex-grow space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 text-[#CCC5B9] hover:text-[#E6E2DE] hover:bg-[#2B2A28] transition-all duration-300 rounded" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#EB5E28] font-bold border-r-4 border-[#EB5E28] bg-[#1C1B19] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="font-label text-sm font-medium">Assessment</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#CCC5B9] hover:text-[#E6E2DE] hover:bg-[#2B2A28] transition-all duration-300 rounded" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-label text-sm font-medium">History</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#CCC5B9] hover:text-[#E6E2DE] hover:bg-[#2B2A28] transition-all duration-300 rounded" href="#">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+<span class="font-label text-sm font-medium">Compliance</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#CCC5B9] hover:text-[#E6E2DE] hover:bg-[#2B2A28] transition-all duration-300 rounded" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label text-sm font-medium">Settings</span>
+</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-[#A88A80]/10 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-[#CCC5B9] hover:text-[#E6E2DE] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<span class="font-label text-sm font-medium">Support</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#CCC5B9] hover:text-[#E6E2DE] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span class="font-label text-sm font-medium">Sign Out</span>
+</a>
+</div>
+</aside>
+<!-- TopNavBar Anchor -->
+<header class="h-14 fixed top-0 right-0 left-[240px] flex justify-between items-center px-8 w-full glass z-40 border-b border-[#A88A80]/15">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#E6E2DE] font-headline tracking-tight">Earthy Sentinel</span>
+<nav class="flex gap-6">
+<a class="text-[#CCC5B9] hover:text-[#EB5E28] transition-colors font-body text-sm" href="#">Dashboard</a>
+<a class="text-[#E6E2DE] font-medium font-body text-sm" href="#">ISO 27001</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-[#CCC5B9] cursor-pointer" data-icon="notifications">notifications</span>
+<div class="flex items-center gap-3 bg-surface-container-high px-3 py-1 rounded-full border border-outline/10">
+<div class="w-2 h-2 rounded-full bg-[#EB5E28] animate-pulse"></div>
+<span class="font-mono text-[10px] uppercase tracking-widest text-[#E6E2DE]">Maturity: High</span>
+</div>
+<img alt="Admin Profile" class="w-8 h-8 rounded-full border border-[#EB5E28]" data-alt="professional portrait of a security architect in a dark studio setting with warm directional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj9G7GvmbcOuSVaWJ_2PAoq6Paia2uDwxhqXscCV-_SKNq6Pmps3ssFrl-_IVwMlFkVOZSK539QqdW6Cyua84HyvHqRrzBYWY-WE40dRSpDKBYb7PZDn2WF0Zb182TxExM65jBojJPYquSCNXxiCDQjGzPpoje_zezt8oUVQiQgavLGWqDo1v_5AyZ1V-yGhJVzsHY5ubgW1g-oNA8ankseMJxBCP-ZAb8Iy83KZQLsHSTwzVFOksvcE0GbdogLlkvW1hUSjdT_T0"/>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="ml-[240px] pt-14 min-h-screen bg-surface">
+<div class="max-w-6xl mx-auto p-12">
+<!-- Hero Header -->
+<section class="mb-16">
+<div class="inline-block px-3 py-1 bg-surface-container-high border border-outline/20 rounded-sm mb-6">
+<span class="font-mono text-xs text-primary tracking-[0.2em] uppercase">Cyber Maturity Framework</span>
+</div>
+<h2 class="text-6xl font-headline font-extrabold text-on-surface leading-none tracking-tighter mb-6">
+                    Maturity Model <br/><span class="text-primary/80">CMMI Breakdown.</span>
+</h2>
+<p class="max-w-2xl text-secondary text-lg leading-relaxed font-body">
+                    A rigorous architectural alignment of Australian security standards against global CMMI tiers. Our archival approach ensures every control is not just implemented, but optimised for resilience.
+                </p>
+</section>
+<!-- Bento Grid Maturity Tiers -->
+<div class="grid grid-cols-12 gap-6 mb-20">
+<!-- Tier 1: Initial -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-low p-8 rounded-lg relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500">
+<span class="font-mono text-4xl text-outline/20 absolute -right-2 -top-2 font-black">01</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Initial</h3>
+<p class="text-secondary text-sm mb-8 leading-relaxed">Reactive and unpredictable. Processes are undocumented and driven by individual heroics rather than systemic governance.</p>
+<div class="flex items-center gap-2 text-primary font-label text-xs font-bold uppercase tracking-widest">
+<span>Risk Profile: Critical</span>
+<span class="material-symbols-outlined text-sm" data-icon="warning">warning</span>
+</div>
+</div>
+<!-- Tier 2: Managed -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-low p-8 rounded-lg relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500">
+<span class="font-mono text-4xl text-outline/20 absolute -right-2 -top-2 font-black">02</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Managed</h3>
+<p class="text-secondary text-sm mb-8 leading-relaxed">Projects are planned, performed, measured, and controlled. Basic infrastructure hygiene is established across departments.</p>
+<div class="flex items-center gap-2 text-secondary font-label text-xs font-bold uppercase tracking-widest">
+<span>Status: Baseline</span>
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+<!-- Tier 3: Defined (Hero Feature) -->
+<div class="col-span-12 md:col-span-8 bg-surface-container-high p-8 rounded-lg border-l-4 border-primary relative glow-brand">
+<span class="font-mono text-4xl text-primary/10 absolute right-4 top-4 font-black">03</span>
+<div class="max-w-md">
+<h3 class="font-headline text-3xl font-bold mb-4 text-on-surface">Defined &amp; Standardised</h3>
+<p class="text-on-surface-variant text-base mb-8">The organisation-wide standard for security operations. Processes are well characterised and understood across the Australian enterprise landscape.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface/50 p-4 rounded border border-outline/10">
+<span class="block font-mono text-[10px] text-primary mb-1 uppercase tracking-tighter">Governance</span>
+<span class="text-sm font-label font-medium">Policy-Led Action</span>
+</div>
+<div class="bg-surface/50 p-4 rounded border border-outline/10">
+<span class="block font-mono text-[10px] text-primary mb-1 uppercase tracking-tighter">Assurance</span>
+<span class="text-sm font-label font-medium">Evidence Chaining</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tier 4: Quantitatively Managed -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-low p-8 rounded-lg relative overflow-hidden hover:bg-surface-container-high transition-all">
+<span class="font-mono text-4xl text-outline/20 absolute -right-2 -top-2 font-black">04</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Quantified</h3>
+<p class="text-secondary text-sm mb-8 leading-relaxed">Security performance is controlled using statistical and quantitative techniques. Real-time telemetry drives the archive.</p>
+<div class="h-1 bg-surface-variant w-full rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+</div>
+<!-- Tier 5: Optimising -->
+<div class="col-span-12 bg-surface-container-lowest p-12 rounded-lg border border-outline/10 flex flex-col md:flex-row items-center gap-12 group">
+<div class="flex-1">
+<span class="font-mono text-xs text-primary mb-4 block uppercase tracking-widest">The Sentinel Peak</span>
+<h3 class="font-headline text-4xl font-black mb-6 italic">Optimising &amp; Resilient</h3>
+<p class="text-secondary text-lg leading-relaxed mb-8">Continuous process improvement through both incremental and innovative technological improvements. The Monolithic Archive becomes a self-healing security ecosystem.</p>
+<button class="bg-gradient-to-r from-[#EB5E28] to-[#C44A1A] text-on-primary px-8 py-4 rounded-sm font-label font-bold text-sm tracking-widest uppercase transition-transform hover:scale-[1.02] active:scale-95 glow-brand">
+                            Enquire About Level 5
+                        </button>
+</div>
+<div class="w-full md:w-1/3 aspect-square bg-surface-container-high rounded-full flex items-center justify-center relative">
+<div class="absolute inset-0 border-[12px] border-primary/5 rounded-full animate-pulse"></div>
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</div>
+</div>
+<!-- Coming Soon Section -->
+<section class="mb-20 border-t border-outline/10 pt-20">
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/2">
+<h4 class="font-headline text-3xl font-bold mb-6">Real-Time Signals &amp; Evidence Chaining</h4>
+<p class="text-secondary text-base leading-relaxed mb-6">
+                            We are currently finalising the integration of live telemetry streams into the Maturity Model. Soon, your compliance status won't be a static document, but a living, breathing ledger of truth.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="hub">hub</span>
+<div>
+<span class="font-label font-bold block">Immutable Evidence Chaining</span>
+<span class="text-sm text-secondary">Every security signal cryptographically linked to a control requirement.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="analytics">analytics</span>
+<div>
+<span class="font-label font-bold block">Predictive Maturity Forecasting</span>
+<span class="text-sm text-secondary">Using historical performance to predict future compliance drifts.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="md:w-1/2 relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-lg blur-3xl -z-10"></div>
+<div class="bg-surface-container-high p-1 rounded-lg border border-outline/20">
+<img alt="Cyber Security Data Visualisation" class="w-full h-auto rounded-md filter grayscale brightness-75 contrast-125" data-alt="abstract high-tech data visualisation with glowing lines and binary code representing evidence chaining in a dark digital space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd91du_v40f7OqVgAmL4GwAV8N7gkK2HGA6d1ivg-LyH7nbKDKhjILlA8OyEsvOUnJ_nWalimqi5IXYDnXvHwcT3kNM2vpAlIcAsKtaM2JoRAyjpU07VOFCTXRcRrGJtD3jiSgduYkzRgGGu_gLofFYOwCk1V06trJfS7k9XpC6_qmL8tT0IiJgOpp_mipQl6f6lgXB0nLDF0wqGfUboX_qerBsImUqlnmoyxTHcvid53975LELGd0SmQdabn4dhhaBKyAnX5lxXI"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="glass px-6 py-3 rounded-full border border-primary/30">
+<span class="font-mono text-sm tracking-widest text-primary font-bold">COMING Q4 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer Archive -->
+<footer class="ml-[240px] bg-surface-container-lowest border-t border-[#A88A80]/15 py-20 px-12">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-2">
+<h2 class="text-3xl font-black text-[#E6E2DE] font-headline tracking-tighter mb-4">Monolithic Archive</h2>
+<p class="text-secondary max-w-sm mb-8 leading-relaxed">The authoritative sentinel for high-stakes information security and compliance management across the Australian sovereign landscape.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="link">link</span>
+</a>
+<a class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-mono text-xs text-primary mb-6 uppercase tracking-widest">Platform</h5>
+<ul class="space-y-3 font-label text-sm font-medium text-secondary">
+<li><a class="hover:text-on-surface transition-colors" href="#">Maturity Model</a></li>
+<li><a class="hover:text-on-surface transition-colors" href="#">Evidence Archive</a></li>
+<li><a class="hover:text-on-surface transition-colors" href="#">Incident Sentinel</a></li>
+<li><a class="hover:text-on-surface transition-colors" href="#">Pricing</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-mono text-xs text-primary mb-6 uppercase tracking-widest">Legal</h5>
+<ul class="space-y-3 font-label text-sm font-medium text-secondary">
+<li><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-on-surface transition-colors" href="#">Data Sovereignty</a></li>
+<li><a class="hover:text-on-surface transition-colors" href="#">Compliance</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-6xl mx-auto mt-20 pt-8 border-t border-outline/5 flex justify-between items-center text-[10px] font-mono text-outline/40 uppercase tracking-[0.3em]">
+<span>© 2024 EARTHY SENTINEL ARCHIVE. ALL RIGHTS RESERVED.</span>
+<span>SYDNEY // CANBERRA</span>
+</div>
+</footer>
+</body></html>

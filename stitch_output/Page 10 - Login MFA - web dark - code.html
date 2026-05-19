@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&amp;family=Josefin+Sans:wght@400;500;600&amp;family=Montserrat:wght@400;500&amp;family=Epilogue:wght@700&amp;family=Manrope:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600&amp;family=Geist+Mono&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ffb4ab",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "on-surface": "#e6e2de",
+                        "on-tertiary": "#5d1900",
+                        "secondary": "#cdc6ba",
+                        "primary-container": "#f2632d",
+                        "on-primary-fixed": "#390c00",
+                        "on-primary": "#5c1900",
+                        "on-background": "#e6e2de",
+                        "on-tertiary-fixed-variant": "#7d2c0d",
+                        "on-secondary-fixed-variant": "#4a463d",
+                        "on-tertiary-container": "#511500",
+                        "surface-container-highest": "#363432",
+                        "secondary-container": "#4f4b42",
+                        "surface-dim": "#141311",
+                        "inverse-on-surface": "#32302e",
+                        "surface-tint": "#ffb59c",
+                        "primary-fixed-dim": "#ffb59c",
+                        "surface-container-lowest": "#0f0e0c",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#141311",
+                        "tertiary-container": "#dc734f",
+                        "surface-container": "#211f1d",
+                        "outline-variant": "#594139",
+                        "inverse-surface": "#e6e2de",
+                        "inverse-primary": "#ab3600",
+                        "primary-fixed": "#ffdbcf",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#ffdbd0",
+                        "primary": "#ffb59c",
+                        "on-error": "#690005",
+                        "surface-container-high": "#2b2a28",
+                        "on-primary-fixed-variant": "#822700",
+                        "surface-container-low": "#1c1b19",
+                        "secondary-fixed": "#e9e2d5",
+                        "on-secondary": "#343028",
+                        "background": "#141311",
+                        "outline": "#a88a80",
+                        "on-secondary-container": "#c2bbaf",
+                        "tertiary": "#ffb59d",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-secondary-fixed": "#1e1b14",
+                        "surface-variant": "#363432",
+                        "surface-bright": "#3a3937",
+                        "on-primary-container": "#511500",
+                        "secondary-fixed-dim": "#cdc6ba",
+                        "on-surface-variant": "#e1bfb4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Plus Jakarta Sans"],
+                        "raleway": ["Raleway"],
+                        "josefin": ["Josefin Sans"],
+                        "montserrat": ["Montserrat"],
+                        "mono": ["Geist Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glow-brand { box-shadow: 0 0 20px rgba(235, 94, 40, 0.15); }
+        .mfa-shadow { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(168, 138, 128, 0.05); }
+        .depth-3d { transform: perspective(1000px) rotateX(2deg); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface overflow-hidden">
+<!-- Background Canvas (Simulating the Dashboard behind the modal) -->
+<div class="fixed inset-0 z-0 bg-[#141311] grid grid-cols-12 gap-6 p-8 opacity-40 blur-[2px]">
+<div class="col-span-3 h-full bg-surface-container-low rounded-lg"></div>
+<div class="col-span-9 flex flex-col gap-6">
+<div class="h-14 bg-surface-container-high rounded-lg w-full"></div>
+<div class="grid grid-cols-3 gap-6 h-40">
+<div class="bg-surface-container-high rounded-lg"></div>
+<div class="bg-surface-container-high rounded-lg"></div>
+<div class="bg-surface-container-high rounded-lg"></div>
+</div>
+<div class="flex-grow bg-surface-container-high rounded-lg"></div>
+</div>
+</div>
+<!-- MFA Backdrop Overlay -->
+<div class="fixed inset-0 z-10 bg-surface-dim/80 backdrop-blur-sm flex items-center justify-center p-4">
+<!-- 3D Popup Modal -->
+<div class="relative w-full max-w-lg bg-[#1C1B19] rounded-xl overflow-hidden mfa-shadow depth-3d border border-outline/10">
+<!-- Close Button -->
+<button aria-label="Close" class="absolute top-6 right-6 text-on-secondary-container hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-2xl" data-icon="close">close</span>
+</button>
+<div class="p-10 flex flex-col items-center text-center">
+<!-- Security Icon -->
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-8 border border-outline/10 glow-brand">
+<span class="material-symbols-outlined text-[#EB5E28] text-4xl" data-icon="verified_user">verified_user</span>
+</div>
+<!-- Typography: Raleway for Command, Josefin for Metadata -->
+<h1 class="font-raleway text-3xl font-bold tracking-tight text-on-surface mb-3">Enter Verification Code</h1>
+<p class="font-josefin text-secondary text-sm max-w-[280px] leading-relaxed mb-10">
+                    A 6-digit code has been sent to your authenticator app.
+                </p>
+<!-- OTP Inputs -->
+<div class="flex gap-3 mb-12">
+<input class="w-12 h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" maxlength="1" type="text"/>
+<input class="w-12 h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" maxlength="1" type="text"/>
+<input class="w-12 h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" maxlength="1" type="text"/>
+<div class="w-4"></div> <!-- Spacer for chunking digits -->
+<input class="w-12 h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" maxlength="1" type="text"/>
+<input class="w-12 h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" maxlength="1" type="text"/>
+<input class="w-12 h-16 bg-surface-container-lowest border-b-2 border-outline/20 text-center text-2xl font-mono text-primary focus:outline-none focus:border-primary focus:ring-0 focus:bg-surface-container-high transition-all rounded-t-sm" maxlength="1" type="text"/>
+</div>
+<!-- Action Button -->
+<button class="w-full py-4 bg-gradient-to-r from-[#EB5E28] to-[#C44A1A] text-on-surface font-josefin font-semibold text-lg rounded-lg glow-brand hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg">
+                    Verify
+                </button>
+<!-- Help Link -->
+<div class="mt-6">
+<button class="text-secondary hover:text-on-surface font-josefin text-xs tracking-wider uppercase transition-colors">
+                        Resend Code
+                    </button>
+</div>
+</div>
+<!-- Footer Meta -->
+<div class="bg-surface-container-lowest/50 py-6 px-10 border-t border-outline/5 flex justify-center gap-8">
+<a class="font-josefin text-[10px] uppercase tracking-[0.2em] text-outline hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-josefin text-[10px] uppercase tracking-[0.2em] text-outline hover:text-secondary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<!-- Decorative Elements (Monolithic Accents) -->
+<div class="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#EB5E28] to-transparent opacity-20 z-20"></div>
+<div class="fixed bottom-0 left-0 w-full h-px bg-outline/5 z-20"></div>
+</body></html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Simplify IS | Security Verification</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&amp;family=Montserrat:wght@400;500;600&amp;family=Josefin+Sans:wght@400;600&amp;family=Geist+Mono&amp;family=Epilogue:wght@700&amp;family=Manrope:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#363432",
+                    "inverse-on-surface": "#32302e",
+                    "on-secondary": "#343028",
+                    "tertiary-container": "#dc734f",
+                    "outline-variant": "#594139",
+                    "error-container": "#93000a",
+                    "on-tertiary": "#5d1900",
+                    "on-secondary-fixed": "#1e1b14",
+                    "surface-container-low": "#1c1b19",
+                    "surface-dim": "#141311",
+                    "primary": "#ffb59c",
+                    "surface-container-high": "#2b2a28",
+                    "outline": "#a88a80",
+                    "inverse-surface": "#e6e2de",
+                    "surface": "#141311",
+                    "inverse-primary": "#ab3600",
+                    "surface-container": "#211f1d",
+                    "on-secondary-fixed-variant": "#4a463d",
+                    "on-primary-fixed-variant": "#822700",
+                    "on-primary-fixed": "#390c00",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "on-surface-variant": "#e1bfb4",
+                    "background": "#141311",
+                    "on-tertiary-fixed": "#390c00",
+                    "on-background": "#e6e2de",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#511500",
+                    "on-tertiary-fixed-variant": "#7d2c0d",
+                    "on-error-container": "#ffdad6",
+                    "surface-tint": "#ffb59c",
+                    "surface-container-lowest": "#0f0e0c",
+                    "secondary": "#cdc6ba",
+                    "secondary-fixed": "#e9e2d5",
+                    "tertiary-fixed": "#ffdbd0",
+                    "primary-fixed": "#ffdbcf",
+                    "secondary-container": "#4f4b42",
+                    "tertiary": "#ffb59d",
+                    "on-error": "#690005",
+                    "on-primary": "#5c1900",
+                    "primary-fixed-dim": "#ffb59c",
+                    "on-secondary-container": "#c2bbaf",
+                    "secondary-fixed-dim": "#cdc6ba",
+                    "primary-container": "#f2632d",
+                    "surface-container-highest": "#363432",
+                    "surface-bright": "#3a3937",
+                    "on-tertiary-container": "#511500",
+                    "on-surface": "#e6e2de"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Raleway", "Epilogue"],
+                    "body": ["Montserrat", "Manrope"],
+                    "label": ["Josefin Sans", "Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-brand {
+            box-shadow: 0 0 20px rgba(235,94,40,0.15);
+        }
+        .glass-panel {
+            background: rgba(20, 19, 17, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .otp-input:focus {
+            box-shadow: 0 4px 12px rgba(235,94,40,0.2);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#141311]/80 backdrop-blur-md shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="flex justify-between items-center px-8 py-6 w-full">
+<div class="text-xl font-bold tracking-tighter text-[#E6E2DE] font-['Raleway']">
+                Simplify IS
+            </div>
+<div class="flex items-center gap-4">
+<button class="text-orange-600 dark:text-[#EB5E28] scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center px-6 pt-24 pb-12 relative overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-outline-variant rounded-full blur-[100px]"></div>
+</div>
+<!-- 3D Modal Container -->
+<div class="relative z-10 w-full max-w-2xl transform perspective-1000">
+<div class="glass-panel border border-[#A88A80]/15 rounded-xl shadow-[0_40px_80px_rgba(0,0,0,0.6)] overflow-hidden transition-all duration-500 hover:translate-y-[-4px]">
+<!-- Modal Header -->
+<div class="p-10 text-center border-b border-[#A88A80]/10 bg-surface-container-low">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-surface-container-high mb-6 border border-primary/20">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h1 class="font-headline text-3xl font-bold tracking-tight text-on-surface mb-2">Verify Identity</h1>
+<p class="text-secondary font-label tracking-wide text-sm max-w-md mx-auto">
+                        A unique 6-digit code has been dispatched to your strategic communication node <span class="text-primary font-medium">m***s@enterprise.archive</span>
+</p>
+</div>
+<!-- Modal Body: OTP Input -->
+<div class="p-10 md:p-14 bg-surface-container-lowest">
+<div class="flex justify-between gap-3 md:gap-4 mb-10">
+<!-- OTP Fields -->
+<input class="otp-input w-full aspect-square md:w-16 md:h-16 text-center text-2xl font-bold bg-surface-container-high border-b-2 border-outline/30 focus:border-primary-container focus:outline-none transition-all duration-300 rounded-lg text-primary" maxlength="1" placeholder="0" type="text"/>
+<input class="otp-input w-full aspect-square md:w-16 md:h-16 text-center text-2xl font-bold bg-surface-container-high border-b-2 border-outline/30 focus:border-primary-container focus:outline-none transition-all duration-300 rounded-lg text-primary" maxlength="1" placeholder="0" type="text"/>
+<input class="otp-input w-full aspect-square md:w-16 md:h-16 text-center text-2xl font-bold bg-surface-container-high border-b-2 border-outline/30 focus:border-primary-container focus:outline-none transition-all duration-300 rounded-lg text-primary" maxlength="1" placeholder="0" type="text"/>
+<input class="otp-input w-full aspect-square md:w-16 md:h-16 text-center text-2xl font-bold bg-surface-container-high border-b-2 border-outline/30 focus:border-primary-container focus:outline-none transition-all duration-300 rounded-lg text-primary" maxlength="1" placeholder="0" type="text"/>
+<input class="otp-input w-full aspect-square md:w-16 md:h-16 text-center text-2xl font-bold bg-surface-container-high border-b-2 border-outline/30 focus:border-primary-container focus:outline-none transition-all duration-300 rounded-lg text-primary" maxlength="1" placeholder="0" type="text"/>
+<input class="otp-input w-full aspect-square md:w-16 md:h-16 text-center text-2xl font-bold bg-surface-container-high border-b-2 border-outline/30 focus:border-primary-container focus:outline-none transition-all duration-300 rounded-lg text-primary" maxlength="1" placeholder="0" type="text"/>
+</div>
+<!-- Action Area -->
+<div class="flex flex-col gap-6">
+<button class="w-full py-4 bg-gradient-to-r from-primary-container to-[#C44A1A] text-on-primary font-bold rounded-lg glow-brand hover:opacity-90 transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2">
+<span>Authorize Access</span>
+<span class="material-symbols-outlined text-xl">shield</span>
+</button>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 py-3 border border-outline/15 rounded-lg text-secondary font-label text-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">refresh</span>
+                                Resend Code
+                            </button>
+<button class="flex items-center justify-center gap-2 py-3 border border-outline/15 rounded-lg text-secondary font-label text-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">edit</span>
+                                Update Email
+                            </button>
+</div>
+</div>
+</div>
+<!-- Modal Footer Info -->
+<div class="px-10 py-6 bg-surface-container text-center">
+<p class="text-secondary/60 text-xs font-label tracking-widest uppercase">
+                        Secure Session ID: <span class="font-mono text-outline">ARC-7729-SENTINEL</span>
+</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-auto bg-[#141311] border-t border-[#A88A80]/15">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-8">
+<div class="max-w-md">
+<div class="text-[#E6E2DE] font-['Raleway'] font-bold mb-4">Simplify IS</div>
+<p class="font-['Montserrat'] leading-relaxed text-sm text-[#CCC5B9]/60">
+                    Establishing digital permanence through strategic oversight. Our mission is to secure the monolithic archive of modern enterprise.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:flex gap-x-12 gap-y-4">
+<a class="text-[#CCC5B9]/60 hover:text-[#E6E2DE] transition-colors duration-300 font-['Montserrat'] text-sm" href="#">Privacy Policy</a>
+<a class="text-[#CCC5B9]/60 hover:text-[#E6E2DE] transition-colors duration-300 font-['Montserrat'] text-sm" href="#">Terms of Service</a>
+<a class="text-[#CCC5B9]/60 hover:text-[#E6E2DE] transition-colors duration-300 font-['Montserrat'] text-sm" href="#">Security Charter</a>
+<a class="text-[#CCC5B9]/60 hover:text-[#E6E2DE] transition-colors duration-300 font-['Montserrat'] text-sm" href="#">Legal Compliance</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,173 @@
+=== API Routes Audit ===
+
+## All API Routes Found:
+./app/api/assignments/[assignmentId]/route.ts
+./app/api/assignments/route.ts
+./app/api/audit-trail/[controlId]/route.ts
+./app/api/audit-trail/route.ts
+./app/api/final-answers/[framework]/[id]/route.ts
+./app/api/final-answers/[framework]/route.ts
+./app/api/final-answers/route.ts
+./app/api/health/route.ts
+./app/api/internal/assessment-cypher/route.ts
+./app/api/internal/route.ts
+./app/api/internal/test/route.ts
+./app/api/internal/threat-refresh/route.ts
+./app/api/responses/[framework]/[controlId]/[responseId]/route.ts
+./app/api/responses/[framework]/[controlId]/route.ts
+./app/api/responses/route.ts
+./app/api/users/[userId]/activity/route.ts
+./app/api/users/[userId]/route.ts
+./app/api/users/route.ts
+./app/api/v1/account/route.ts
+./app/api/v1/assessment/answer/route.ts
+./app/api/v1/assessment/questions/route.ts
+./app/api/v1/assessments/organizations/[orgId]/export/bi/route.ts
+./app/api/v1/assessments/organizations/[orgId]/reassess/route.ts
+./app/api/v1/assessments/organizations/[orgId]/risks/route.ts
+./app/api/v1/assessments/organizations/[orgId]/scores/route.ts
+./app/api/v1/assessments/organizations/[orgId]/sessions/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/answer/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/cypher/message/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/cypher/start/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/export/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/questions/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/responses/[responseId]/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/responses/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/scores/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/subdomain/[subdomainKey]/confirm/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/subdomain/[subdomainKey]/recap/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/subdomains/route.ts
+./app/api/v1/assessments/sessions/route.ts
+./app/api/v1/auth/forgot-password/route.ts
+./app/api/v1/auth/login/route.ts
+./app/api/v1/auth/logout/route.ts
+./app/api/v1/auth/mfa/enroll/route.ts
+./app/api/v1/auth/mfa/enroll/verify/route.ts
+./app/api/v1/auth/mfa/verify/route.ts
+./app/api/v1/auth/resend-verification/route.ts
+./app/api/v1/auth/reset-password/route.ts
+./app/api/v1/auth/session/route.ts
+./app/api/v1/auth/signup/route.ts
+./app/api/v1/billing/checkout/route.ts
+./app/api/v1/billing/webhook/route.ts
+./app/api/v1/contact/route.ts
+./app/api/v1/industry/map/route.ts
+./app/api/v1/notifications/preferences/route.ts
+./app/api/v1/notifications/send/route.ts
+./app/api/v1/onboarding/complete/route.ts
+./app/api/v1/onboarding/consultant-name/route.ts
+./app/api/v1/onboarding/frameworks/route.ts
+./app/api/v1/onboarding/organisation/route.ts
+./app/api/v1/onboarding/state/route.ts
+./app/api/v1/organisation/frameworks/route.ts
+./app/api/v1/tech-stack/[organizationId]/route.ts
+./app/api/v1/tech-stack/discovery/finalize/route.ts
+./app/api/v1/tech-stack/discovery/message/route.ts
+./app/api/v1/tech-stack/discovery/start/route.ts
+./app/api/v1/threat-readiness/[organizationId]/clarifications/[threatKey]/route.ts
+./app/api/v1/threat-readiness/[organizationId]/export/route.ts
+./app/api/v1/threat-readiness/[organizationId]/order/route.ts
+./app/api/v1/threat-readiness/[organizationId]/refresh/route.ts
+./app/api/v1/threat-readiness/[organizationId]/route.ts
+./app/api/v1/threat-readiness/[organizationId]/threats/[threatKey]/route.ts
+
+## Route Method & Path Mapping:
+./app/api/v1/threat-readiness/[organizationId]/order/route.ts:export async function PATCH(
+./app/api/v1/threat-readiness/[organizationId]/threats/[threatKey]/route.ts:export async function PATCH(
+./app/api/v1/threat-readiness/[organizationId]/refresh/route.ts:export async function POST(
+./app/api/v1/threat-readiness/[organizationId]/route.ts:export async function GET(
+./app/api/v1/threat-readiness/[organizationId]/export/route.ts:export async function GET(
+./app/api/v1/threat-readiness/[organizationId]/clarifications/[threatKey]/route.ts:export async function POST(
+./app/api/v1/assessments/organizations/[orgId]/reassess/route.ts:export async function POST(
+./app/api/v1/assessments/organizations/[orgId]/scores/route.ts:export async function GET(
+./app/api/v1/assessments/organizations/[orgId]/sessions/route.ts:export async function GET(
+./app/api/v1/assessments/organizations/[orgId]/risks/route.ts:export async function GET(
+./app/api/v1/assessments/organizations/[orgId]/risks/route.ts:export async function POST(
+./app/api/v1/assessments/organizations/[orgId]/export/bi/route.ts:export async function GET(
+./app/api/v1/assessments/sessions/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/assessments/sessions/[sessionId]/answer/route.ts:export async function POST(
+./app/api/v1/assessments/sessions/[sessionId]/subdomains/route.ts:export async function GET(
+./app/api/v1/assessments/sessions/[sessionId]/responses/route.ts:export async function POST(
+./app/api/v1/assessments/sessions/[sessionId]/responses/[responseId]/route.ts:export async function PUT(
+./app/api/v1/assessments/sessions/[sessionId]/scores/route.ts:export async function GET(
+./app/api/v1/assessments/sessions/[sessionId]/cypher/start/route.ts:export async function POST(
+./app/api/v1/assessments/sessions/[sessionId]/cypher/message/route.ts:export async function POST(
+./app/api/v1/assessments/sessions/[sessionId]/route.ts:export async function GET(
+./app/api/v1/assessments/sessions/[sessionId]/subdomain/[subdomainKey]/recap/route.ts:export async function POST(
+./app/api/v1/assessments/sessions/[sessionId]/subdomain/[subdomainKey]/confirm/route.ts:export async function POST(
+./app/api/v1/assessments/sessions/[sessionId]/export/route.ts:export async function POST(
+./app/api/v1/assessments/sessions/[sessionId]/questions/route.ts:export async function GET(
+./app/api/v1/contact/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/resend-verification/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/signup/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/logout/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/mfa/enroll/verify/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/mfa/enroll/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/mfa/verify/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/forgot-password/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/reset-password/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/login/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/auth/session/route.ts:export async function GET(request: NextRequest) {
+./app/api/v1/assessment/answer/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/assessment/questions/route.ts:export async function GET(request: NextRequest) {
+./app/api/v1/tech-stack/discovery/start/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/tech-stack/discovery/message/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/tech-stack/discovery/finalize/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/tech-stack/[organizationId]/route.ts:export async function GET(
+./app/api/v1/tech-stack/[organizationId]/route.ts:export async function PUT(
+./app/api/v1/organisation/frameworks/route.ts:export async function GET(request: NextRequest) {
+./app/api/v1/organisation/frameworks/route.ts:export async function PATCH(request: NextRequest) {
+./app/api/v1/industry/map/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/account/route.ts:export async function DELETE(request: NextRequest) {
+./app/api/v1/notifications/preferences/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/notifications/send/route.ts:export async function POST(request: NextRequest) {
+./app/api/v1/billing/webhook/route.ts:export async function POST(request: NextRequest) {
+
+## All lib/api or services directories:
+./lib/api
+
+## Middleware & Auth patterns:
+./app/api/v1/threat-readiness/[organizationId]/order/route.ts
+./app/api/v1/threat-readiness/[organizationId]/threats/[threatKey]/route.ts
+./app/api/v1/threat-readiness/[organizationId]/refresh/route.ts
+./app/api/v1/threat-readiness/[organizationId]/route.ts
+./app/api/v1/threat-readiness/[organizationId]/export/route.ts
+./app/api/v1/threat-readiness/[organizationId]/clarifications/[threatKey]/route.ts
+./app/api/v1/assessments/organizations/[orgId]/reassess/route.ts
+./app/api/v1/assessments/organizations/[orgId]/scores/route.ts
+./app/api/v1/assessments/organizations/[orgId]/sessions/route.ts
+./app/api/v1/assessments/organizations/[orgId]/risks/route.ts
+./app/api/v1/assessments/organizations/[orgId]/export/bi/route.ts
+./app/api/v1/assessments/sessions/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/answer/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/subdomains/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/responses/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/responses/[responseId]/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/scores/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/cypher/start/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/cypher/message/route.ts
+./app/api/v1/assessments/sessions/[sessionId]/route.ts
+
+## Database query patterns (Supabase calls):
+./lib/auth/rateLimiter.ts
+./lib/auth/routing.ts
+./lib/auth/client.ts
+./lib/auth/server.ts
+./lib/auth/mfa.ts
+./lib/orchestration/assessment/assessmentCompletion.ts
+./lib/orchestration/assessment/assessmentSessionHandler.ts
+./lib/orchestration/scoring/maturityScoring.ts
+./lib/orchestration/handlers/industryMappingHandler.ts
+./lib/db/admin.ts
+./lib/db/client.ts
+./lib/db/server.ts
+./lib/api/secrets.ts
+./lib/api/client.ts
+./lib/api/onboarding.ts
+./lib/api/auth.ts
+
+## Hook files (data fetching):
+
+

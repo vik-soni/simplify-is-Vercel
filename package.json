@@ -1,0 +1,53 @@
+{
+  "name": "simplify-is-vercel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --coverage",
+    "test:e2e": "playwright test",
+    "test:autonomous": "tsx test-harness/autonomous-validator.ts",
+    "test:autonomous:smoke": "tsx test-harness/autonomous-validator.ts --smoke --max-iterations 1 --conversations 4",
+    "test:autonomous:marathon": "tsx test-harness/autonomous-validator.ts --max-hours 72 --max-iterations 36",
+    "security:audit": "node scripts/security/audit.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.80.0",
+    "@supabase/ssr": "0.9.0",
+    "@supabase/supabase-js": "2.99.3",
+    "@tanstack/react-query": "^5.91.2",
+    "bad-words": "^3.0.4",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.577.0",
+    "next": "14.2.35",
+    "react": "^18",
+    "react-dom": "^18",
+    "resend": "^6.9.4",
+    "stripe": "^20.4.1",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^16.2.0",
+    "@playwright/test": "^1.58.2",
+    "@types/bad-words": "^3.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "dotenv": "^17.4.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "jest": "^30.3.0",
+    "js-yaml": "^4.1.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}

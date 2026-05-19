@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&amp;family=Josefin+Sans:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600&amp;family=Geist+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#1A1917", // Deep Charcoal
+                        "primary": "#EB5E28", // Burnt Orange
+                        "secondary": "#CCC5B9", // Warm Stone
+                        "surface-variant": "#2B2A28",
+                        "on-surface": "#CCC5B9",
+                        "on-background": "#F5F2ED",
+                        "outline": "#403D39",
+                        "outline-variant": "#2B2A28"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Raleway", "sans-serif"],
+                        "body": ["Montserrat", "sans-serif"],
+                        "label": ["Josefin Sans", "sans-serif"],
+                        "mono": ["Geist Mono", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-brand {
+            box-shadow: 0 0 60px rgba(235, 94, 40, 0.15);
+        }
+        .perspective-lg {
+            perspective: 2000px;
+        }
+        .tilt-card {
+            transform: rotateX(2deg) rotateY(-1deg);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #403D39;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-[#0F0E0C] text-on-surface font-body selection:bg-primary selection:text-white overflow-hidden">
+<!-- Background Layer: Pricing Page (Blurred) -->
+<main aria-hidden="true" class="fixed inset-0 w-full h-full overflow-hidden blur-xl scale-110 saturate-50 brightness-[0.2] pointer-events-none">
+<div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+<header class="text-center mb-24">
+<h2 class="font-headline text-6xl font-black tracking-tighter mb-4 text-on-background uppercase">The Monolithic Archive</h2>
+<p class="font-label text-secondary tracking-widest uppercase">Select your level of digital permanence</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-variant h-[600px] rounded-lg border border-outline/20 p-10 flex flex-col justify-between">
+<div>
+<div class="font-mono text-primary text-xs uppercase tracking-[0.3em] mb-6">Archive I</div>
+<h3 class="font-headline text-4xl font-bold mb-8">Personal</h3>
+</div>
+</div>
+<div class="bg-surface-variant h-[600px] rounded-lg border-2 border-primary/30 p-10 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary px-4 py-1 font-mono text-[10px] text-white font-bold uppercase">Active</div>
+</div>
+<div class="bg-surface-variant h-[600px] rounded-lg border border-outline/20 p-10 flex flex-col justify-between"></div>
+</div>
+</div>
+</main>
+<!-- Modal Overlay -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-md px-4 py-8">
+<!-- 3D Styled Modal Container -->
+<div class="perspective-lg w-full max-w-2xl">
+<div class="relative bg-surface tilt-card rounded-lg shadow-[0_40px_100px_rgba(0,0,0,0.9)] border border-white/5 glow-brand overflow-hidden flex flex-col max-h-[90vh]">
+<!-- Header Accent -->
+<div class="h-1.5 w-full bg-gradient-to-r from-primary to-[#822700]"></div>
+<!-- Close Button -->
+<button aria-label="Close modal" class="absolute top-8 right-8 z-20 text-secondary/40 hover:text-primary transition-colors duration-300 flex items-center justify-center w-10 h-10 hover:bg-white/5 rounded-full">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<!-- Modal Content Scroll Area -->
+<div class="px-8 py-10 md:px-14 md:py-12 overflow-y-auto custom-scrollbar">
+<!-- Brand Anchor -->
+<div class="mb-10 text-center md:text-left">
+<h1 class="font-headline text-3xl font-black text-on-background tracking-tight uppercase mb-2">Simplify IS</h1>
+<p class="font-label text-[10px] tracking-[0.25em] text-primary font-bold uppercase">Security Provisioning Protocol</p>
+</div>
+<!-- Signup Form -->
+<form class="space-y-10" onsubmit="return false;">
+<!-- Section: Identity -->
+<div class="space-y-6">
+<div class="flex items-center gap-4 mb-4">
+<span class="h-px flex-1 bg-outline/30"></span>
+<span class="font-label text-[10px] tracking-widest text-secondary/40 uppercase">Identity Details</span>
+<span class="h-px flex-1 bg-outline/30"></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.15em] text-secondary font-bold uppercase" for="full_name">Full Name</label>
+<input class="w-full bg-[#141311] border-0 border-b-2 border-outline/40 focus:border-primary focus:ring-0 text-on-surface placeholder:text-outline/40 font-body py-3 text-sm transition-all duration-300" id="full_name" placeholder="A. VANCE" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.15em] text-secondary font-bold uppercase" for="work_email">Work Email</label>
+<input class="w-full bg-[#141311] border-0 border-b-2 border-outline/40 focus:border-primary focus:ring-0 text-on-surface placeholder:text-outline/40 font-body py-3 text-sm transition-all duration-300" id="work_email" placeholder="vance.a@simplify.is" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.15em] text-secondary font-bold uppercase" for="country">Primary Jurisdiction (Location)</label>
+<div class="relative">
+<select class="w-full bg-[#141311] border-0 border-b-2 border-outline/40 focus:border-primary focus:ring-0 text-on-surface font-body py-3 text-sm appearance-none cursor-pointer" id="country">
+<option selected="" value="AU">Australia</option>
+<option value="US">United States</option>
+<option value="UK">United Kingdom</option>
+<option value="EU">European Union</option>
+<option value="SG">Singapore</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-outline/60 text-lg">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Section: Rewards & Access -->
+<div class="space-y-6">
+<div class="flex items-center gap-4 mb-4">
+<span class="h-px flex-1 bg-outline/30"></span>
+<span class="font-label text-[10px] tracking-widest text-secondary/40 uppercase">Rewards &amp; Access</span>
+<span class="h-px flex-1 bg-outline/30"></span>
+</div>
+<div class="space-y-4">
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.15em] text-secondary font-bold uppercase" for="discount_code">Legacy Referral / Discount Code</label>
+<input class="w-full bg-[#141311] border-0 border-b-2 border-outline/40 focus:border-primary focus:ring-0 text-on-surface placeholder:text-outline/40 font-mono py-3 text-sm transition-all duration-300" id="discount_code" placeholder="OPTIONAL" type="text" value="EARTHY-SENTINEL-90"/>
+</div>
+<!-- Reward Status Banner -->
+<div class="bg-primary/10 border border-primary/20 rounded p-4 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-xl">verified</span>
+<div>
+<p class="font-label text-[10px] text-primary font-bold uppercase tracking-wider mb-0.5">Reward Status</p>
+<p class="font-body text-[11px] text-secondary/90 leading-tight">Code Applied: Extended 90-day Trial + Premium Features Unlocked for CISO Personnel.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Secure Payment -->
+<div class="space-y-6">
+<div class="flex items-center justify-between gap-4 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary/60 text-lg">shield</span>
+<span class="font-label text-[10px] tracking-widest text-secondary/40 uppercase">Secure Payment Node</span>
+</div>
+<div class="h-px flex-1 bg-outline/30"></div>
+</div>
+<!-- Card Details -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 opacity-40 grayscale pointer-events-none transition-all duration-500" id="payment_fields">
+<div class="md:col-span-2 space-y-2">
+<label class="font-label text-[10px] tracking-[0.15em] text-secondary/60 font-bold uppercase">Card Number</label>
+<div class="relative">
+<input class="w-full bg-[#141311] border-0 border-b-2 border-outline/20 text-on-surface font-mono py-3 text-sm" placeholder="•••• •••• •••• ••••" type="text"/>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 text-outline/40">credit_card</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.15em] text-secondary/60 font-bold uppercase">Expiry</label>
+<input class="w-full bg-[#141311] border-0 border-b-2 border-outline/20 text-on-surface font-mono py-3 text-sm" placeholder="MM/YY" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.15em] text-secondary/60 font-bold uppercase">CVC</label>
+<input class="w-full bg-[#141311] border-0 border-b-2 border-outline/20 text-on-surface font-mono py-3 text-sm" placeholder="•••" type="password"/>
+</div>
+</div>
+<!-- No Payment Toggle -->
+<div class="flex items-center gap-3 bg-surface-variant/30 p-4 rounded-lg border border-outline/20">
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="no_payment_toggle" onchange="document.getElementById('payment_fields').style.opacity = this.checked ? '0.4' : '1'; document.getElementById('payment_fields').style.grayscale = this.checked ? '100%' : '0%'; document.getElementById('payment_fields').style.pointerEvents = this.checked ? 'none' : 'auto';" type="checkbox"/>
+<div class="w-11 h-6 bg-outline/40 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</div>
+<label class="font-body text-[11px] font-medium text-on-surface" for="no_payment_toggle">
+                                Start trial without payment details
+                                <span class="block text-[10px] text-secondary/50 font-normal">Activate immediately, provide billing later.</span>
+</label>
+</div>
+</div>
+<!-- Section: Agreements -->
+<div class="space-y-4 pt-4">
+<div class="flex items-start gap-3">
+<input class="mt-1 w-4 h-4 bg-transparent border-outline/40 text-primary focus:ring-offset-surface focus:ring-primary rounded-sm transition-all" id="terms" type="checkbox"/>
+<label class="font-body text-[11px] text-secondary/70 leading-relaxed cursor-pointer hover:text-on-surface transition-colors" for="terms">I agree to the <a class="text-primary underline decoration-primary/20 hover:decoration-primary/60" href="#">Terms of Service</a></label>
+</div>
+<div class="flex items-start gap-3">
+<input class="mt-1 w-4 h-4 bg-transparent border-outline/40 text-primary focus:ring-offset-surface focus:ring-primary rounded-sm transition-all" id="privacy" type="checkbox"/>
+<label class="font-body text-[11px] text-secondary/70 leading-relaxed cursor-pointer hover:text-on-surface transition-colors" for="privacy">I agree to the <a class="text-primary underline decoration-primary/20 hover:decoration-primary/60" href="#">Privacy Policy</a></label>
+</div>
+<div class="flex items-start gap-3">
+<input class="mt-1 w-4 h-4 bg-transparent border-outline/40 text-primary focus:ring-offset-surface focus:ring-primary rounded-sm transition-all" id="marketing" type="checkbox"/>
+<label class="font-body text-[11px] text-secondary/70 leading-relaxed cursor-pointer hover:text-on-surface transition-colors" for="marketing">Email me for updates regarding system status and protocol modifications</label>
+</div>
+</div>
+<!-- Action: Submit -->
+<div class="pt-4">
+<button class="w-full bg-primary hover:bg-[#C44A1A] py-5 px-8 rounded-lg font-label text-xs font-bold tracking-[0.3em] text-white uppercase shadow-[0_15px_30px_rgba(235,94,40,0.25)] hover:shadow-[0_20px_40px_rgba(235,94,40,0.4)] transition-all duration-300 active:scale-[0.98] group flex items-center justify-center gap-3">
+<span>Next</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Footer / Secondary Actions -->
+<div class="mt-12 text-center">
+<p class="font-body text-[11px] text-secondary/40">
+                        Already provisioned? 
+                        <a class="text-primary font-bold hover:underline decoration-primary/30 underline-offset-4 ml-1" href="#">Sign In</a>
+</p>
+<p class="mt-6 font-body text-[9px] text-secondary/30 uppercase tracking-widest">
+                        ISO/IEC 27001 Certified System • AES-256 End-to-End Encryption
+                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Background texture overlay -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.02] z-[200]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClimdRsO_Aqnvum2sZ6ZilAAIueNpbSmt2f3nlJRO_q5mMANudFvJFXa8K8MsByamPArmIqNBGSmgbJ2ZAptYZg7xIhJtJtFve8k9JnXq3ZInL5WuoPaIWgN_nF4Ef8TIfKosD0yvX6eKTDiCUB3ekScJveIwumullw38DzL8wAQliRR0_9sIWM1y6zfgejpbPd_l_fCUgvfngecArP3UDT-qDZKbTQDCgrT4RBVu7tdmB-UAVVzk8h7cYF3lFN5swXcCunLaDYDc');"></div>
+</body></html>

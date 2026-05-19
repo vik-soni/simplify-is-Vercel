@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en-AU"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&amp;family=Josefin+Sans:wght@300;400;600&amp;family=Montserrat:wght@400;500;600&amp;family=Epilogue:wght@700&amp;family=Manrope:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@500;700&amp;family=Geist+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "secondary": "#cdc6ba",
+                        "secondary-fixed": "#e9e2d5",
+                        "background": "#141311",
+                        "tertiary-fixed-dim": "#ffb59d",
+                        "surface": "#141311",
+                        "secondary-fixed-dim": "#cdc6ba",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#ffdbcf",
+                        "on-surface-variant": "#e1bfb4",
+                        "tertiary": "#ffb59d",
+                        "surface-dim": "#141311",
+                        "on-tertiary-container": "#511500",
+                        "on-error": "#690005",
+                        "surface-container-low": "#1c1b19",
+                        "inverse-surface": "#e6e2de",
+                        "on-surface": "#e6e2de",
+                        "primary": "#ffb59c",
+                        "on-tertiary-fixed-variant": "#7d2c0d",
+                        "secondary-container": "#4f4b42",
+                        "outline": "#a88a80",
+                        "on-background": "#e6e2de",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#ffb59c",
+                        "tertiary-container": "#dc734f",
+                        "surface-bright": "#3a3937",
+                        "on-primary-fixed-variant": "#822700",
+                        "surface-container-high": "#2b2a28",
+                        "on-secondary-fixed-variant": "#4a463d",
+                        "surface-variant": "#363432",
+                        "on-secondary-fixed": "#1e1b14",
+                        "on-secondary-container": "#c2bbaf",
+                        "on-primary-container": "#511500",
+                        "on-tertiary": "#5d1900",
+                        "inverse-on-surface": "#32302e",
+                        "surface-container-lowest": "#0f0e0c",
+                        "primary-fixed-dim": "#ffb59c",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-primary": "#5c1900",
+                        "outline-variant": "#594139",
+                        "primary-container": "#f2632d",
+                        "on-primary-fixed": "#390c00",
+                        "surface-container-highest": "#363432",
+                        "on-secondary": "#343028",
+                        "inverse-primary": "#ab3600",
+                        "surface-container": "#211f1d"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                },
+                "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Plus Jakarta Sans"]
+                }
+              },
+            },
+          }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-brand {
+            box-shadow: 0 0 20px rgba(235,94,40,0.15);
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .glass-surface {
+            background: rgba(20, 19, 17, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#141311]/80 backdrop-blur-md">
+<div class="flex justify-end items-center px-8 py-6 w-full max-w-7xl mx-auto gap-12">
+<!-- Progress Indicator -->
+<div class="flex flex-col items-end gap-2">
+<span class="font-['Geist_Mono'] text-[10px] uppercase tracking-[0.2em] text-primary">
+                Step 01 / 04
+            </span>
+<div class="flex gap-1 w-32">
+<div class="h-1 flex-1 bg-[#EB5E28]"></div>
+<div class="h-1 flex-1 bg-outline/20"></div>
+<div class="h-1 flex-1 bg-outline/20"></div>
+<div class="h-1 flex-1 bg-outline/20"></div>
+</div>
+</div>
+<!-- Close Button -->
+<button aria-label="Close" class="text-on-surface hover:text-[#EB5E28] transition-colors p-2">
+<span class="material-symbols-outlined text-3xl" data-icon="close">close</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center pt-24 pb-12 px-6">
+<!-- High-End Security Modal -->
+<div class="max-w-xl w-full surface-container-high editorial-shadow rounded-lg overflow-hidden border border-[#A88A80]/15 relative">
+<!-- Abstract Background Visual Component -->
+<div class="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+<div class="absolute -top-1/4 -right-1/4 w-96 h-96 rounded-full bg-primary-container blur-[100px]"></div>
+<div class="absolute -bottom-1/4 -left-1/4 w-64 h-64 rounded-full bg-secondary-container blur-[80px]"></div>
+</div>
+<div class="relative z-10 p-10 md:p-14">
+<!-- Progress Metadata (Mini) -->
+<div class="mb-8 flex items-center gap-4">
+<span class="font-['Geist_Mono'] text-xs uppercase tracking-[0.2em] text-primary">
+                    Initialisation
+                </span>
+<div class="h-[1px] flex-grow bg-outline/20"></div>
+</div>
+<!-- Editorial Headline Section -->
+<header class="mb-8">
+<h1 class="font-['Raleway'] text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface leading-tight mb-4">
+                    Establish Your Consultant's Identity
+                </h1>
+<p class="font-body text-secondary leading-relaxed text-base opacity-80">
+                    This is how you can address me; every user in your organisation will see this name.
+                </p>
+</header>
+<!-- Input Component -->
+<div class="mb-10 group">
+<label class="block font-['Josefin_Sans'] text-sm font-semibold tracking-wide text-secondary/60 mb-3 uppercase" for="identity_input">
+                    Designation Name
+                </label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline/30 px-0 py-4 font-['Josefin_Sans'] text-2xl text-on-surface placeholder:text-outline/40 focus:ring-0 focus:border-primary-container transition-all duration-300" id="identity_input" maxlength="10" placeholder="e.g. Cypher" type="text"/>
+<div class="absolute right-0 bottom-4 font-['Geist_Mono'] text-[10px] text-outline/50 uppercase">
+                        Max 10 Chars
+                    </div>
+</div>
+</div>
+<!-- Strategic Call to Action -->
+<div class="flex flex-col gap-6">
+<button class="group relative w-full py-5 bg-gradient-to-r from-[#EB5E28] to-[#C44A1A] rounded-lg glow-brand transition-all duration-300 hover:scale-[1.01] active:scale-[0.98]">
+<span class="relative z-10 font-['Josefin_Sans'] font-bold text-lg tracking-widest text-on-primary-fixed uppercase">
+                        Initialise Identity
+                    </span>
+</button>
+<div class="flex items-center justify-center gap-3 opacity-40">
+<span class="material-symbols-outlined text-xs" data-icon="lock" style='font-variation-settings: "FILL" 1;'>lock</span>
+<span class="font-['Geist_Mono'] text-[10px] uppercase tracking-tighter">Security Protocol Verified</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Blueprint -->
+<footer class="bg-[#141311] border-t border-[#A88A80]/15 w-full pt-12 pb-8 mt-auto">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8 items-center">
+<!-- Left -->
+<div class="text-[#E6E2DE] font-['Raleway'] font-bold text-lg text-center md:text-left">
+            Simplify IS
+        </div>
+<!-- Middle -->
+<div class="flex justify-center gap-8">
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+<!-- Right -->
+<div class="text-center md:text-right">
+<a class="text-[#CCC5B9]/60 font-['Montserrat'] text-sm hover:text-[#E6E2DE] transition-colors duration-300" href="#">Contact</a>
+</div>
+</div>
+<!-- Bottom Center -->
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-[#A88A80]/5 text-center">
+<span class="font-['Geist_Mono'] text-[10px] text-outline/30 uppercase tracking-[0.3em]">
+            © 2026 Simplify IS. Systems Online.
+        </span>
+</div>
+</footer>
+</body></html>
