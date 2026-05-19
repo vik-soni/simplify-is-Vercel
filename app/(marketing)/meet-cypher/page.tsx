@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Layers, ShieldCheck, FileSearch } from "lucide-react";
 import { MarketingShell } from "@/components/marketing/MarketingShell";
+import { ComingSoonTrigger } from "@/components/marketing/ComingSoonTrigger";
 
 export const metadata: Metadata = {
   title: "Meet Cypher | Simplify IS",
@@ -27,12 +28,12 @@ export default function MeetCypherPage() {
             Trained on ISO 27001:2022, NIST CSF 2.0, payment standards (PCI DSS), Australian prudential and uplift baselines where applicable, plus AI governance frameworks (ISO 42001, NIST AI RMF, AUVA ISS). One consultant voice — grounded in every standard you operate.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link
-              href="/signup"
+            <ComingSoonTrigger
+              source="meet_cypher_hero"
               className="bg-gradient-to-br from-primary to-primary-deep text-[#1A1917] px-10 py-5 font-josefin font-bold text-lg rounded-sm shadow-glow-brand hover:scale-105 transition-all duration-300"
             >
               Get Started
-            </Link>
+            </ComingSoonTrigger>
           </div>
         </section>
 
@@ -260,12 +261,12 @@ export default function MeetCypherPage() {
               Cypher is ready to guide your organisation through its first maturity assessment.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/signup"
+              <ComingSoonTrigger
+                source="meet_cypher_footer"
                 className="bg-gradient-to-br from-primary to-primary-deep text-[#1A1917] px-10 py-4 rounded-sm font-josefin font-bold uppercase text-sm tracking-[0.2em] shadow-glow-brand active:scale-95 transition-all"
               >
                 Get Started
-              </Link>
+              </ComingSoonTrigger>
               <Link
                 href="/how-it-works"
                 className="bg-surface-container-highest text-on-surface-muted px-10 py-4 rounded-sm font-josefin font-bold uppercase text-sm tracking-[0.2em] hover:bg-surface-bright transition-all"

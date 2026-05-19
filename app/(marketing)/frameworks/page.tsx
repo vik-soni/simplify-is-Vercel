@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MarketingShell } from "@/components/marketing/MarketingShell";
+import { ComingSoonTrigger } from "@/components/marketing/ComingSoonTrigger";
 import { ContactCtaButton } from "@/components/marketing/ContactCtaButton";
 import { FrameworkTile } from "@/components/onboarding/FrameworkTile";
 import { FrameworkGrid } from "@/components/onboarding/FrameworkGrid";
@@ -31,12 +32,12 @@ export default function FrameworksPage() {
                 giving your team consistent, framework-grounded guidance without spreadsheet overhead.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
-                <Link
-                  href="/signup"
+                <ComingSoonTrigger
+                  source="frameworks_hero"
                   className="inline-flex items-center gap-2 rounded-sm bg-gradient-to-r from-primary to-primary-deep px-8 py-4 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-white shadow-glow-brand transition-all duration-300 motion-reduce:transition-none hover:shadow-glow-brand-lg active:scale-95"
                 >
                   Get Started
-                </Link>
+                </ComingSoonTrigger>
                 <ContactCtaButton
                   className="inline-flex items-center gap-2 rounded-sm bg-surface-container-highest px-8 py-4 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-on-surface-muted transition-colors duration-300 hover:bg-surface-bright hover:text-on-surface"
                   placement="frameworks_hero"
@@ -199,12 +200,12 @@ export default function FrameworksPage() {
             Start your 14-day free trial of the Essential plan. No credit card required.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              href="/signup"
+            <ComingSoonTrigger
+              source="frameworks_footer"
               className="inline-flex items-center gap-2 rounded-sm bg-gradient-to-r from-primary to-primary-deep px-10 py-4 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-white shadow-glow-brand transition-all duration-300 motion-reduce:transition-none hover:shadow-glow-brand-lg active:scale-95"
             >
               Get Started &rarr;
-            </Link>
+            </ComingSoonTrigger>
             <Link
               href="/pricing"
               className="inline-flex items-center gap-2 rounded-sm border border-outline/40 px-10 py-4 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-on-surface transition-colors duration-300 motion-reduce:transition-none hover:border-primary hover:text-primary"

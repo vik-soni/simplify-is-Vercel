@@ -72,14 +72,14 @@ export default function NotFound() {
           {/* CTAs */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <Link
-              href="/login"
-              className="flex items-center gap-3 px-10 py-4 font-josefin font-semibold hover:scale-95 active:scale-90 transition-all duration-300 text-[#1A1917]"
+              href="/signup"
+              className="flex items-center gap-3 px-10 py-4 font-josefin font-semibold text-[#1A1917] transition-all duration-300 hover:scale-95 active:scale-90"
               style={{
                 background: "linear-gradient(to right, #EB5E28, #C44A1A)",
                 boxShadow: "0 0 20px rgba(235,94,40,0.15)",
               }}
             >
-              Log in
+              Join the waitlist
             </Link>
             <Link
               href="/"
@@ -91,40 +91,42 @@ export default function NotFound() {
 
           {/* Info cards — equal-height grid so baselines align */}
           <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 text-left items-stretch">
-            {[
-              {
-                Icon: LayoutDashboard,
-                title: "Log in",
-                body: "See the login experience for Simplify IS — full platform access is coming soon.",
-                href: "/login",
-              },
-              {
-                Icon: Library,
-                title: "Review Frameworks",
-                body: "See which frameworks Cypher supports today (ISO 27001:2022, NIST CSF 2.0, APRA CPS 234) and what's coming next.",
-                href: "/frameworks",
-              },
-              {
-                Icon: MessageSquare,
-                title: "Contact us",
-                body: "Can't find what you need, or think the link you followed is broken? Tell us — we'll take a look.",
-                href: "/",
-              },
-            ].map((card) => (
-              <Link
-                key={card.title}
-                href={card.href}
-                className="flex h-full flex-col bg-surface-container-low p-8 border border-outline/5 hover:border-primary/40 hover:bg-surface-container transition-all"
-              >
-                <card.Icon className="text-primary w-7 h-7 mb-4" strokeWidth={1.5} aria-hidden />
-                <h3 className="font-josefin font-bold text-xs uppercase tracking-widest text-on-surface mb-2">
-                  {card.title}
-                </h3>
-                <p className="text-on-surface-muted text-xs leading-relaxed font-montserrat font-light">
-                  {card.body}
-                </p>
-              </Link>
-            ))}
+            <Link
+              href="/signup"
+              className="flex h-full flex-col bg-surface-container-low p-8 border border-outline/5 hover:border-primary/40 hover:bg-surface-container transition-all"
+            >
+              <LayoutDashboard className="text-primary w-7 h-7 mb-4" strokeWidth={1.5} aria-hidden />
+              <h3 className="font-josefin font-bold text-xs uppercase tracking-widest text-on-surface mb-2">
+                Coming soon
+              </h3>
+              <p className="text-on-surface-muted text-xs leading-relaxed font-montserrat font-light">
+                Join the waitlist — we&apos;ll reach out when Simplify IS is ready for demo and launch.
+              </p>
+            </Link>
+            <Link
+              href="/frameworks"
+              className="flex h-full flex-col bg-surface-container-low p-8 border border-outline/5 hover:border-primary/40 hover:bg-surface-container transition-all"
+            >
+              <Library className="text-primary w-7 h-7 mb-4" strokeWidth={1.5} aria-hidden />
+              <h3 className="font-josefin font-bold text-xs uppercase tracking-widest text-on-surface mb-2">
+                Review Frameworks
+              </h3>
+              <p className="text-on-surface-muted text-xs leading-relaxed font-montserrat font-light">
+                See which frameworks Cypher supports today and what&apos;s coming next.
+              </p>
+            </Link>
+            <Link
+              href="/"
+              className="flex h-full flex-col bg-surface-container-low p-8 border border-outline/5 hover:border-primary/40 hover:bg-surface-container transition-all"
+            >
+              <MessageSquare className="text-primary w-7 h-7 mb-4" strokeWidth={1.5} aria-hidden />
+              <h3 className="font-josefin font-bold text-xs uppercase tracking-widest text-on-surface mb-2">
+                Back to Home
+              </h3>
+              <p className="text-on-surface-muted text-xs leading-relaxed font-montserrat font-light">
+                Explore what we&apos;re building and where Simplify IS is headed.
+              </p>
+            </Link>
           </div>
         </div>
       </main>

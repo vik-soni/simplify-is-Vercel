@@ -10,6 +10,7 @@ import {
 import Script from "next/script";
 import "./globals.css";
 import { Providers } from "@/components/providers";
+import { ComingSoonModalProvider } from "@/components/marketing/ComingSoonModalProvider";
 import { GTM_CONTAINER_ID } from "@/lib/analytics/gtm";
 
 const dmSans = DM_Sans({
@@ -77,7 +78,9 @@ export default function RootLayout({
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtm.js?id=${GTM_CONTAINER_ID}`}
         />
-        <Providers>{children}</Providers>
+        <Providers>
+          <ComingSoonModalProvider>{children}</ComingSoonModalProvider>
+        </Providers>
       </body>
     </html>
   );

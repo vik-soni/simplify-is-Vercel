@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MarketingShell } from "@/components/marketing/MarketingShell";
+import { ComingSoonTrigger } from "@/components/marketing/ComingSoonTrigger";
 
 export const metadata: Metadata = {
   title: "Maturity Model | Simplify IS",
@@ -287,12 +288,12 @@ export default function MaturityModelPage() {
               Cypher is ready to guide your organisation through its first maturity assessment.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/signup"
+              <ComingSoonTrigger
+                source="maturity_model_footer"
                 className="bg-gradient-to-br from-primary to-primary-deep text-[#1A1917] px-10 py-4 rounded-sm font-josefin font-bold uppercase text-sm tracking-[0.2em] shadow-glow-brand active:scale-95 transition-all"
               >
                 Get Started
-              </Link>
+              </ComingSoonTrigger>
               <Link
                 href="/how-it-works"
                 className="bg-surface-container-highest text-on-surface-muted px-10 py-4 rounded-sm font-josefin font-bold uppercase text-sm tracking-[0.2em] hover:bg-surface-bright transition-all"

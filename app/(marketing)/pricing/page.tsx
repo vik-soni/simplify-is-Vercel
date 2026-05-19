@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { MarketingShell } from "@/components/marketing/MarketingShell";
+import { ComingSoonTrigger } from "@/components/marketing/ComingSoonTrigger";
 import { ContactCtaButton } from "@/components/marketing/ContactCtaButton";
 import { FrameworkTile } from "@/components/onboarding/FrameworkTile";
 import { FrameworkGrid } from "@/components/onboarding/FrameworkGrid";
@@ -115,12 +115,12 @@ export default function PricingPage() {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/signup"
+            <ComingSoonTrigger
+              source="pricing_essential"
               className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-gradient-to-r from-primary to-primary-deep px-6 py-4 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-white shadow-glow-brand transition-transform duration-300 motion-reduce:transition-none active:scale-95"
             >
               Start Free Trial &rarr;
-            </Link>
+            </ComingSoonTrigger>
           </article>
 
           {/* Professional */}
@@ -166,12 +166,12 @@ export default function PricingPage() {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/signup?plan=professional"
+            <ComingSoonTrigger
+              source="pricing_professional"
               className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-sm border-2 border-primary px-6 py-4 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-primary transition-colors duration-300 hover:bg-primary/10"
             >
               Get Started &rarr;
-            </Link>
+            </ComingSoonTrigger>
           </article>
 
           {/* Enterprise */}
@@ -285,12 +285,12 @@ export default function PricingPage() {
             >
               Contact Us
             </ContactCtaButton>
-            <Link
-              href="/signup"
+            <ComingSoonTrigger
+              source="pricing_footer"
               className="inline-flex items-center gap-2 rounded-sm bg-gradient-to-r from-primary to-primary-deep px-8 py-3 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-white shadow-glow-brand transition-transform duration-300 motion-reduce:transition-none active:scale-95"
             >
               Start Free Trial &rarr;
-            </Link>
+            </ComingSoonTrigger>
           </div>
         </section>
       </main>

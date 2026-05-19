@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LayoutDashboard, Home, MessageSquare } from "lucide-react";
+import { ErrorPageComingSoonCta } from "./ErrorPageCta";
 
 interface SecondaryCard {
   Icon: React.ElementType;
@@ -15,6 +16,8 @@ interface ErrorPageProps {
   description: string;
   ctaLabel?: string;
   ctaHref?: string;
+  /** When true, primary CTA opens the coming-soon waitlist modal instead of linking. */
+  waitlistCta?: boolean;
   secondaryLabel?: string;
   secondaryHref?: string;
   helperCards?: SecondaryCard[];
@@ -23,9 +26,9 @@ interface ErrorPageProps {
 const DEFAULT_HELPER_CARDS: SecondaryCard[] = [
   {
     Icon: LayoutDashboard,
-    title: "Log in",
-    body: "See the login experience for Simplify IS — full platform access is coming soon.",
-    href: "/login",
+    title: "Coming soon",
+    body: "Join the waitlist — we'll reach out when Simplify IS is ready for demo and launch.",
+    href: "/signup",
   },
   {
     Icon: Home,
@@ -48,6 +51,7 @@ export function ErrorPage({
   description,
   ctaLabel,
   ctaHref,
+  waitlistCta = false,
   secondaryLabel = "Back to Home",
   secondaryHref = "/",
   helperCards = DEFAULT_HELPER_CARDS,
@@ -116,10 +120,11 @@ export function ErrorPage({
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            {ctaLabel && ctaHref ? (
+            {ctaLabel && waitlistCta ? <ErrorPageComingSoonCta label={ctaLabel} /> : null}
+            {ctaLabel && !waitlistCta && ctaHref ? (
               <Link
                 href={ctaHref}
-                className="flex items-center gap-3 px-10 py-4 font-josefin font-semibold hover:scale-95 active:scale-90 transition-all duration-300 text-[#1A1917]"
+                className="flex items-center gap-3 px-10 py-4 font-josefin font-semibold text-[#1A1917] transition-all duration-300 hover:scale-95 active:scale-90"
                 style={{
                   background: "linear-gradient(to right, #EB5E28, #C44A1A)",
                   boxShadow: "0 0 20px rgba(235,94,40,0.15)",

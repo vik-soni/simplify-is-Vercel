@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { MarketingShell } from "@/components/marketing/MarketingShell";
+import { ComingSoonTrigger } from "@/components/marketing/ComingSoonTrigger";
 import { ContactCtaButton } from "@/components/marketing/ContactCtaButton";
 
 export const metadata: Metadata = {
@@ -254,12 +254,12 @@ export default function HowItWorksPage() {
                   <p className="text-[#1A1917]/80 leading-relaxed mb-6 font-montserrat font-light">
                     Start with a full <strong>NIST CSF 2.0</strong> conversational baseline — always included — then optionally add ISO 27001, PCI DSS, or AI-focused frameworks without redoing groundwork.
                   </p>
-                  <Link
-                    href="/signup"
+                  <ComingSoonTrigger
+                    source="how_it_works_trial"
                     className="inline-block bg-[#1A1917] text-[#FFFCF2] px-8 py-3 rounded-sm font-bold font-josefin hover:bg-surface-container-highest transition-colors text-sm uppercase tracking-widest"
                   >
                     Start Trial
-                  </Link>
+                  </ComingSoonTrigger>
                 </div>
                 <div className="w-full md:w-1/3 opacity-20 text-[120px] text-[#1A1917] leading-none">
                   ✦
@@ -277,12 +277,12 @@ export default function HowItWorksPage() {
               Ready to start your first consultation?
             </h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Link
-                href="/signup"
+              <ComingSoonTrigger
+                source="how_it_works_footer"
                 className="bg-primary text-[#1A1917] px-10 py-4 rounded-sm font-bold font-josefin text-sm uppercase tracking-widest hover:bg-[#ff6a33] transition-colors shadow-glow-brand"
               >
                 Get Started
-              </Link>
+              </ComingSoonTrigger>
               <ContactCtaButton
                 className="bg-surface-container-highest text-on-surface-muted px-10 py-4 rounded-sm font-bold font-josefin text-sm uppercase tracking-widest hover:bg-surface-bright transition-colors"
                 placement="hiw_footer"

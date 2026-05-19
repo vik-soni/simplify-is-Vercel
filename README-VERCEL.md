@@ -9,7 +9,16 @@ npm ci
 npm run build
 ```
 
-Set `NEXT_PUBLIC_APP_URL` in Vercel to your production URL (e.g. `https://simplify.is`).
+Set these in Vercel:
+
+| Variable | Example |
+|----------|---------|
+| `NEXT_PUBLIC_APP_URL` | `https://simplify.is` |
+| `RESEND_API_KEY` | Your Resend API key |
+| `RESEND_FROM_EMAIL` | Verified sender (e.g. `notifications@simplify.is`) |
+| `VIK_ALERT_EMAIL` | `vik@simplify.is` |
+
+Login and sign-up CTAs open a **coming soon** modal with a waitlist form. Submissions email `VIK_ALERT_EMAIL`.
 
 ## Routes
 
