@@ -208,12 +208,12 @@ export default function PricingPage() {
                 </li>
               ))}
             </ul>
-            <button
-              type="button"
-              className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-surface-container-highest px-6 py-4 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-on-surface-muted"
+            <ContactCtaButton
+              placement="pricing_enterprise"
+              className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-sm bg-surface-container-highest px-6 py-4 font-josefin text-xs font-bold uppercase tracking-[0.22em] text-on-surface-muted transition-colors hover:bg-surface-bright hover:text-on-surface"
             >
               Contact for Enterprise
-            </button>
+            </ContactCtaButton>
           </article>
         </section>
 

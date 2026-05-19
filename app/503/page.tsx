@@ -1,5 +1,7 @@
 import { ErrorPage } from "@/components/error/ErrorPage";
 
+export const dynamic = "force-dynamic";
+
 export default function UnavailablePage() {
   return (
     <ErrorPage

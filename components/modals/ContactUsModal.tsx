@@ -101,13 +101,33 @@ export function ContactUsModal({
     setErrorMessage(null);
     trackEvent("form_submit", { form: "contact_us" });
 
-    // Preview build: acknowledge locally without calling the API.
-    void trimmedName;
-    void trimmedEmail;
-    void trimmedCountry;
-    void subject;
-    void trimmedMessage;
-    setState("success");
+    try {
+      const response = await fetch("/api/v1/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: trimmedName,
+          email: trimmedEmail,
+          country: trimmedCountry,
+          subject,
+          message: trimmedMessage,
+        }),
+      });
+
+      if (!response.ok) {
+        const payload: { error?: string } = await response.json().catch(() => ({}));
+        setErrorMessage(payload.error ?? "Something went wrong. Please try again shortly.");
+        setState("error");
+        trackEvent("form_error", { form: "contact_us", status: response.status });
+        return;
+      }
+
+      setState("success");
+    } catch {
+      setErrorMessage("Network error. Please check your connection and try again.");
+      setState("error");
+      trackEvent("form_error", { form: "contact_us", status: "network" });
+    }
   }
 
   return (

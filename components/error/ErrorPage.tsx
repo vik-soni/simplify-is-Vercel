@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { LayoutDashboard, Home, MessageSquare } from "lucide-react";
 import { ErrorPageComingSoonCta } from "./ErrorPageCta";
+import { ErrorPageHelperCards } from "./ErrorPageHelperCards";
 
 interface SecondaryCard {
   Icon: React.ElementType;
   title: string;
   body: string;
   href: string;
+  openContactModal?: boolean;
 }
 
 interface ErrorPageProps {
@@ -40,7 +42,8 @@ const DEFAULT_HELPER_CARDS: SecondaryCard[] = [
     Icon: MessageSquare,
     title: "Contact us",
     body: "Can't find what you need, or think the link you followed is broken? Tell us — we'll take a look.",
-    href: "/contact",
+    href: "#",
+    openContactModal: true,
   },
 ];
 
@@ -141,29 +144,7 @@ export function ErrorPage({
             </Link>
           </div>
 
-          {helperCards.length > 0 ? (
-            <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 text-left items-stretch">
-              {helperCards.map((card) => (
-                <Link
-                  key={card.title}
-                  href={card.href}
-                  className="flex h-full flex-col bg-surface-container-low p-8 border border-outline/5 hover:border-primary/40 hover:bg-surface-container transition-all"
-                >
-                  <card.Icon
-                    className="text-primary w-7 h-7 mb-4"
-                    strokeWidth={1.5}
-                    aria-hidden
-                  />
-                  <h3 className="font-josefin font-bold text-xs uppercase tracking-widest text-on-surface mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-on-surface-muted text-xs leading-relaxed font-montserrat font-light">
-                    {card.body}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          ) : null}
+          {helperCards.length > 0 ? <ErrorPageHelperCards /> : null}
         </div>
       </main>
 

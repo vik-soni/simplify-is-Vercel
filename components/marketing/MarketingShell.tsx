@@ -3,7 +3,7 @@
 import { ReactNode, useEffect } from "react";
 import { Footer } from "./Footer";
 import { TopNav } from "./TopNav";
-import { ContactModalProvider } from "./ContactModalProvider";
+
 export function MarketingShell({ children }: { children: ReactNode }) {
   useEffect(() => {
     document.body.classList.add("marketing");
@@ -13,10 +13,10 @@ export function MarketingShell({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <ContactModalProvider>
+    <>
       <TopNav />
       <div className="min-h-screen">{children}</div>
       <Footer />
-    </ContactModalProvider>
+    </>
   );
 }
